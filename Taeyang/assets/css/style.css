@@ -1,0 +1,974 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+/* 공통 */
+a {
+  text-decoration: none !important;
+}
+.mt {
+  margin-top: 80px;
+}
+
+.mb {
+  margin-bottom: 80px;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+
+
+
+/* nav */
+.nav-link {
+  font-size: 17px;
+  margin: 0 30px;
+}
+
+.navbar-expand-lg {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding: 10px 0;
+}
+
+.material-icons::after {
+  content: '';
+  display: block;
+  background: #fff;
+  width: 1px;
+  height: 16px;
+  position: absolute;
+  top: 26px;
+  right: 50px;
+}
+
+
+input[id="menuicon"] {
+  display: none;
+}
+
+input[id="menuicon"]+label {
+  margin-top: 2px !important;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+input[id="menuicon"]+label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all .35s;
+}
+
+input[id="menuicon"]+label span:nth-child(1) {
+  top: 0;
+}
+
+input[id="menuicon"]+label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[id="menuicon"]+label span:nth-child(3) {
+  bottom: 0;
+
+}
+
+input[id="menuicon"]:checked+label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked+label span:nth-child(2) {
+  opacity: 0;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+/* nav-scroll */
+.fixed-head-white {
+  background: #fff !important;
+  color: #000;
+  z-index: 50;
+  box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, .08);
+}
+
+.fixed-head-white .nav-link {
+  color: #000 !important;
+}
+
+.fixed-head-white .menu-bar {
+  background-color: #000 !important;
+}
+.border-bt{
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+.top-nav {
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  transition: all .5s;
+}
+
+.dropdown-navbar {
+  display:none;
+}
+
+.fixed-head-white{
+  display:block !important;
+}
+
+.fixed-head-white .dropdown-navbar{
+  border-top: 1px solid #e1e1e1;
+}
+.top-nav.fixed-head {
+  top: 0px;
+}
+
+.logo-r {
+  display: none;
+}
+
+.fixed-head-white .material-icons::after {
+  background-color: #000;
+}
+
+.fixed-head-white .language {
+  color: #000 !important;
+}
+
+.fixed-head-white .icon {
+  color: #000 !important;
+}
+
+.fixed-head-white .logo-r {
+  display: block !important;
+}
+
+.fixed-head-white .logo-w {
+  display: none !important;
+}
+
+
+/* PC dropdown-navbar */
+.dropdown-navbar .nav-item {
+  color: #000 !important;
+  margin: 0px 32.5px;
+  font-size: 16px;
+}
+
+
+
+/* 메인배너 */
+.main-title {
+  display: block;
+  font-size: 60px;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+
+.main-bg-img-1 {
+  background-image: url(/assets/img/main_banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+}
+
+.main-bg-img-2 {
+  background-image: url(/assets/img/main_banner_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+}
+
+.main-bg-img-3 {
+  background-image: url(/assets/img/main_banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+}
+
+.main_slider button {
+  border: none;
+  font-size: 10px;
+  background: none;
+  color: transparent;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+
+}
+
+
+
+
+/* 태양건업 */
+/* .slider-wrap{
+  position: relative;
+  height: 300px;
+} */
+.slider button.slick-prev {
+  border: none;
+  font-size: 0px;
+  background: none;
+  color: transparent;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 10;
+  transform: translateY(-50%);
+  top: -11%;
+  right: 5%;
+}
+
+.slider button.slick-next {
+  border: none;
+  font-size: 0px;
+  background: none;
+  color: transparent;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+
+  z-index: 10;
+  transform: translateY(-50%);
+  top: -11%;
+  right: 0%;
+}
+
+.chevron {
+  border: 1px solid #e1e1e1;
+  padding: 7px;
+  color: #005FA5;
+  margin: -2.5px;
+}
+
+.banner {
+  max-height: 100%;
+  height: auto;
+  height: 100%;
+  visibility: hidden;
+}
+
+.bg-img-1 {
+  background-image: url(/assets/img/img.jpg);
+  max-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img-2 {
+  background-image: url(/assets/img/img-2.jpg);
+  max-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img-3 {
+  background-image: url(/assets/img/img.jpg);
+  max-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+/* 공지사항 */
+.box-wrap {
+  border: 1px solid #e1e1e1;
+  padding: 35px 20px;
+  height: 300px;
+}
+
+.box-wrap .box-line {
+  width: 20px;
+  height: 2px;
+  display: block;
+  background-color: #005FA5;
+  margin: 12px 0;
+}
+
+.box-wrap .box-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.box-wrap .box-date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #888888;
+}
+
+.box-wrap .box-text {
+  font-size: 15px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  height: 70px;
+}
+
+
+
+
+/* 사업분야 */
+.img-pd {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.plus span:nth-child(1) {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: #005FA5;
+  position: relative;
+  top: 8px;
+}
+
+.plus span:nth-child(2) {
+  display: block;
+  width: 2px;
+  height: 16px;
+  background-color: #005FA5;
+  position: relative;
+  right: -47%;
+  top: -1px;
+}
+
+.plus {
+  border: 1px solid #e1e1e1;
+  padding: 10px 11px;
+}
+
+.business-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 19px;
+  left: 4%;
+  text-anchor: left;
+}
+
+.business-img-1 {
+  background-image: url(/assets/img/1.jpg);
+  max-height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.business-img-2 {
+  background-image: url(/assets/img/2.jpg);
+  max-height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.business-img-3 {
+  background-image: url(/assets/img/3.jpg);
+  max-height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.business-img-4 {
+  background-image: url(/assets/img/4.jpg);
+  max-height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* --------------------메인 end------------------ */
+
+
+
+
+
+
+/* ------------------회사소개 start------------------ */
+/* CEO인사말 */
+.text {
+  font-size: 17px;
+  line-height: 2.6rem;
+  margin-top: 100px;
+  word-break: break-word;
+}
+
+.banner-title {
+  font-weight: 500;
+}
+
+.top-banner {
+  background-image: url(/assets/img/about-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+/* 경영이념 */
+.gray-title {
+  font-size: 50px;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #EEEEEE;
+}
+
+.management-bg {
+  background: url(/assets/img/about-2.jpg);
+  background-position-y: -2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 570px;
+}
+
+.margin-box {
+  background: #fff;
+  padding: 55px 15px 0px 15px;
+
+}
+
+.taeyang-wrap .row {
+  margin-top: 120px;
+}
+
+.taeyang-text {
+  font-size: 24px;
+  color: #005FA5;
+  border: 1px solid #005FA5;
+  background: #fff;
+  border-radius: 500px;
+  padding: 9px 42px;
+  display: inline-block;
+}
+
+.position {
+  position: relative;
+  top: 500px;
+}
+
+.icon-bg-1 {
+  background: #005FA5;
+  padding: 40px;
+  border-radius: 500%;
+}
+
+.icon-bg-2 {
+  background: #429FE3;
+  padding: 40px;
+  border-radius: 100%;
+}
+
+.icon-bg-3 {
+  background: #30B4C4;
+  padding: 40px;
+  border-radius: 500%;
+}
+
+.taeyang-wrap p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.taeyang-wrap span {
+  font-size: 17px;
+  color: #555;
+  font-weight: 400;
+}
+
+.Management-line {
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  border-left: 1px solid #e1e1e1;
+  top: -40px;
+  left: 50%;
+}
+
+.Management-line.center {
+  position: absolute;
+  width: 1px;
+  height: 47%;
+  border-left: 1px solid #e1e1e1;
+  top: -47%;
+  left: 50%;
+}
+
+.Management-width {
+  position: absolute;
+  width: 200%;
+  height: 10px;
+  border-bottom: 1px solid #e1e1e1;
+  top: -50px;
+  left: 50%;
+}
+
+/* 드롭다운 상세메뉴 nav */
+.division {
+  font-size: 15px;
+  color: #888;
+}
+
+.nav-list {
+  padding-top: 20px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.division::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background: #e1e1e1;
+  top: 3px;
+  right: 2px;
+}
+
+.before::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background: #e1e1e1;
+  top: 3px;
+  left: 2px;
+}
+
+.hit {
+  font-weight: 500;
+  color: #000;
+}
+
+.hit-line {
+  border-bottom: 3px solid #005FA5;
+  width: 100%;
+  padding-bottom: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+.dropdown .btn {
+  width: 100%;
+  padding: 20px;
+  border-radius: 0px;
+  border: 1px solid #e1e1e1;
+}
+
+.dropdown-toggle::after {
+  float: right;
+  margin-top: 10px;
+}
+
+.dropdown-menu {
+  border-radius: 0px;
+  top: -2.5% !important;
+  width: 100%;
+  font-size: 16px;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 20px;
+}
+
+.dropdown-menu.show {
+  transform: translate3d(0px, 66px, 0px) !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #e1e1e1;
+}
+
+
+/* 회사연혁 */
+.main-timeline {
+  position: relative;
+}
+
+.main-timeline:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  border-radius: 20px;
+  margin: 0 auto;
+  background: #999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0
+}
+
+.main-timeline .timeline:before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 4px solid #005FA5;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%)
+}
+
+.main-timeline .title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 5px;
+}
+
+.main-timeline .timeline {
+  display: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.main-timeline .timeline-content {
+  width: 50%;
+  padding: 0 40px;
+  margin: 52px 0 0;
+  float: right;
+  position: relative;
+}
+
+.main-timeline .description {
+  display: inline-block;
+  font-size: 24px;
+  color: #404040;
+  line-height: 35px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-content {
+  float: left;
+  text-align: right;
+}
+
+
+
+
+/* 오시는길 */
+.directions-wrap .col-md-4{
+  border-top: 2px solid #757575;
+  width: 85%;
+  margin: 0 auto;
+}
+.directions-wrap .col-md-4 div{
+  border-bottom: 1px solid #e1e1e1;
+  padding: 15px 0;
+}
+.directions-wrap .col-md-4 div span{
+  color: #555;
+}
+.wrap_controllers.hide{
+  display: none;
+}
+.root_daum_roughmap{
+  width: 100% !important;
+}
+
+/* --------------------회사소개 end------------------ */
+
+
+
+
+
+
+/* ------------------사업분야 start------------------ */
+/* 전문건설업 */
+.top-banner-2 {
+  background-image: url(/assets/img/business-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+.business-wrap .col-12{
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+}
+.business-wrap .col-12 p{
+  font-size: 17px;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+
+
+
+/* ------------------시공사례 start------------------ */
+/* 시공사례 */
+.top-banner-3{
+  background-image: url(/assets/img/case-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+li{
+  list-style: none;
+}
+.case-wrap .width{
+  border-top: 3px solid #005FA5;
+}
+.case-wrap .circle{
+  padding-left: 30px;
+}
+.case-timeline ul{
+margin-bottom: 0px;
+}
+
+.case-timeline .case-timelin-content li{
+  padding: 10px 0;
+}
+.case-timelin-content .circle-1::before{
+  content: "";
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  border: 4px solid #005FA5;
+  background: #fff;
+  position: absolute;
+  top: .5%;
+  left: 28%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.case-timelin-content .circle-2::before{
+  content: "";
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  border: 4px solid #005FA5;
+  background: #fff;
+  position: absolute;
+  top: 49.5%;
+  left: 28%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.case-timelin-content .circle-3::before{
+  content: "";
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  border: 4px solid #005FA5;
+  background: #fff;
+  position: absolute;
+  top: 99%;
+  left: 28%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.case-timeline::before{
+  content: "";
+  width: 1px;
+  height: 99%;
+  border-radius: 20px;
+  margin: 0 auto;
+  background: #999;
+  position: absolute;
+  top: 0.5%;
+  left: -44%;
+  right: 0;
+}
+.date-yy{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #005FA5;
+  font-size: 32px;
+}
+
+
+
+/* ------------------고객센터 start------------------ */
+/* 고객센터 */
+.top-banner-4{
+  background-image: url(/assets/img/customer-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+.customer-list-wrap .col-md-12{
+  border-top: 3px solid #005FA5;
+}
+.customer-list-wrap .article-title{
+  font-size: 17px;
+  margin-bottom: 2px;
+  color: #000;
+}
+.customer-list-wrap .article-date{
+  font-size: 0.875rem;
+  color: #888;
+}
+.customer-list-wrap .col-md-12 div{
+  padding: 20px 10px 20px 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+.input-group{
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+}
+.input-group .form-control{
+  height: 45px; 
+  border-radius: 0px; 
+}
+.search-btn{
+  border: none;
+  background-color: #005FA5;
+  padding: 6px 20px;
+}
+.search-btn .material-icons::after{
+  background: #005FA5;
+}
+.customer-list-wrap .col-md-12 div:hover{
+  background: #fafafa;
+}
+.page-link{
+  color: #555;
+}
+
+
+.customer-wrap{
+  padding: 0 15px;
+}
+.customer-wrap .est-form-btn {
+  width: 200px;
+  height: 50px;
+  color: #555555;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: #fff;
+  border: 1px solid #636569;
+  margin-top: 80px;
+}
+.customer-wrap p{
+  margin: 0px;
+  font-size: 17px;
+  padding: 20px 0;
+}
+.est-text{
+  line-height: 2.5em;
+}
+.customer-wrap th{
+  font-weight: 500;
+  font-size: 17px;
+  width: 20%;
+  padding: 20px 0;
+  color: #333;
+}
+.customer-wrap tr{
+  border-bottom: 1px solid #e1e1e1;
+  padding: 20px 0;
+}
+.est-table{
+  border-top: 3px solid #005FA5;
+}
+.est-btn{
+  margin: 0 auto;
+}
+
+
+
+
+
+/* 푸터 */
+.footer-wrap {
+  background-color: #3E3E3E;
+  padding: 45px 0px;
+}
+
+.margin-none {
+  margin-left: 0px !important;
+}
+
+.footer-menu {
+  margin: 0px 20px;
+  color: #9E9E9E;
+  font-size: 0.9rem;
+  display: inline;
+}
+
+.list-top {
+  font-weight: 500;
+}
+
+.list-bottom span {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.footer-menu::after {
+  content: '';
+  width: 1px;
+  height: 13px;
+  margin-left: 2%;
+  position: absolute;
+  background: #9E9E9E;
+  margin-top: 8px;
+}
+
+.after-none::after {
+  display: none;
+}
