@@ -45,16 +45,25 @@ button:focus {
 
 
 
+
 /* nav */
-.nav-link {
+.top-nav .border-bt .navbar-nav .nav-link {
   font-size: 17px;
-  margin: 0 30px;
+  margin: 0 33px;
+}
+.pc-nav-group .dropdown-navbar .nav-link {
+  font-size: 16px;
+  margin: 0 35px;
+  padding: 12px 0;
+}
+.top-nav{
+  padding: 0px;
 }
 
 .navbar-expand-lg {
   padding-right: 0px;
   padding-left: 0px;
-  padding: 10px 0;
+  padding: 15px 15px;
 }
 
 .material-icons::after {
@@ -64,8 +73,8 @@ button:focus {
   width: 1px;
   height: 16px;
   position: absolute;
-  top: 26px;
-  right: 50px;
+  top: 32px;
+  right:70px;
 }
 
 
@@ -178,6 +187,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 
 .fixed-head-white .logo-r {
   display: block !important;
+  display: none;
 }
 
 .fixed-head-white .logo-w {
@@ -186,12 +196,36 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 
 
 /* PC dropdown-navbar */
-.dropdown-navbar .nav-item {
+.pc-nav-group .dropdown-navbar .nav-item {
   color: #000 !important;
   margin: 0px 32.5px;
   font-size: 16px;
 }
-
+/* mobile-nav */
+.mobile-nav-group .dropdown-toggle::after{
+  float: right;
+  margin-top: 9px;
+}
+.mobile-nav-group .nav-link{
+  padding: 20px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.mobile-nav-group .dropdown-menu.show{
+  border: none;
+  border-radius: 1px;
+  margin: 0px;
+  padding: 5px;
+  background: #fafafa;
+}
+.mobile-nav-group .navbar{
+  padding: 0px;
+}
+.mobile-nav-group .dropdown-item{
+  padding: 14px 25px;
+}
+.mobile-nav-group .dropdown-menu a:hover{
+  background-color: #e1e1e1 !important;
+}
 
 
 /* 메인배너 */
@@ -600,34 +634,34 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
   color: #000;
 }
 
-.dropdown .btn {
+.company-top .dropdown .btn {
   width: 100%;
   padding: 20px;
   border-radius: 0px;
   border: 1px solid #e1e1e1;
 }
 
-.dropdown-toggle::after {
+.company-top .dropdown-toggle::after {
   float: right;
   margin-top: 10px;
 }
 
-.dropdown-menu {
+.company-top .dropdown-menu {
   border-radius: 0px;
   top: -2.5% !important;
   width: 100%;
   font-size: 16px;
 }
 
-.dropdown-menu .dropdown-item {
+.company-top .dropdown-menu .dropdown-item {
   padding: 20px;
 }
 
-.dropdown-menu.show {
+.company-top .dropdown-menu.show {
   transform: translate3d(0px, 66px, 0px) !important;
 }
 
-.dropdown-menu .dropdown-item:hover {
+.company-top .dropdown-menu .dropdown-item:hover {
   background-color: #e1e1e1;
 }
 
@@ -880,7 +914,7 @@ margin-bottom: 0px;
   padding: 6px 20px;
 }
 .search-btn .material-icons::after{
-  background: #005FA5;
+  opacity: 0;
 }
 .customer-list-wrap .col-md-12 div:hover{
   background: #fafafa;

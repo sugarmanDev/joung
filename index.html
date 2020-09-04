@@ -35,40 +35,43 @@
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span> -->
             </button>
-            <div class="nav justify-content-center d-none d-xl-block d-lg-block">
+            <div class="nav justify-content-center">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active menu-over" href="./about_greet.html">회사소개 <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link  menu-over" href="./business.html">사업분야</a>
                     <a class="nav-item nav-link  menu-over" href="./construction_case.html">시공사례</a>
                     <a class="nav-item nav-link menu-over" href="./customerservice.html">고객센터</a>
                 </div>
+                <div class="mobile-nav">
+                    
+                </div>
             </div>
             <div class="nav justify-content-end">
-                <div class="d-none d-xl-block d-lg-block" style="margin-right: 40px;">
-                    <div class="d-flex align-self-center language-list">
+                <div style="margin-right: 40px;">
+                    <div class="d-flex align-self-center language-box">
                         <span class="material-icons mr-1 icon" style="color: #fff;">public</span>
                         <span class="language" style="color: #fff;">한국어</span>
                     </div>
                 </div>
-                <dlv class="menu">
+                <div class="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <input type="checkbox" id="menuicon">
                     <label for="menuicon">
                         <span class="menu-bar"></span>
                         <span class="menu-bar"></span>
                         <span class="menu-bar"></span>
                     </label>
-                </dlv>
+                </div>
             </div>
         </nav>
     </div>
     <!-- 드롭다운 nav -->
     <div class="dropdown-navbar">
         <div class="container">
-            <div class="row m-auto pt-3" style="width:100%;">
+            <div class="row m-auto" style="width:100%;">
                 <div class="col-md-3"></div>
-                <div class="col-md-9">
-                    <div class="nav pb-2">
-                        <ul class="navbar-nav dropdown-nav"> 
+                <div class="col-md-9" style="margin: 16px 0 !important;">
+                    <div class="nav pb-2 pc-nav-group">
+                        <ul class="navbar-nav dropdown-nav size">
                             <li><a class="nav-item nav-link" href="./about_greet.html">CEO인사말</a></li>
                             <li><a class="nav-item nav-link" href="./about_Management.html">경영이념</a></li>
                             <li><a class="nav-item nav-link" href="./about_history.html">연혁</a></li>
@@ -91,9 +94,50 @@
                 </div>
             </div>
         </div>
+        <div class="mobile-nav-group">
+            <nav class="navbar">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        회사소개
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./about_greet.html">CEO인사말</a>
+                            <a class="dropdown-item" href="./about_Management.html">경영이념</a>
+                            <a class="dropdown-item" href="./about_history.html">연혁</a>
+                            <a class="dropdown-item" href="./about_directions.html">오시는 길</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          사업분야
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./business.html">전문건설업</a>
+                            <a class="dropdown-item" href="#">유리문</a>
+                            <a class="dropdown-item" href="#">엘베문</a>
+                        </div>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        시공사례
+                      </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        고객센터
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./customerservice.html">공지사항</a>
+                        </div>
+                      </li>
+                  </ul>
+                </div>
+            </nav>
+        </div>  
     </div>
 </div>
-
 
 
 <!-- main-banner -->
