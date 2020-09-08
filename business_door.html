@@ -37,8 +37,8 @@
             </button>
             <div class="nav justify-content-center">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active menu-over" href="./about_greet.html">회사소개 <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link  menu-over" href="./business.html">사업분야</a>
+                    <a class="nav-item nav-link  menu-over" href="./about_greet.html">회사소개 <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active menu-over" href="./business.html">사업분야</a>
                     <a class="nav-item nav-link  menu-over" href="./construction_case.html">시공사례</a>
                     <a class="nav-item nav-link menu-over" href="./customerservice.html">고객센터</a>
                 </div>
@@ -79,10 +79,10 @@
                         </ul>
                         <ul class="navbar-nav dropdown-nav"> 
                             <li><a class="nav-item nav-link" href="./business.html">전문건설업</a></li>
-                            <li><a class="nav-item nav-link" href="#">유리문</a></li>
-                            <li><a class="nav-item nav-link" href="#">엘베문</a></li>
+                            <li><a class="nav-item nav-link" href="./business_door.html">자동문</a></li>
+                            <li><a class="nav-item nav-link" href="./business_seal.html">방수</a></li>
                         </ul>
-                        <ul class="navbar-nav dropdown-nav"> 
+                        <ul class="navbar-nav dropdown-nav" style="visibility: hidden;"> 
                             <li><a class="nav-item nav-link" href="./construction_case.html">전문건설업</a></li>
                             <li><a class="nav-item nav-link" href="#">유리문</a></li>
                             <li><a class="nav-item nav-link" href="#">엘베문</a></li>
@@ -324,14 +324,14 @@
     function toggleHead() {
         var scroll = $(window).scrollTop();
         var returnValue = false;
-        if(scroll > 699) {
+        if(scroll > 75) {
             returnValue = true;
         }
         else {
             returnValue = false;
         }
         return returnValue;
-    }
+    } 
 
 </script>
 

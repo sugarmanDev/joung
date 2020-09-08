@@ -89,10 +89,10 @@
                             </ul>
                             <ul class="navbar-nav dropdown-nav">
                                 <li><a class="nav-item nav-link" href="./business.html">전문건설업</a></li>
-                                <li><a class="nav-item nav-link" href="#">유리문</a></li>
-                                <li><a class="nav-item nav-link" href="#">엘베문</a></li>
+                                <li><a class="nav-item nav-link" href="./business_door.html">자동문</a></li>
+                                <li><a class="nav-item nav-link" href="./business_seal.html">방수</a></li>
                             </ul>
-                            <ul class="navbar-nav dropdown-nav">
+                            <ul class="navbar-nav dropdown-nav" style="visibility: hidden;">
                                 <li><a class="nav-item nav-link" href="./construction_case.html">전문건설업</a></li>
                                 <li><a class="nav-item nav-link" href="#">유리문</a></li>
                                 <li><a class="nav-item nav-link" href="#">엘베문</a></li>
@@ -353,16 +353,16 @@
         });
 
         function toggleHead() {
-            var scroll = $(window).scrollTop();
-            var returnValue = false;
-            if (scroll > 200) {
-                returnValue = true;
-            }
-            else {
-                returnValue = false;
-            }
-            return returnValue;
-        }   
+        var scroll = $(window).scrollTop();
+        var returnValue = false;
+        if(scroll > 75) {
+            returnValue = true;
+        }
+        else {
+            returnValue = false;
+        }
+        return returnValue;
+    }     
     </script>
 
    
