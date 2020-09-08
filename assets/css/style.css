@@ -480,7 +480,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .top-banner {
-  background-image: url(../img/about-banner.jpg);
+  background-image: url(../img/image_home.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1045,4 +1045,38 @@ margin-bottom: 0px;
 .title-quote {
   color:#005eaa;
   font-weight:bold;
+}
+
+.top-banner-seal {
+  background-image: url(../img/biz_02.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  background-position: 50% 69%;
+  height: 350px;
+}
+.top-banner-doors {
+  background-image: url(../img/biz_03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+.management-bg-seal {
+  background: url(../img/biz_02.jpeg);
+  background-position-y: -2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  background-position: 50% 69%;
+  height: 570px;
+}
+.management-bg-doors {
+  background: url(../img/biz_03.jpg);
+  background-position-y: -2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 570px;
 }
