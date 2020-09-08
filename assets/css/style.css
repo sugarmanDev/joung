@@ -1037,3 +1037,12 @@ margin-bottom: 0px;
   padding-bottom:50px;
   border-bottom:1px solid #efefef;
 }
+
+.product-row{
+  margin-top:50px !important;
+}
+
+.title-quote {
+  color:#005eaa;
+  font-weight:bold;
+}
