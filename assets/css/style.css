@@ -1006,3 +1006,34 @@ margin-bottom: 0px;
 .after-none::after {
   display: none;
 }
+
+
+.title-tip-left{
+  width:5px;
+  height:23px;
+  background-color:#005eaa;
+  vertical-align: sub;
+  margin-right:14px;
+  float:left;
+
+}
+.title-text-left{
+  font-size: 18px;
+  font-weight: 500;
+  float:left;
+}
+.desc-text-right{
+  color:#555;
+  margin-bottom:15px;
+  text-align:left;
+}
+
+.desc-text-right-bottom{
+  text-align:left;
+  font-size:15px;
+}
+
+.bottom-line{
+  padding-bottom:50px;
+  border-bottom:1px solid #efefef;
+}
