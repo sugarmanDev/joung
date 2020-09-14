@@ -94,6 +94,7 @@ input[id="menuicon"]+label {
   height: 20px;
   cursor: pointer;
   margin-bottom: 0px;
+  background-color: transparent;
 }
 
 input[id="menuicon"]+label span {
