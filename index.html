@@ -318,9 +318,19 @@
     });
 
     $("#top_nav").hover(function(){
+        var getPosition = toggleHead();
         $('.top-nav').addClass('fixed-head-white');
+        $('.dropdown-navbar').show();
         $("#menuicon").prop("checked", true);
     }, function(){
+        var getPosition = toggleHead();
+        $('.dropdown-navbar').hide()
+            if(getPosition == true) {
+                $('.top-nav').addClass('fixed-head-white');
+            }
+            else {
+                $('.top-nav').removeClass('fixed-head-white');
+            }
         $("#menuicon").prop("checked", false);
     });
 
