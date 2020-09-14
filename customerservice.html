@@ -115,8 +115,8 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="./business.html">전문건설업</a>
-                            <a class="dropdown-item" href="#">유리문</a>
-                            <a class="dropdown-item" href="#">엘베문</a>
+                            <a class="dropdown-item" href="./business_door.html">자동문</a>
+                            <a class="dropdown-item" href="./business_seal.html">방수</a>
                         </div>
                       </li>
                     <li class="nav-item dropdown">
@@ -292,10 +292,8 @@
 
     $("#top_nav").hover(function(){
         $('.top-nav').addClass('fixed-head-white');
-        $('.dropdown-navbar').show();
         $("#menuicon").prop("checked", true);
     }, function(){
-        $('.dropdown-navbar').hide();
         $("#menuicon").prop("checked", false);
     });
 
