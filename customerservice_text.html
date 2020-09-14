@@ -26,7 +26,7 @@
 
 <body>
 <!-- nav -->
-<div class="navbar fixed-top top-nav" style="display: block;">
+<div class="navbar fixed-top top-nav" id="top_nav" style="display: block;">
     <div class="border-bt">
         <nav class="navbar container navbar-expand-lg navbar-dark">
             <a class="navbar-brand logo-w" href="./index.html"><img src="./assets/img/logo.png" alt=""></a>
@@ -240,6 +240,16 @@
         else {
             $('.top-nav').removeClass('fixed-head-white');
         }
+    });
+
+    $("#top_nav").hover(function(){
+        $('.top-nav').addClass('fixed-head-white');
+        $('.dropdown-navbar').show();
+        $("#menuicon").prop("checked", true);
+    }, function(){
+        $('.top-nav').removeClass('fixed-head-white');
+        $('.dropdown-navbar').hide();
+        $("#menuicon").prop("checked", false);
     });
 
     $(document).on('change', '#menuicon', function () {

@@ -26,7 +26,7 @@
 
 <body>
 <!-- nav -->
-<div class="navbar fixed-top top-nav clearfix" style="display: block;">
+<div class="navbar fixed-top top-nav" id="top_nav" style="display: block;">
     <div class="border-bt">
         <nav class="navbar container navbar-expand-lg navbar-dark">
             <a class="navbar-brand logo-w" href="./index.html"><img src="./assets/img/logo.png" alt=""></a>
@@ -188,7 +188,7 @@
     <div class="container text-center">
         <div class="row position">
             <div class="col-md-12 margin-box">
-                <h3 class="main-text" style="line-height:1.4em;">
+                <h3 class="main-text " style="line-height:1.4em;">
                     세계 최초 100% 완전 방수 시공
                 </h3>
                 <p class="text mt-4" style="line-height:1.7em; font-size:17px;">
@@ -244,7 +244,7 @@
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                <div class="desc-text-right">
+                <div class="desc-text-right" style="color: #005eaa; font-weight: bold;">
                     터보씰 GT + 터보시트 / 건설교통부 신기술 376호<br/>
                     터보씰 H + 터보시트 / 조달우수제품
                 </div>
@@ -262,7 +262,7 @@
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                <div class="desc-text-right">
+                <div class="desc-text-right" style="color: #005eaa; font-weight: bold;">
                     DW 시트 + 터보씰D + DW메쉬
                 </div>
                 <div class="desc-text-right-bottom">
@@ -276,11 +276,11 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-3">
                 <div class="title-tip-left"></div>
-                <div class="title-text-left ">옥상녹화 방근/방수공법</div>
+                <div class="title-text-left">옥상녹화 방근/방수공법</div>
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                <div class="desc-text-right">
+                <div class="desc-text-right" style="color: #005eaa; font-weight: bold;">
                     에코씰 + 에코방근시트 / 국토해양부 지정 신기술 506호
                 </div>
                 <div class="desc-text-right-bottom">
@@ -294,11 +294,11 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-3">
                 <div class="title-tip-left"></div>
-                <div class="title-text-left ">온통GTR방수공법</div>
+                <div class="title-text-left">온통GTR방수공법</div>
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                <div class="desc-text-right">
+                <div class="desc-text-right" style="color: #005eaa; font-weight: bold;">
                     국토교통부 신기술 740호
                 </div>
                 <div class="desc-text-right-bottom">
@@ -323,7 +323,7 @@
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                <div class="desc-text-right">
+                <div class="desc-text-right" style="color: #005eaa; font-weight: bold;">
                     LH 아파트 지하 외방수 규격상품<br/>
                     [ 점착형 합성고무계 복합시트 ]
                 </div>
@@ -355,7 +355,7 @@
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                <div class="desc-text-right">
+                <div class="desc-text-right" style="color: #005eaa; font-weight: bold;">
                     누수보수 / ISO TR16475 규격제정<br/>
                     건설교통부 신기술 376호 / 방재신기술 제 44 - 1 호
                 </div>
@@ -374,7 +374,7 @@
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                <div class="desc-text-right">
+                <div class="desc-text-right" style="color: #005eaa; font-weight: bold;">
                     GTR Exposed Membrane Sheet <br/>
                     [자가 접착형 다용도 방수재]
                 </div>
@@ -457,6 +457,16 @@
         else {
             $('.top-nav').removeClass('fixed-head-white');
         }
+    });
+
+    $("#top_nav").hover(function(){
+        $('.top-nav').addClass('fixed-head-white');
+        $('.dropdown-navbar').show();
+        $("#menuicon").prop("checked", true);
+    }, function(){
+        $('.top-nav').removeClass('fixed-head-white');
+        $('.dropdown-navbar').hide();
+        $("#menuicon").prop("checked", false);
     });
 
     $(document).on('change', '#menuicon', function () {
