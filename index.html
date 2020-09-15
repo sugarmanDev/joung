@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/timeline_style.css">
@@ -19,355 +21,561 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script charset="UTF-8" class="daum_roughmap_loader_script"
+        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 </head>
-
-<body>
-<!-- nav -->
-<div class="navbar fixed-top top-nav" id="top_nav" style="display: block;">
-    <div class="border-bt">
-        <nav class="navbar container navbar-expand-lg navbar-dark">
-            <a class="navbar-brand logo-w" href="./index.html"><img src="./assets/img/logo.png" alt=""></a>
-            <a class="navbar-brand logo-r" href="./index.html"><img src="./assets/img/logo_color.png" alt=""></a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> -->
-            </button>
-            <div class="nav justify-content-center">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link menu-over" href="./about_greet.html">회사소개 <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link menu-over" href="./business.html">사업분야</a>
-                    <a class="nav-item nav-link menu-over" href="./construction_case.html">시공사례</a>
-                    <a class="nav-item nav-link menu-over" href="./customerservice.html">고객센터</a>
-                </div>
-                <div class="mobile-nav">
-                    
-                </div>
-            </div>
-            <div class="nav justify-content-end">
-                <div style="margin-right: 40px;">
-                    <div class="d-flex align-self-center language-box">
-                        <span class="material-icons mr-1 icon" style="color: #fff;">public</span>
-                        <span class="language" style="color: #fff;">한국어</span>
-                    </div>
-                </div>
-                <div class="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <input type="checkbox" id="menuicon">
-                    <label for="menuicon">
-                        <span class="menu-bar"></span>
-                        <span class="menu-bar"></span>
-                        <span class="menu-bar"></span>
-                    </label>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!-- 드롭다운 nav -->
-    <div class="dropdown-navbar">
-        <div class="container">
-            <div class="row m-auto" style="width:100%;">
-                <div class="col-md-3"></div>
-                <div class="col-md-9" style="margin: 16px 0 !important;">
-                    <div class="nav pb-2 pc-nav-group">
-                        <ul class="navbar-nav dropdown-nav size">
-                            <li><a class="nav-item nav-link" href="./about_greet.html">CEO인사말</a></li>
-                            <li><a class="nav-item nav-link" href="./about_Management.html">경영이념</a></li>
-                            <li><a class="nav-item nav-link" href="./about_history.html">연혁</a></li>
-                            <li><a class="nav-item nav-link" href="./about_directions.html">오시는 길</a></li>
-                        </ul>
-                        <ul class="navbar-nav dropdown-nav"> 
-                            <li><a class="nav-item nav-link" href="./business.html">전문건설업</a></li>
-                            <li><a class="nav-item nav-link" href="./business_door.html">자동문</a></li>
-                            <li><a class="nav-item nav-link" href="./business_seal.html">방수</a></li>
-                        </ul>
-                        <ul class="navbar-nav dropdown-nav" style="visibility: hidden;"> 
-                            <li><a class="nav-item nav-link" href="./construction_case.html">전문건설업</a></li>
-                            <li><a class="nav-item nav-link" href="#">유리문</a></li>
-                            <li><a class="nav-item nav-link" href="#">엘베문</a></li>
-                        </ul>
-                        <ul class="navbar-nav dropdown-nav"> 
-                            <li><a class="nav-item nav-link" href="./customerservice.html">공지사항</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mobile-nav-group">
-            <nav class="navbar">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        회사소개
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./about_greet.html">CEO인사말</a>
-                            <a class="dropdown-item" href="./about_Management.html">경영이념</a>
-                            <a class="dropdown-item" href="./about_history.html">연혁</a>
-                            <a class="dropdown-item" href="./about_directions.html">오시는 길</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          사업분야
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./business.html">전문건설업</a>
-                            <a class="dropdown-item" href="./business_door.html">자동문</a>
-                            <a class="dropdown-item" href="./business_seal.html">방수</a>
-                        </div>
-                      </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        시공사례
-                      </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        고객센터
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./customerservice.html">공지사항</a>
-                        </div>
-                      </li>
-                  </ul>
-                </div>
-            </nav>
-        </div>  
-    </div>
-</div>
-
-
-<!-- main-banner -->
-<div class="main-banner">
-    <div class="main_slider">
-        <div class="main-bg-img-1 d-flex align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="main-title">Taeyang Innovation</h1>
-                        <span class="sub-title" style="color: #fff; font-size: 1.063em;">태양건업은 풍부한 장비기술 · 인력 · 신뢰를 바탕으로<br>
-                            최상의 품질과 노하우로 보다 더 나은 가치를 제공하겠습니다.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-bg-img-2 d-flex align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="main-title">Taeyang Technology</h1>
-                        <span class="sub-title" style="color: #fff; font-size: 1.063em;">태양건업은 풍부한 장비기술 · 인력 · 신뢰를 바탕으로<br>
-                            최상의 품질과 노하우로 보다 더 나은 가치를 제공하겠습니다.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- contents -->
-<div class="contents">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-xs-6 align-self-center mt">
-                <div class="d-flex">
-                    <h4 class="mb-4 title">태양건업</h4>
-                    <div class="ml-auto mb-3">
-                        <a href="#"><span class="material-icons chevron">chevron_left</span></a>
-                        <a href="#"><span class="material-icons chevron">chevron_right</span></a>
-                    </div>
-                </div>
-                <div class="slider slider-wrap">
-                    <div class="bg-img-1"><img src="./assets/img/img.jpg" class="img-fluid banner" alt=""></div>
-                    <div class="bg-img-2"><img src="./assets/img/img-2.jpg" class="img-fluid banner" alt=""></div>
-                    <div class="bg-img-3"><img src="./assets/img/img.jpg" class="img-fluid banner" alt=""></div>
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-6 mt">
-                <div class="d-flex">
-                    <h4 class="mb-4 title">공지사항</h4>
-                    <div class="ml-auto mb-3">
-                        <a href="#"><span class="material-icons chevron">chevron_left</span></a>
-                        <a href="#"><span class="material-icons chevron">chevron_right</span></a>
-                    </div>
-                </div>
-                <div class="box-wrap slider">
-                    <div class="box-slider">
-                        <p class="box-title">태양건업<br>신규 홈페이지 오픈</p>
-                        <span class="box-line"></span>
-                        <span class="box-date">2020.08.01</span>
-                        <p class="box-text mt-5">태양건업은 8월 신규 홈페이지를 오픈하여 동해물과
-                            백두산이 마르고 닳도록 하느님이 보우하사 우리 나
-                            라만세 무궁화 삼천리 화려강산 대한사람...</p>
-                    </div>
-                    <div class="box-slider">
-                        <p class="box-title">태양의 축제!<br>신규 홈페이지 오픈</p>
-                        <span class="box-line"></span>
-                        <span class="box-date">2020.08.01</span>
-                        <p class="box-text mt-5">태양건업은 8월 신규 홈페이지를 오픈하여 동해물과
-                            백두산이 마르고 닳도록 하느님이 보우하사 우리 나
-                            라만세 무궁화 삼천리 화려강산 대한사람...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="Business mt">
-    <div class="container">
-        <div class="d-flex">
-            <h4 class="mb-4 title">사업분야</h4>
-            <div class="ml-auto mb-3">
-                <a href="./business.html">
-                    <div class="plus">
-                        <span></span>
-                        <span></span>
-                    </div>
-                </a>
-            </div>            
-        </div>
-        <div class="row" style="padding:0 15px;">
-            <div class="col-md-6 col-xs-6 img-pd business-img-1">
-                <img src="./assets/img/1.jpg" class="img-fluid banner" alt="">
-                <span class="business-title">시설물·실내건축</span>
-            </div>
-            <div class="col-md-6 col-xs-6 img-pd business-img-2">
-                <img src="./assets/img/2.jpg" class="img-fluid banner" alt="">
-                <span class="business-title">금속창호</span>
-            </div>
-            <div class="col-md-6 col-xs-6 img-pd business-img-3">
-                <img src="./assets/img/3.jpg" class="img-fluid banner" alt="">
-                <span class="business-title">자동문</span>
-            </div>
-            <div class="col-md-6 col-xs-6 img-pd business-img-4">
-                <img src="./assets/img/4.jpg" class="img-fluid banner" alt="">
-                <span class="business-title">방수</span>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- foonter -->
-<div class="footer-wrap" style="margin-top:170px">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <img src="./assets/img/footer_logo.png" alt="">
-                <div class="list-top mt-4">
-                    <a href="./about_greet.html" class="footer-menu margin-none">회사소개</a>
-                    <a href="" class="footer-menu">이용약관</a>
-                    <a href="" class="footer-menu after-none">개인정보 처리방침</a>
-                </div>
-                <div class="list-bottom mt-3">
-                    <p class="footer-menu margin-none">(주)태양</p>
-                    <p class="footer-menu"><span>사업자등록번호</span> 121-81-48125</p>
-                    <p class="footer-menu after-none"><span>주소</span> 인천광역시 남동구 도림북로 16번길 52<a><br>
-                    <p class="footer-menu margin-none"><span>이메일</span>taeyang4658@gmail.com</p>
-                    <p class="footer-menu"><span>고객센터</span>032-463-4658</p>
-                    <p class="footer-menu after-none"><span>팩스번호</span>032-463-4660</p><br>
-                    <p class="footer-menu after-none margin-none">© 2020 taeyang,  All rights reserved</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script type="text/javascript">
-    $('.slider').slick();
-
-    $('.main_slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3500,
-    });
-
-    // $(window).scroll(function(){
-    // var scroll = $(window).scrollTop();
-    // // 48
-    
-    // if(scroll > 100) {
-    // $('.top-nav').addClass('fixed-head-white');
-    // }
-    // else {
-    // $('.top-nav').removeClass('fixed-head-white');
-    // }
-    // })
-
-  
-
-    
-
-    $(window).scroll(function(){
-        var getPosition = toggleHead();
-        $('.dropdown-navbar').hide();
-        $("#menuicon").prop("checked", false);
-
-        if(getPosition == true) {
-            $('.top-nav').addClass('fixed-head-white');
-        }
-        else {
-            $('.top-nav').removeClass('fixed-head-white');
-        }
-        
-    });
-
-    $("#top_nav").hover(function(){
-        var getPosition = toggleHead();
-        $('.top-nav').addClass('fixed-head-white');
-        $('.dropdown-navbar').show();
-        $("#menuicon").prop("checked", true);
-    }, function(){
-        var getPosition = toggleHead();
-        $('.dropdown-navbar').hide()
-            if(getPosition == true) {
-                $('.top-nav').addClass('fixed-head-white');
-            }
-            else {
-                $('.top-nav').removeClass('fixed-head-white');
-            }
-        $("#menuicon").prop("checked", false);
-    });
-
-    $(document).on('change', '#menuicon', function () {
-        var getPosition = toggleHead();
-        if ($("#menuicon").is(":checked") == true) {
-            $('.top-nav').addClass('fixed-head-white');
-            $('.dropdown-navbar').show()
-        }
-        else {
-            $('.dropdown-navbar').hide()
-            if(getPosition == true) {
-                $('.top-nav').addClass('fixed-head-white');
-            }
-            else {
-                $('.top-nav').removeClass('fixed-head-white');
-            }
-        }
-    });
-
-    function toggleHead() {
-        var scroll = $(window).scrollTop();
-        var returnValue = false;
-        if(scroll > 699) {
-            returnValue = true;
-        }
-        else {
-            returnValue = false;
-        }
-        return returnValue;
+<style>
+    #wrapper {
+        width: 100vw;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 80px;
     }
 
+    .mobile_menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        border-radius: 3px;
+    }
+
+    .accordionTitle {
+        padding: 20px;
+        position: relative;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+        color: #52616b;
+        transition: ease-in-out 0.2s all;
+        cursor: pointer;
+    }
+
+    .accordionTitle:hover {
+        padding-left: 25px;
+    }
+
+    /* Accordion Item line */
+    .accordionTitle:before,
+    .accordionTitle:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        border-radius: 50px;
+        transition: ease-in-out 0.6s all;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accordionTitle:before {
+        width: 100%;
+        background-color: #c9d6df;
+    }
+
+    .accordionTitle:after {
+        background-image: linear-gradient(90deg, #52616b, #c9d6df);
+        width: 0%;
+    }
+
+    .accordionTitle:hover::after {
+        width: 100%;
+    }
+
+    /* Accordion Item line - Active */
+    .accordionTitleActive:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        border-radius: 50px;
+        transition: ease-in-out 0.6s all;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accordionTitleActive:after {
+        background-image: linear-gradient(90deg, #52616b, #c9d6df);
+        width: 100%;
+    }
+
+    /* Accordion Item Icon  */
+    .accIcon {
+        float: right;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        margin-top: -3px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .accIcon:before,
+    .accIcon:after {
+        content: "";
+        position: absolute;
+        border-radius: 50px;
+        background-color: #c9d6df;
+        transition: ease 0.3s all;
+    }
+
+    .accIcon:before {
+        width: 2px;
+        height: 20px;
+    }
+
+    .accIcon:after {
+        width: 20px;
+        height: 2px;
+    }
+
+    .accordionTitle:hover .accIcon:before,
+    .accordionTitle:hover .accIcon:after {
+        background-color: #52616b;
+    }
+
+    .accIcon.anime.accIcon:before {
+        transform: rotate(90deg);
+    }
+
+    /* Text Content */
+    .accordion .item .text {
+        opacity: 0;
+        height: 0;
+        padding: 0px 20px;
+        position: relative;
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 200;
+        transition: all 0.6s cubic-bezier(0.42, 0.2, 0.08, 1);
+        overflow: hidden;
+        background-color: #fff;
+        letter-spacing: 0.5px;
+        margin-top: 0;
+    }
+
+    /* Text Content - Class for JS to hide and show */
+    .accordion .item .text.show {
+        opacity: 1;
+        height: auto;
+        padding: 25px 20px;
+        position: relative;
+        z-index: 0;
+        border-radius: 0px 0px 3px 3px;
+    }
+</style>
+
+<body>
+    <!-- nav -->
+    <div class="navbar fixed-top top-nav" id="top_nav" style="display: block;">
+        <div class="border-bt">
+            <nav class="navbar container navbar-expand-lg navbar-dark">
+                <a class="navbar-brand logo-w" href="./index.html"><img src="./assets/img/logo.png" alt=""></a>
+                <a class="navbar-brand logo-r" href="./index.html"><img src="./assets/img/logo_color.png" alt=""></a>
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> -->
+                </button>
+                <div class="nav justify-content-center">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link menu-over" href="./about_greet.html">회사소개 <span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link menu-over" href="./business.html">사업분야</a>
+                        <a class="nav-item nav-link menu-over" href="./construction_case.html">시공사례</a>
+                        <a class="nav-item nav-link menu-over" href="./customerservice.html">고객센터</a>
+                    </div>
+                    <div class="mobile-nav">
+
+                    </div>
+                </div>
+                <div class="nav justify-content-end">
+                    <div style="margin-right: 40px;">
+                        <div class="d-flex align-self-center language-box">
+                            <span class="material-icons mr-1 icon" style="color: #fff;">public</span>
+                            <span class="language" style="color: #fff;">한국어</span>
+                        </div>
+                    </div>
+                    <div class="menu" type="button" id="menu" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <input type="checkbox" id="menuicon">
+                        <label for="menuicon">
+                            <span class="menu-bar"></span>
+                            <span class="menu-bar"></span>
+                            <span class="menu-bar"></span>
+                        </label>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- 드롭다운 nav -->
+        <div class="dropdown-navbar" id="drop_menu">
+            <div class="container">
+                <div class="row m-auto" style="width:100%;">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9" style="margin: 16px 0 !important;">
+                        <div class="nav pb-2 pc-nav-group">
+                            <ul class="navbar-nav dropdown-nav size">
+                                <li><a class="nav-item nav-link" href="./about_greet.html">CEO인사말</a></li>
+                                <li><a class="nav-item nav-link" href="./about_Management.html">경영이념</a></li>
+                                <li><a class="nav-item nav-link" href="./about_history.html">연혁</a></li>
+                                <li><a class="nav-item nav-link" href="./about_directions.html">오시는 길</a></li>
+                            </ul>
+                            <ul class="navbar-nav dropdown-nav">
+                                <li><a class="nav-item nav-link" href="./business.html">전문건설업</a></li>
+                                <li><a class="nav-item nav-link" href="./business_door.html">자동문</a></li>
+                                <li><a class="nav-item nav-link" href="./business_seal.html">방수</a></li>
+                            </ul>
+                            <ul class="navbar-nav dropdown-nav" style="visibility: hidden;">
+                                <li><a class="nav-item nav-link" href="./construction_case.html">전문건설업</a></li>
+                                <li><a class="nav-item nav-link" href="#">유리문</a></li>
+                                <li><a class="nav-item nav-link" href="#">엘베문</a></li>
+                            </ul>
+                            <ul class="navbar-nav dropdown-nav">
+                                <li><a class="nav-item nav-link" href="./customerservice.html">공지사항</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mobile_nav -->
+    <section id="wrapper" class="mobile_menu">
+        <div class="container-fluid" style="padding: 0;">
+            <ul class="accordion">
+                <li class="item">
+                    <h2 class="accordionTitle">회사소개 <span class="accIcon"></span></h2>
+                    <div class="text">
+                        <button class="btn btn-link btn-block text-left" onclick="location.href='./about_greet.html'">CEO인사말</button>
+                        <button class="btn btn-link btn-block text-left" onclick="location.href='./about_Management.html'">경영이념</button>
+                        <button class="btn btn-link btn-block text-left" onclick="location.href='./about_history.html'">연혁</button>
+                        <button class="btn btn-link btn-block text-left" onclick="location.href='./about_directions.html'">오시는길</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <h2 class="accordionTitle">사업분야 <span class="accIcon"></span></h2>
+                    <div class="text">
+                        <button class="btn btn-link btn-block text-left" onclick="location.href='./business.html'">전문건설업</button>
+                        <button class="btn btn-link btn-block text-left" onclick="location.href='./business_door.html'">자동문</button>
+                        <button class="btn btn-link btn-block text-left" onclick="location.href='./business_seal.html'">방수</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <h2 class="accordionTitle" onclick="location.href='./construction_case.html'">시공사례</h2>
+                </li>
+                <li class="item">
+                    <h2 class="accordionTitle">고객센터 <span class="accIcon"></span></h2>
+                    <div class="text">
+                        <button class="btn btn-link btn-block text-left" onclick="location.href='./customerservice.html'">공지사항</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
 
-    
-        
-</script>
+
+    <!-- main-banner -->
+    <div class="main-banner">
+        <div class="main_slider">
+            <div class="main-bg-img-1 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="main-title">Taeyang Innovation</h1>
+                            <span class="sub-title" style="color: #fff; font-size: 1.063em;">태양건업은 풍부한 장비기술 · 인력 · 신뢰를
+                                바탕으로<br>
+                                최상의 품질과 노하우로 보다 더 나은 가치를 제공하겠습니다.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-bg-img-2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="main-title">Taeyang Technology</h1>
+                            <span class="sub-title" style="color: #fff; font-size: 1.063em;">태양건업은 풍부한 장비기술 · 인력 · 신뢰를
+                                바탕으로<br>
+                                최상의 품질과 노하우로 보다 더 나은 가치를 제공하겠습니다.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contents -->
+    <div class="contents">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-6 align-self-center mt">
+                    <div class="d-flex">
+                        <h4 class="mb-4 title">태양건업</h4>
+                        <div class="ml-auto mb-3">
+                            <a href="#"><span class="material-icons chevron">chevron_left</span></a>
+                            <a href="#"><span class="material-icons chevron">chevron_right</span></a>
+                        </div>
+                    </div>
+                    <div class="slider slider-wrap">
+                        <div class="bg-img-1"><img src="./assets/img/img.jpg" class="img-fluid banner" alt=""></div>
+                        <div class="bg-img-2"><img src="./assets/img/img-2.jpg" class="img-fluid banner" alt=""></div>
+                        <div class="bg-img-3"><img src="./assets/img/img.jpg" class="img-fluid banner" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 mt">
+                    <div class="d-flex">
+                        <h4 class="mb-4 title">공지사항</h4>
+                        <div class="ml-auto mb-3">
+                            <a href="#"><span class="material-icons chevron">chevron_left</span></a>
+                            <a href="#"><span class="material-icons chevron">chevron_right</span></a>
+                        </div>
+                    </div>
+                    <div class="box-wrap slider">
+                        <div class="box-slider">
+                            <p class="box-title">태양건업<br>신규 홈페이지 오픈</p>
+                            <span class="box-line"></span>
+                            <span class="box-date">2020.08.01</span>
+                            <p class="box-text mt-5">태양건업은 8월 신규 홈페이지를 오픈하여 동해물과
+                                백두산이 마르고 닳도록 하느님이 보우하사 우리 나
+                                라만세 무궁화 삼천리 화려강산 대한사람...</p>
+                        </div>
+                        <div class="box-slider">
+                            <p class="box-title">태양의 축제!<br>신규 홈페이지 오픈</p>
+                            <span class="box-line"></span>
+                            <span class="box-date">2020.08.01</span>
+                            <p class="box-text mt-5">태양건업은 8월 신규 홈페이지를 오픈하여 동해물과
+                                백두산이 마르고 닳도록 하느님이 보우하사 우리 나
+                                라만세 무궁화 삼천리 화려강산 대한사람...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Business mt">
+        <div class="container">
+            <div class="d-flex">
+                <h4 class="mb-4 title">사업분야</h4>
+                <div class="ml-auto mb-3">
+                    <a href="./business.html">
+                        <div class="plus">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="padding:0 15px;">
+                <div class="col-md-6 col-xs-6 img-pd business-img-1">
+                    <img src="./assets/img/1.jpg" class="img-fluid banner" alt="">
+                    <span class="business-title">시설물·실내건축</span>
+                </div>
+                <div class="col-md-6 col-xs-6 img-pd business-img-2">
+                    <img src="./assets/img/2.jpg" class="img-fluid banner" alt="">
+                    <span class="business-title">금속창호</span>
+                </div>
+                <div class="col-md-6 col-xs-6 img-pd business-img-3">
+                    <img src="./assets/img/3.jpg" class="img-fluid banner" alt="">
+                    <span class="business-title">자동문</span>
+                </div>
+                <div class="col-md-6 col-xs-6 img-pd business-img-4">
+                    <img src="./assets/img/4.jpg" class="img-fluid banner" alt="">
+                    <span class="business-title">방수</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- foonter -->
+    <div class="footer-wrap" style="margin-top:170px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="./assets/img/footer_logo.png" alt="">
+                    <div class="list-top mt-4">
+                        <a href="./about_greet.html" class="footer-menu margin-none">회사소개</a>
+                        <a href="" class="footer-menu">이용약관</a>
+                        <a href="" class="footer-menu after-none">개인정보 처리방침</a>
+                    </div>
+                    <div class="list-bottom mt-3">
+                        <p class="footer-menu margin-none">(주)태양</p>
+                        <p class="footer-menu"><span>사업자등록번호</span> 121-81-48125</p>
+                        <p class="footer-menu after-none"><span>주소</span> 인천광역시 남동구 도림북로 16번길 52<a><br>
+                                <p class="footer-menu margin-none"><span>이메일</span>taeyang4658@gmail.com</p>
+                                <p class="footer-menu"><span>고객센터</span>032-463-4658</p>
+                                <p class="footer-menu after-none"><span>팩스번호</span>032-463-4660</p><br>
+                                <p class="footer-menu after-none margin-none">© 2020 taeyang, All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('.slider').slick();
+
+        $('.main_slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3500,
+        });
+
+        // $(window).scroll(function(){
+        // var scroll = $(window).scrollTop();
+        // // 48
+
+        // if(scroll > 100) {
+        // $('.top-nav').addClass('fixed-head-white');
+        // }
+        // else {
+        // $('.top-nav').removeClass('fixed-head-white');
+        // }
+        // })
+
+
+
+
+
+        $(window).scroll(function () {
+            var getPosition = toggleHead();
+            $('.dropdown-navbar').hide();
+            $("#menuicon").prop("checked", false);
+
+            if (getPosition == true) {
+                $('.top-nav').addClass('fixed-head-white');
+            }
+            else {
+                $('.top-nav').removeClass('fixed-head-white');
+            }
+
+        });
+
+        $("#top_nav").hover(function () {
+            var getPosition = toggleHead();
+            $('.top-nav').addClass('fixed-head-white');
+            $('.dropdown-navbar').show();
+            $("#menuicon").prop("checked", true);
+        }, function () {
+            var getPosition = toggleHead();
+            $('.dropdown-navbar').hide()
+            if (getPosition == true) {
+                $('.top-nav').addClass('fixed-head-white');
+            }
+            else {
+                $('.top-nav').removeClass('fixed-head-white');
+            }
+            $("#menuicon").prop("checked", false);
+        });
+
+        $(document).on('change', '#menuicon', function () {
+            var getPosition = toggleHead();
+            if ($("#menuicon").is(":checked") == true) {
+                $('.top-nav').addClass('fixed-head-white');
+                $('.dropdown-navbar').show()
+            }
+            else {
+                $('.dropdown-navbar').hide()
+                if (getPosition == true) {
+                    $('.top-nav').addClass('fixed-head-white');
+                }
+                else {
+                    $('.top-nav').removeClass('fixed-head-white');
+                }
+            }
+        });
+
+        function toggleHead() {
+            var scroll = $(window).scrollTop();
+            var returnValue = false;
+            if (scroll > 699) {
+                returnValue = true;
+            }
+            else {
+                returnValue = false;
+            }
+            return returnValue;
+        }
+
+        if (matchMedia("screen and (min-width: 992px)").matches) {
+            $('#wrapper').css('display', 'none');
+        } else {
+            $('#wrapper').hide()
+            $('#drop_menu').css('display', 'none');
+            $("#menuicon").click(function() {
+                if( $('#wrapper').hide()){
+                    $('#wrapper').show()
+                }
+                
+            });
+        }
+
+
+
+            // variables
+            var accordionBtn = document.querySelectorAll('.accordionTitle');
+            var allTexts = document.querySelectorAll('.text');
+            var accIcon = document.querySelectorAll('.accIcon');
+
+            // event listener
+            accordionBtn.forEach(function (el) {
+                el.addEventListener('click', toggleAccordion)
+            });
+
+            // function
+            function toggleAccordion(el) {
+                var targetText = el.currentTarget.nextElementSibling.classList;
+                var targetAccIcon = el.currentTarget.children[0];
+                var target = el.currentTarget;
+
+                if (targetText.contains('show')) {
+                    targetText.remove('show');
+                    targetAccIcon.classList.remove('anime');
+                    target.classList.remove('accordionTitleActive');
+                }
+                else {
+                    accordionBtn.forEach(function (el) {
+                        el.classList.remove('accordionTitleActive');
+
+                        allTexts.forEach(function (el) {
+                            el.classList.remove('show');
+                        })
+
+                        accIcon.forEach(function (el) {
+                            el.classList.remove('anime');
+                        })
+
+                    })
+
+                    targetText.add('show');
+                    target.classList.add('accordionTitleActive');
+                    targetAccIcon.classList.add('anime');
+                }
+            }
+
+
+
+
+
+    </script>
 
 </body>
 

@@ -25,11 +25,11 @@
       display: none !important;
     }
     .main-title {
-      font-size: 45px !important;
+      font-size: 2.813em !important;
     }
   
     .sub-title {
-      font-size: 15px !important;
+      font-size: 0.938em !important;
     }
   
     .mt {
@@ -59,12 +59,12 @@
     }
   
     .title {
-      font-size: 24px;
+      font-size: 1.5em;
     }
   
     /* 경영이념 */
     .gray-title {
-      font-size: 30px !important;
+      font-size: 1.875em !important;
       line-height: 1em;
     }
   
@@ -90,7 +90,7 @@
     }
   
     .main-text {
-      font-size: 22px;
+      font-size: 1.375em;
     }
   
     .taeyang-wrap {
@@ -110,7 +110,7 @@
     }
     /* 연혁 */
     .main-timeline .title{
-      font-size: 22px !important;
+      font-size: 1.375em !important;
     }
     .main-timeline .description {
       font-size: 18px !important;
@@ -121,7 +121,7 @@
       padding-bottom: 20px !important;
     }
     .date-yy{
-        font-size: 20px;
+        font-size: 1.25em;
     }
     .case-timeline::before{
         left: -55%;
@@ -148,7 +148,7 @@
       display: none !important;
     }
     .title {
-      font-size: 26px;
+      font-size: 1.625em;
     }
   
     .mt {
@@ -162,7 +162,7 @@
     }
     /* 경영이념 */
     .gray-title {
-      font-size: 30px !important;
+      font-size: 1.875em !important;
       line-height: 1em;
     }
   
@@ -188,7 +188,7 @@
     }
   
     .main-text {
-      font-size: 24px;
+      font-size: 1.5em;
     }
   
     .taeyang-wrap {
@@ -212,13 +212,13 @@
     }
     /* 연혁 */
     .main-timeline .title{
-      font-size: 22px !important;
+      font-size: 1.375em !important;
     }
     .main-timeline .description {
-      font-size: 18px !important;
+      font-size: 1.125em !important;
     }
     .date-yy{
-        font-size: 20px;
+        font-size: 1.250em;
     }
     
   }
@@ -235,7 +235,7 @@
       display: none;
     }
     .title {
-      font-size: 24px;
+      font-size: 1.5em;
     }
   
     .taeyang-wrap {
@@ -257,11 +257,7 @@
   @media (min-width: 992px) and (max-width: 1199px) {
     .company-top .dropdown {
       display: none;
-    }
-    /* 모바일nav */
-    .mobile-nav-group{
-      display: none;
-    }
+    }  
     /* pc nav */
     .dropdown-navbar .col-md-3{
       margin: 0px;
@@ -279,10 +275,6 @@
   /* // 큰화면 데스크탑 (가로 해상도가 1200px 보다 큰 화면에 적용) */
   @media (min-width: 1200px) {
     .company-top .dropdown {
-      display: none;
-    }
-    /* 모바일nav */
-    .mobile-nav-group{
       display: none;
     }
     .dropdown-navbar .col-md-3{

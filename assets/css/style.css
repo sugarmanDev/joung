@@ -304,6 +304,8 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
   right: 5%;
 }
 
+
+
 .slider button.slick-next {
   border: none;
   font-size: 0px;
@@ -1089,4 +1091,8 @@ margin-bottom: 0px;
   background-size: cover;
   background-position: center;
   height: 570px;
+}
+
+.mobile_menu{
+  display: none;
 }
