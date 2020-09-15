@@ -8,7 +8,7 @@ input {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
+  font-size: 1.5em;
   /* Preferred icon size */
   display: inline-block;
   line-height: 1;
@@ -52,11 +52,11 @@ button:focus {
 
 /* nav */
 .top-nav .border-bt .navbar-nav .nav-link {
-  font-size: 17px;
+  font-size: 1.063em;
   margin: 0 33px;
 }
 .pc-nav-group .dropdown-navbar .nav-link {
-  font-size: 16px;
+  font-size: 1em;
   margin: 0 35px;
   padding: 12px 0;
 }
@@ -204,7 +204,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 .pc-nav-group .dropdown-navbar .nav-item {
   color: #000 !important;
   margin: 0px 32.5px;
-  font-size: 16px;
+  font-size: 1em;
 }
 /* mobile-nav */
 .mobile-nav-grou{
@@ -241,7 +241,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 /* 메인배너 */
 .main-title {
   display: block;
-  font-size: 60px;
+  font-size: 3.750em;
   font-family: 'Inter', sans-serif;
   color: #fff;
   font-weight: 700;
@@ -273,7 +273,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 
 .main_slider button {
   border: none;
-  font-size: 10px;
+  font-size: 0.625em;
   background: none;
   color: transparent;
   width: 40px;
@@ -376,19 +376,19 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .box-wrap .box-title {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 500;
   margin-bottom: 0px;
 }
 
 .box-wrap .box-date {
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 500;
   color: #888888;
 }
 
 .box-wrap .box-text {
-  font-size: 15px;
+  font-size: 0.938em;
   margin-bottom: 0px;
   overflow: hidden;
   height: 70px;
@@ -429,7 +429,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 
 .business-title {
   color: #fff;
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 400;
   position: absolute;
   bottom: 19px;
@@ -479,7 +479,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 /* ------------------회사소개 start------------------ */
 /* CEO인사말 */
 .text {
-  font-size: 17px;
+  font-size: 1.063em;
   line-height: 2.6rem;
   margin-top: 100px;
   word-break: break-word;
@@ -499,7 +499,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 
 /* 경영이념 */
 .gray-title {
-  font-size: 50px;
+  font-size: 3.125em;
   font-family: 'Inter', sans-serif !important;
   font-weight: 700;
   text-transform: uppercase;
@@ -526,7 +526,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .taeyang-text {
-  font-size: 24px;
+  font-size: 1.5em;
   color: #005FA5;
   border: 1px solid #005FA5;
   background: #fff;
@@ -559,14 +559,14 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .taeyang-wrap p {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 500;
   margin-top: 16px;
   margin-bottom: 6px;
 }
 
 .taeyang-wrap span {
-  font-size: 17px;
+  font-size: 1.063em;
   color: #555;
   font-weight: 400;
 }
@@ -600,7 +600,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 
 /* 드롭다운 상세메뉴 nav */
 .division {
-  font-size: 15px;
+  font-size: 0.938em;
   color: #888;
 }
 
@@ -660,7 +660,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
   border-radius: 0px;
   top: -2.5% !important;
   width: 100%;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .company-top .dropdown-menu .dropdown-item {
@@ -709,7 +709,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .main-timeline .title {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 600;
   color: #000;
   text-transform: uppercase;
@@ -734,7 +734,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 
 .main-timeline .description {
   display: inline-block;
-  font-size: 24px;
+  font-size: 1.5em;
   color: #404040;
   line-height: 35px;
   letter-spacing: 1px;
@@ -791,7 +791,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
   padding-bottom: 80px;
 }
 .business-wrap .col-12 p{
-  font-size: 17px;
+  font-size: 1.063em;
   line-height: 1.5em;
   margin-top: 20px;
 }
@@ -879,7 +879,7 @@ margin-bottom: 0px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: #005FA5;
-  font-size: 32px;
+  font-size: 2em;
 }
 
 
@@ -897,7 +897,7 @@ margin-bottom: 0px;
   border-top: 3px solid #005FA5;
 }
 .customer-list-wrap .article-title{
-  font-size: 17px;
+  font-size: 1.063em;
   margin-bottom: 2px;
   color: #000;
 }
@@ -942,14 +942,14 @@ margin-bottom: 0px;
   height: 50px;
   color: #555555;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.938em;
   background-color: #fff;
   border: 1px solid #636569;
   margin-top: 80px;
 }
 .customer-wrap p{
   margin: 0px;
-  font-size: 17px;
+  font-size: 1.063em;
   padding: 20px 0;
 }
 .est-text{
@@ -957,7 +957,7 @@ margin-bottom: 0px;
 }
 .customer-wrap th{
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1.063em;
   width: 20%;
   padding: 20px 0;
   color: #333;
@@ -1028,7 +1028,7 @@ margin-bottom: 0px;
 
 }
 .title-text-left{
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 500;
   float:left;
 }
@@ -1040,7 +1040,7 @@ margin-bottom: 0px;
 
 .desc-text-right-bottom{
   text-align:left;
-  font-size:15px;
+  font-size:0.938em;
 }
 
 .bottom-line{
