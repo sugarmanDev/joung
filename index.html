@@ -203,9 +203,9 @@
         background-color:#fff
     }
 
-html.prevent-scroll,body.prevent-scroll {
-    overflow:hidden;
-}
+    html.prevent-scroll,body.prevent-scroll {
+        overflow:hidden;
+    }
 </style>
 
 <body>
@@ -462,7 +462,6 @@ html.prevent-scroll,body.prevent-scroll {
     <script type="text/javascript">
         $('.slider').slick();
 
-        
         function isMobile() {
             if($(window).width() < 992) {
                 return true
@@ -473,18 +472,10 @@ html.prevent-scroll,body.prevent-scroll {
             
         }
 
-
-        $(document).ready(function(){
-            console.log(isMobile())
-        })
-        
-
-
         $(document).on('click','.mobile_bg',function(){
             $('.mobile_group').removeClass('open');
             $('html,body').removeClass('prevent-scroll');
         }) 
-
 
         $('.main_slider').slick({
             slidesToShow: 1,
