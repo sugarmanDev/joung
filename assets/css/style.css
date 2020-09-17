@@ -84,6 +84,7 @@ button:focus {
 
 input[id="menuicon"] {
   display: none;
+  opacity:0;
 }
 
 input[id="menuicon"]+label {
