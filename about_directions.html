@@ -47,9 +47,9 @@
                     <div class="navbar-nav">
                         <a class="nav-item nav-link active menu-over" href="./about_greet.html">회사소개 <span
                                 class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link  menu-over" href="./business.html">사업분야</a>
-                        <a class="nav-item nav-link  menu-over" href="./construction_case.html">시공사례</a>
-                        <a class="nav-item nav-link menu-over" href="./customerservice.html">고객센터</a>
+                        <a class="nav-item nav-link active menu-over" href="./business.html">사업분야</a>
+                        <a class="nav-item nav-link active menu-over" href="./construction_case.html">시공사례</a>
+                        <a class="nav-item nav-link active menu-over" href="./customerservice.html">고객센터</a>
                     </div>
                     <div class="mobile-nav">
 
@@ -62,8 +62,9 @@
                             <span class="language" style="color: #fff;">한국어</span>
                         </div>
                     </div>
-                    <div class="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="menu" type="button" id="menu" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <input type="checkbox" id="menuicon">
                         <label for="menuicon">
                             <span class="menu-bar"></span>
@@ -75,7 +76,7 @@
             </nav>
         </div>
         <!-- 드롭다운 nav -->
-        <div class="dropdown-navbar">
+        <div class="dropdown-navbar" id="drop_menu">
             <div class="container">
                 <div class="row m-auto" style="width:100%;">
                     <div class="col-md-3"></div>
@@ -104,53 +105,52 @@
                     </div>
                 </div>
             </div>
-            <div class="mobile-nav-group">
-                <nav class="navbar">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    회사소개
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="./about_greet.html">CEO인사말</a>
-                                    <a class="dropdown-item" href="./about_Management.html">경영이념</a>
-                                    <a class="dropdown-item" href="./about_history.html">연혁</a>
-                                    <a class="dropdown-item" href="./about_directions.html">오시는 길</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  사업분야
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="./business.html">전문건설업</a>
-                                    <a class="dropdown-item" href="./business_door.html">자동문</a>
-                                    <a class="dropdown-item" href="./business_seal.html">방수</a>
-                                </div>
-                              </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    시공사례
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    고객센터
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="./customerservice.html">공지사항</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
         </div>
     </div>
+
+    <!-- mobile_nav -->
+    <div class="mobile_bg mobile_group"></div>
+    <section id="wrapper" class="mobile_menu mobile_group">
+        <div class="container-fluid" style="padding: 0;">
+            <ul class="accordion">
+                <li class="item">
+                    <h2 class="accordionTitle">회사소개 <span class="accIcon"></span></h2>
+                    <div class="text">
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./about_greet.html'">CEO인사말</button>
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./about_Management.html'">경영이념</button>
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./about_history.html'">연혁</button>
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./about_directions.html'">오시는길</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <h2 class="accordionTitle">사업분야 <span class="accIcon"></span></h2>
+                    <div class="text">
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./business.html'">전문건설업</button>
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./business_door.html'">자동문</button>
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./business_seal.html'">방수</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <h2 class="accordionTitle" onclick="location.href='./construction_case.html'">시공사례</h2>
+                </li>
+                <li class="item">
+                    <h2 class="accordionTitle">고객센터 <span class="accIcon"></span></h2>
+                    <div class="text">
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./customerservice.html'">공지사항</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
 
 
     <div class="top-banner d-flex align-items-center">
@@ -321,43 +321,7 @@
 
 
     <script type="text/javascript">
-        $(window).scroll(function () {
-            var getPosition = toggleHead();
-            $('.dropdown-navbar').hide();
-            $("#menuicon").prop("checked", false);
-
-            if (getPosition == true) {
-                $('.top-nav').addClass('fixed-head-white');
-            }
-            else {
-                $('.top-nav').removeClass('fixed-head-white');
-            }
-        });
-
-        $(document).on('change', '#menuicon', function () {
-            var getPosition = toggleHead();
-            if ($("#menuicon").is(":checked") == true) {
-                $('.top-nav').addClass('fixed-head-white');
-                $('.dropdown-navbar').show();
-                if(isMobile()) {
-                $('.mobile_group').addClass('open');
-                $('html,body').addClass('prevent-scroll')
-                }
-            }
-            else {
-                $('.dropdown-navbar').hide()
-                
-                $('.mobile_group').removeClass('open');
-                $('html,body').removeClass('prevent-scroll');
-
-                if (getPosition == true) {
-                    $('.top-nav').addClass('fixed-head-white');
-                }
-                else {
-                    $('.top-nav').removeClass('fixed-head-white');
-                }
-            }
-        });
+   
 
         function toggleHead() {
         var scroll = $(window).scrollTop();
@@ -371,23 +335,10 @@
         return returnValue;
     }     
 
-    $("#top_nav").hover(function(){
-        var getPosition = toggleHead();
-        $('.top-nav').addClass('fixed-head-white');
-        $('.dropdown-navbar').show();
-        $("#menuicon").prop("checked", true);
-    }, function(){
-        var getPosition = toggleHead();
-        $('.dropdown-navbar').hide()
-            if(getPosition == true) {
-                $('.top-nav').addClass('fixed-head-white');
-            }
-            else {
-                $('.top-nav').removeClass('fixed-head-white');
-            }
-        $("#menuicon").prop("checked", false);
-    });
+
     </script>
+      <script src="./assets/js/header.js"></script>
+      <script src="./assets/js/accordion.js"></script>
 
    
 
