@@ -1096,3 +1096,9 @@ margin-bottom: 0px;
 .mobile_menu{
   display: none;
 }
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
