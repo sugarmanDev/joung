@@ -16,7 +16,7 @@ $('.slider').slick();
             $('html,body').removeClass('prevent-scroll');
             $('.dropdown-navbar').hide()
             if (getPosition == true) {
-                $('.top-nav').addClass('fixed-head-white');b
+                $('.top-nav').addClass('fixed-head-white');
             }
             else {
                 $('.top-nav').removeClass('fixed-head-white');
