@@ -22,7 +22,7 @@ input {
 body {
   font-family: 'Inter', sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
-
+  word-break: keep-all;
 }
 
 /* 공통 */
@@ -1245,7 +1245,7 @@ input[type="checkbox"] {
   color: #000;
   width: 100%;
   padding: 15px 20px;
-  margin: 0;
+  margin: 0px;
 }
 
 .accordion .item button:last-child{
