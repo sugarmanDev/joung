@@ -232,61 +232,7 @@
 
 
 <script type="text/javascript">
-    $(window).scroll(function(){
-        var getPosition = toggleHead();
-        $('.dropdown-navbar').hide();
-        $("#menuicon").prop("checked", false);
-
-        if(getPosition == true) {
-            $('.top-nav').addClass('fixed-head-white');
-        }
-        else {
-            $('.top-nav').removeClass('fixed-head-white');
-        }
-    });
-
-    $("#top_nav").hover(function(){
-        var getPosition = toggleHead();
-        $('.top-nav').addClass('fixed-head-white');
-        $('.dropdown-navbar').show();
-        $("#menuicon").prop("checked", true);
-    }, function(){
-        var getPosition = toggleHead();
-        $('.dropdown-navbar').hide()
-            if(getPosition == true) {
-                $('.top-nav').addClass('fixed-head-white');
-            }
-            else {
-                $('.top-nav').removeClass('fixed-head-white');
-            }
-        $("#menuicon").prop("checked", false);
-    });
-
-    $(document).on('change', '#menuicon', function () {
-            var getPosition = toggleHead();
-            if ($("#menuicon").is(":checked") == true) {
-                $('.top-nav').addClass('fixed-head-white');
-                $('.dropdown-navbar').show();
-                if(isMobile()) {
-                $('.mobile_group').addClass('open');
-                $('html,body').addClass('prevent-scroll')
-                }
-            }
-            else {
-                $('.dropdown-navbar').hide()
-                
-                $('.mobile_group').removeClass('open');
-                $('html,body').removeClass('prevent-scroll');
-
-                if (getPosition == true) {
-                    $('.top-nav').addClass('fixed-head-white');
-                }
-                else {
-                    $('.top-nav').removeClass('fixed-head-white');
-                }
-            }
-        });
-
+    
     function toggleHead() {
         var scroll = $(window).scrollTop();
         var returnValue = false;
@@ -299,6 +245,8 @@
         return returnValue;
     }   
 </script>
+<script src="./assets/js/header.js"></script>
+<script src="./assets/js/accordion.js"></script>
 
 
 </body>
