@@ -221,11 +221,11 @@
                 </button>
                 <div class="nav justify-content-center">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link menu-over" href="./about_greet.html">회사소개 <span
+                        <a class="nav-item nav-link active menu-over" href="./about_greet.html">회사소개 <span
                                 class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link menu-over" href="./business.html">사업분야</a>
-                        <a class="nav-item nav-link menu-over" href="./construction_case.html">시공사례</a>
-                        <a class="nav-item nav-link menu-over" href="./customerservice.html">고객센터</a>
+                        <a class="nav-item nav-link active menu-over" href="./business.html">사업분야</a>
+                        <a class="nav-item nav-link active menu-over" href="./construction_case.html">시공사례</a>
+                        <a class="nav-item nav-link active menu-over" href="./customerservice.html">고객센터</a>
                     </div>
                     <div class="mobile-nav">
 
@@ -524,9 +524,10 @@
             if ($("#menuicon").is(":checked") == true) {
                 $('.top-nav').addClass('fixed-head-white');
                 $('.dropdown-navbar').show();
-                
+                if(isMobile()) {
                 $('.mobile_group').addClass('open');
                 $('html,body').addClass('prevent-scroll')
+                }
             }
             else {
                 $('.dropdown-navbar').hide()
@@ -546,7 +547,7 @@
         function toggleHead() {
             var scroll = $(window).scrollTop();
             var returnValue = false;
-            if (scroll > 699) {
+            if (scroll > 240) {
                 returnValue = true;
             }
             else {

@@ -289,21 +289,29 @@
     });
 
     $(document).on('change', '#menuicon', function () {
-        var getPosition = toggleHead();
-        if ($("#menuicon").is(":checked") == true) {
-            $('.top-nav').addClass('fixed-head-white');
-            $('.dropdown-navbar').show()
-        }
-        else {
-            $('.dropdown-navbar').hide()
-            if(getPosition == true) {
+            var getPosition = toggleHead();
+            if ($("#menuicon").is(":checked") == true) {
                 $('.top-nav').addClass('fixed-head-white');
+                $('.dropdown-navbar').show();
+                if(isMobile()) {
+                $('.mobile_group').addClass('open');
+                $('html,body').addClass('prevent-scroll')
+                }
             }
             else {
-                $('.top-nav').removeClass('fixed-head-white');
+                $('.dropdown-navbar').hide()
+                
+                $('.mobile_group').removeClass('open');
+                $('html,body').removeClass('prevent-scroll');
+
+                if (getPosition == true) {
+                    $('.top-nav').addClass('fixed-head-white');
+                }
+                else {
+                    $('.top-nav').removeClass('fixed-head-white');
+                }
             }
-        }
-    });
+        });
 
     function toggleHead() {
         var scroll = $(window).scrollTop();
