@@ -1127,7 +1127,7 @@ input[type="checkbox"] {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.8px;
-  color: #52616b;
+  color: #005FA5;
   transition: ease-in-out 0.2s all;
   cursor: pointer;
 }
@@ -1153,11 +1153,11 @@ input[type="checkbox"] {
 
 .accordionTitle:before {
   width: 100%;
-  background-color: #c9d6df;
+  background-color: #e1e1e1;
 }
 
 .accordionTitle:after {
-  background-image: linear-gradient(90deg, #52616b, #c9d6df);
+  background-image: linear-gradient(90deg, #005FA5, #e1e1e1);
   width: 0%;
 }
 
@@ -1180,7 +1180,7 @@ input[type="checkbox"] {
 }
 
 .accordionTitleActive:after {
-  background-image: linear-gradient(90deg, #52616b, #c9d6df);
+  background-image: linear-gradient(90deg, #005FA5, #e1e1e1);
   width: 100%;
 }
 
@@ -1200,7 +1200,7 @@ input[type="checkbox"] {
   content: "";
   position: absolute;
   border-radius: 50px;
-  background-color: #c9d6df;
+  background-color: #e1e1e1;
   transition: ease 0.3s all;
 }
 
@@ -1216,7 +1216,7 @@ input[type="checkbox"] {
 
 .accordionTitle:hover .accIcon:before,
 .accordionTitle:hover .accIcon:after {
-  background-color: #52616b;
+  background-color: #005FA5;
 }
 
 .accIcon.anime.accIcon:before {
@@ -1237,13 +1237,30 @@ input[type="checkbox"] {
   background-color: #fff;
   letter-spacing: 0.5px;
   margin-top: 0;
+  
+}
+
+.accordion .item button{
+  border-top: 1px solid #e1e1e1;
+  color: #000;
+  width: 100%;
+  padding: 15px 20px;
+  margin: 0;
+}
+
+.accordion .item button:last-child{
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.accordion .item button:hover{
+  text-decoration: none;
 }
 
 /* Text Content - Class for JS to hide and show */
 .accordion .item .text.show {
   opacity: 1;
   height: auto;
-  padding: 25px 20px;
+  padding: 0;
   position: relative;
   z-index: 0;
   border-radius: 0px 0px 3px 3px;
