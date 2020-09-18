@@ -151,7 +151,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
   background-color: #000 !important;
 }
 .border-bt{
-  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  /* border-bottom: 1px solid rgba(255, 255, 255, .2); */
 }
 .top-nav {
   position: fixed;
@@ -493,11 +493,13 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .top-banner {
-  background-image: url(../img/image_home.jpeg);
+  /* background-image: url(../img/image_home.jpeg); */
+  background-image: url(../img/banner_img_light.jpg);
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 350px;
+  height: 500px;
 }
 
 /* 경영이념 */
@@ -1113,7 +1115,7 @@ margin-bottom: 0px;
   list-style: none;
   margin: 0;
   padding: 0;
-  border-radius: 3px;
+  /* border-radius: 3px; */
 }
 
 .accordionTitle {
@@ -1149,7 +1151,7 @@ margin-bottom: 0px;
 
 .accordionTitle:before {
   width: 100%;
-  background-color: #e1e1e1;
+  /* background-color: #e1e1e1; */
 }
 
 .accordionTitle:after {
