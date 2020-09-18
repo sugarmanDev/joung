@@ -86,7 +86,16 @@ input[id="menuicon"] {
   display: none;
   opacity:0;
 }
-
+.menu-icon-wrapper{
+  margin-top: 2px !important;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-bottom: 0px;
+  background-color: transparent;  
+}
 input[id="menuicon"]+label {
   margin-top: 2px !important;
   display: block;
@@ -98,7 +107,7 @@ input[id="menuicon"]+label {
   background-color: transparent;
 }
 
-input[id="menuicon"]+label span {
+.menu-icon-wrapper span {
   display: block;
   position: absolute;
   width: 100%;
@@ -107,30 +116,30 @@ input[id="menuicon"]+label span {
   transition: all .35s;
 }
 
-input[id="menuicon"]+label span:nth-child(1) {
+.menu-icon-wrapper span:nth-child(1) {
   top: 0;
 }
 
-input[id="menuicon"]+label span:nth-child(2) {
+.menu-icon-wrapper span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
 
-input[id="menuicon"]+label span:nth-child(3) {
+.menu-icon-wrapper span:nth-child(3) {
   bottom: 0;
 
 }
 
-input[id="menuicon"]:checked+label span:nth-child(1) {
+input[id="menuicon"]:checked+.menu-icon-wrapper span:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
 }
 
-input[id="menuicon"]:checked+label span:nth-child(2) {
+input[id="menuicon"]:checked+.menu-icon-wrapper span:nth-child(2) {
   opacity: 0;
 }
 
-input[id="menuicon"]:checked+label span:nth-child(3) {
+input[id="menuicon"]:checked+.menu-icon-wrapper span:nth-child(3) {
   bottom: 50%;
   transform: translateY(50%) rotate(-45deg);
 }
