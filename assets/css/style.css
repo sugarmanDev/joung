@@ -337,7 +337,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .bg-img-1 {
-  background-image: url(../img/img.jpg);
+  background-image: url(../img/company_view1.png);
   max-height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -345,22 +345,12 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .bg-img-2 {
-  background-image: url(../img/img-2.jpg);
+  background-image: url(../img/company_view2.png);
   max-height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
-.bg-img-3 {
-  background-image: url(../img/img.jpg);
-  max-height: 300px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-
 
 
 /* 공지사항 */
@@ -446,6 +436,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 .business-img-2 {
@@ -454,6 +445,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 .business-img-3 {
@@ -462,6 +454,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 .business-img-4 {
@@ -470,6 +463,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 /* --------------------메인 end------------------ */
