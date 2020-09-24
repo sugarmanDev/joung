@@ -266,10 +266,10 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 
 @media(max-width:576px){
   .main-bg-img-1{
-    height: 420px;
+    height: 50vh;
   }
   .main-bg-img-2{
-    height: 420px;
+    height: 50vh;
   }
 
 }
