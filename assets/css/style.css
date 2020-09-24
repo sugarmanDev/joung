@@ -493,12 +493,38 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 .top-banner {
 /* background-image: url(../img/image_home.jpeg); */
 background-image: url(../img/banner_img_light.jpg);
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 500px;
 }
+
+@media(max-width:714px){
+  .top-banner{
+    height: 300px;
+  }
+  .top-banner-2{
+    height: 250px !important;
+  }
+  .top-banner-3{
+    height: 250px !important;
+  }
+  .top-banner-4{
+    height: 250px !important;
+  }
+}
+
+@media(max-width:414px){
+  .top-banner{
+    height: 250px;
+  }
+  .banner-title{
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+}
+
+
 
 /* 경영이념 */
 .gray-title {
