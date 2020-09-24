@@ -249,7 +249,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .main-bg-img-1 {
-  background-image: url(../img/main_banner.jpg);
+  background-image: url(../img/main_banner_1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -264,13 +264,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
   height: 750px;
 }
 
-.main-bg-img-3 {
-  background-image: url(../img/main_banner.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 750px;
-}
+
 
 .main_slider button {
   border: none;
@@ -1645,7 +1639,7 @@ margin-bottom: 0px;
 }
 
 .management-bg-seal {
-  background: url(../img/biz_02.jpeg);
+  background: url(../img/top_banner@2x.jpg);
   background-position-y: -2rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1654,7 +1648,7 @@ margin-bottom: 0px;
   height: 570px;
 }
 .management-bg-doors {
-  background: url(../img/biz_03.jpg);
+  background: url(../img/banner_2@2x.jpg);
   background-position-y: -2rem;
   background-repeat: no-repeat;
   background-size: cover;
