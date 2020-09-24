@@ -692,6 +692,12 @@ background-image: url(../img/banner_img_light.jpg);
   font-size: 1em;
 }
 
+@media(max-width:767px){
+  .align-items-center{
+    display: none;
+  }
+}
+
 .company-top .dropdown-menu .dropdown-item {
   padding: 20px;
 }
