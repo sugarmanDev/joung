@@ -1610,15 +1610,6 @@ margin-bottom: 0px;
   margin-right: 10px;
 }
 
-.footer-menu::after {
-  content: '';
-  width: 1px;
-  height: 13px;
-  margin-left: 2%;
-  position: absolute;
-  background: #9E9E9E;
-  margin-top: 8px;
-}
 
 .after-none::after {
   display: none;
