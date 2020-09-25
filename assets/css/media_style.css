@@ -84,7 +84,7 @@
     .margin-box {
       position: relative;
       padding: 40px 10px 0px 10px !important;
-      top: -225px;
+      top: -180px;
       width: 90%;
       margin: 0 auto;
     }
@@ -94,7 +94,7 @@
     }
   
     .taeyang-wrap {
-      margin-top: 320px;
+      margin-top: 100px;
     }
   
     .Management-line.center {
@@ -182,7 +182,6 @@
     .margin-box {
       position: relative;
       padding: 40px 10px 0px 10px !important;
-      top: -225px;
       width: 90%;
       margin: 0 auto;
     }
@@ -192,7 +191,7 @@
     }
   
     .taeyang-wrap {
-      margin-top: 270px;
+      margin-top: 100px;
     }
   
     .Management-line.center {

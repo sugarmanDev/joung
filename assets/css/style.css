@@ -266,10 +266,10 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 
 @media(max-width:576px){
   .main-bg-img-1{
-    height: 50vh;
+    background-image: url(../img/mobile_img/m_main_banner_1@2x.jpg);
   }
   .main-bg-img-2{
-    height: 50vh;
+    background-image: url(../img/mobile_img/m_main_banner_2@2x.jpg);
   }
 
 }
@@ -499,6 +499,21 @@ background-image: url(../img/banner_img_light.jpg);
   height: 500px;
 }
 
+@media(max-width:576px){
+  .top-banner{
+    background-image: url(../img/mobile_img/m_banner_img_light@2x.jpg);
+  }
+  .top-banner-2{
+    background-image: url(../img/mobile_img/m_business-banner@2x.jpg);
+  }
+  .top-banner-3{
+    background-image: url(../img/mobile_img/m_case-banner@2x.jpg);
+  }
+  .top-banner-3{
+    background-image: url(../img/mobile_img/m_customer-banner@2x.jpg);
+  }
+}
+
 @media(max-width:714px){
   .top-banner{
     height: 300px;
@@ -515,9 +530,6 @@ background-image: url(../img/banner_img_light.jpg);
 }
 
 @media(max-width:414px){
-  .top-banner{
-    height: 250px;
-  }
   .banner-title{
     font-size: 1.5rem;
     margin-top: 15px;
@@ -1685,8 +1697,20 @@ margin-bottom: 0px;
   background-position-y: -2rem;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   height: 570px;
+}
+
+@media(max-width:576px){
+  .management-bg-doors{
+    background: url(../img/mobile_img/m_top_banner1@2x.jpg);
+    height: 400px;
+  }
+  .management-bg-seal{
+    background: url(../img/mobile_img/m_top_banner@2x.jpg);
+    height: 400px;
+  }
+ 
 }
 
 .mobile_menu{
