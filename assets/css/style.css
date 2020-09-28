@@ -435,7 +435,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .business-img-1 {
-  background-image: url(../img/1.jpg);
+  background-image: url(../img/main-2.jpg);
   max-height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -444,7 +444,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .business-img-2 {
-  background-image: url(../img/banner_2.jpg);
+  background-image: url(../img/main-3.jpg);
   max-height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -462,7 +462,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .business-img-4 {
-  background-image: url(../img/top_banner@2x.jpg);
+  background-image: url(../img/main-4.jpg);
   max-height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
