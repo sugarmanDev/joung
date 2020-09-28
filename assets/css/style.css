@@ -444,7 +444,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .business-img-2 {
-  background-image: url(../img/2.jpg);
+  background-image: url(../img/banner_2.jpg);
   max-height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -462,7 +462,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .business-img-4 {
-  background-image: url(../img/4.jpg);
+  background-image: url(../img/top_banner@2x.jpg);
   max-height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1693,7 +1693,7 @@ margin-bottom: 0px;
   height: 570px;
 }
 .management-bg-doors {
-  background: url(../img/banner_2@2x.jpg);
+  /* background: url(../img/banner_2@2x.jpg); */
   background-position-y: -2rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1703,7 +1703,7 @@ margin-bottom: 0px;
 
 @media(max-width:576px){
   .management-bg-doors{
-    background: url(../img/mobile_img/m_top_banner1@2x.jpg);
+    /* background: url(../img/mobile_img/m_top_banner1@2x.jpg); */
     height: 400px;
   }
   .management-bg-seal{
