@@ -453,7 +453,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {
 }
 
 .business-img-3 {
-  background-image: url(../img/3.jpg);
+  background-image: url(../img/door/door_main.jpeg);
   max-height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1669,11 +1669,11 @@ margin-bottom: 0px;
   height: 570px;
 }
 .management-bg-doors {
-  /* background: url(../img/banner_2@2x.jpg); */
+  background: url(../img/door/door_main.jpeg);
   background-position-y: -2rem;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   height: 570px;
 }
 
