@@ -1668,14 +1668,23 @@ margin-bottom: 0px;
   background-position: 50% 69%;
   height: 570px;
 }
-.management-bg-doors {
+
+.door_main_img{
+  width: 100%;
+  background-image: url(../img/door/door_main.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+/* .management-bg-doors {
   background: url(../img/door/door_main.jpeg);
   background-position-y: -2rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 570px;
-}
+} */
 
 @media(max-width:576px){
   .management-bg-doors{
