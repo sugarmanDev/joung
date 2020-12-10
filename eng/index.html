@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taeyang</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/timeline_style.css">
+    <link rel="stylesheet" href="../assets/css/media_style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script charset="UTF-8" class="daum_roughmap_loader_script"
+        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+</head>
+<style>
+ 
+</style>
+
+<body>
+    <div class="language_bg mobile_group"></div>
+    <!-- nav -->
+    <div class="navbar fixed-top top-nav" id="top_nav" style="display: block;">
+        <div class="border-bt">
+            <nav class="navbar container navbar-expand-lg navbar-dark">
+                <a class="navbar-brand logo-w" href="./index.html"><img src="../assets/img/logo.png" alt=""></a>
+                <a class="navbar-brand logo-r" href="./index.html"><img src="../assets/img/logo_color.png" alt=""></a>
+                <div class="nav justify-content-center">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active menu-over" href="./about_greet.html">Anout Us <span
+                                class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active menu-over" href="./business.html">Our Business</a>
+                        <a class="nav-item nav-link active menu-over" href="./construction_case.html">What we did</a>
+                        <a class="nav-item nav-link active menu-over" href="./customerservice.html">Customer Service</a>
+                    </div>
+                    <div class="mobile-nav">
+
+                    </div>
+                </div>
+                <div class="nav justify-content-end">
+                    <div style="margin-right: 40px;">
+                        <div class="d-flex align-self-center ">
+                            <span class="open-lang material-icons mr-1 icon" style="color: #fff; cursor: pointer;">public</span>
+                            <span class="open-lang language language-box" style="color: #fff; cursor: pointer" >English</span>
+                        </div>
+
+                        <style>
+                            .language-select{
+                                position: absolute;
+                                top:75px;
+                                right:11px;
+                                background-color:#fff;
+                                border-radius:5px;
+                                padding:10px;
+                                width:300px;
+                                height:130px;
+                                overflow:auto;
+                                max-width: calc (90% - 11px);
+                                text-align:center;
+                                z-index:10;
+                                opacity:0;
+                                transition: 0.6s all;
+                                z-index:0;
+                            }
+                            .language-select.show{
+                                opacity:1;
+                                width:300px;
+                                height:130px;
+                                z-index:53;
+                            }
+                            .language-items{
+                                padding:5px 10px;
+                                background-color:#f1f1f1;
+                                border-radius:3px;
+                                display:inline-block;
+                                width:30%;
+                                cursor: pointer;
+                                transition: 0.6s all;
+                            }
+                            .language-items.active{
+                                border:1px solid #000;
+                            }
+                            .language-items:hover {
+                                background-color:#d0d0d0;
+                            }
+                            .language-text{
+                                margin-bottom:30px;
+                            }
+                            .remove-language{
+                                position:absolute;
+                                right:20px;
+                                color: #000;
+                                cursor: pointer;
+                                top: 11px;
+                            }
+                        </style>
+
+                            <div class="language-select">
+                                <div class="language-text">Please select a language</div>
+                                <span class="remove-language  material-icons mr-1 icon" style="color: #000; cursor: pointer;">close</span>
+                                <div class="language-items">한국어</div>
+                                <div class="language-items active">English</div>
+                                <div class="language-items">ไทย</div>
+                            </div>
+                            
+                    </div>
+                    <div>
+                        <input type="checkbox" id="menuicon">
+                        <label for="menuicon">
+                            <span class="menu-bar"></span>
+                            <span class="menu-bar"></span>
+                            <span class="menu-bar"></span>
+                        </label>
+                    </div>
+                </div>
+            </nav>
+            
+        </div>
+        <!-- 드롭다운 nav -->
+        <div class="dropdown-navbar" id="drop_menu">
+            <div class="container">
+                <div class="row m-auto" style="width:100%;">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9" style="margin: 16px 0 !important;">
+                        <div class="nav pb-2 pc-nav-group">
+                            <ul class="navbar-nav dropdown-nav size">
+                                <li><a class="nav-item nav-link" href="./about_greet.html">CEO Greeting</a></li>
+                                <li><a class="nav-item nav-link" href="./about_Management.html">Management philosophy</a></li>
+                                <li><a class="nav-item nav-link" href="./about_history.html">History</a></li>
+                                <li><a class="nav-item nav-link" href="./about_directions.html">Location</a></li>
+                            </ul>
+                            <ul class="navbar-nav dropdown-nav">
+                                <li><a class="nav-item nav-link" href="./business.html">Specialty Construction business</a></li>
+                                <li><a class="nav-item nav-link" href="./business_door.html">Automatic door</a></li>
+                                <li><a class="nav-item nav-link" href="./business_seal.html">Waterproof</a></li>
+                            </ul>
+                            <ul class="navbar-nav dropdown-nav" style="visibility: hidden;">
+                                <li><a class="nav-item nav-link" href="./construction_case.html">Specialty Construction business</a></li>
+                                <li><a class="nav-item nav-link" href="#">유리문</a></li>
+                                <li><a class="nav-item nav-link" href="#">엘베문</a></li>
+                            </ul>
+                            <ul class="navbar-nav dropdown-nav">
+                                <li><a class="nav-item nav-link" href="./customerservice.html">Notice</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mobile_nav -->
+    <div class="mobile_bg mobile_group"></div>
+    <section id="wrapper" class="mobile_menu mobile_group">
+        <div class="container-fluid" style="padding: 0;">
+            <ul class="accordion">
+                <li class="item">
+                    <h2 class="accordionTitle">Anout Us <span class="accIcon"></span></h2>
+                    <div class="text">
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./about_greet.html'">CEO Greeting</button>
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./about_Management.html'">Management philosophy</button>
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./about_history.html'">History</button>
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./about_directions.html'">Location</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <h2 class="accordionTitle">Our Business <span class="accIcon"></span></h2>
+                    <div class="text">
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./business.html'">Specialty Construction business</button>
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./business_door.html'">Automatic door</button>
+                        <button class="btn btn-link btn-block text-left"
+                            onclick="location.href='./business_seal.html'">Waterproof</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <h2 class="accordionTitle" onclick="location.href='./construction_case.html'">What we did</h2>
+                </li>
+                <li class="item">
+                    <h2 class="accordionTitle" onclick="location.href='./customerservice.html'">Customer Service</h2>
+                </li>
+            </ul>
+            <div class="mobile-menu-footer"></div>
+        </div>
+    </section>
+    <!-- main-banner -->
+    <div class="main-banner">
+        <div class="main_slider">
+            <div class="main-bg-img-1 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="main-title">Taeyang Construction</h1>
+                            <span class="sub-title" style="color: #fff; font-size: 1.063em;">
+                                Taeyang C&T will provide better value <br />
+                                with the best quality and know-how based on abundant technology and trust.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-bg-img-2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="main-title">Taeyang Technology</h1>
+                            <span class="sub-title" style="color: #fff; font-size: 1.063em;">
+                                Taeyang C&T will provide better value <br />
+                                with the best quality and know-how based on abundant technology and trust.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contents -->
+    <div class="contents">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-6 align-self-center mt">
+                    <div class="d-flex">
+                        <h4 class="mb-4 title">Taeyang C&T</h4>
+                        <div class="ml-auto mb-3">
+                            <a href="#"><span class="material-icons chevron">chevron_left</span></a>
+                            <a href="#"><span class="material-icons chevron">chevron_right</span></a>
+                        </div>
+                    </div>
+                    <div class="slider slider-wrap">
+                        <div class="bg-img-1"><img src="../assets/img/company_view1.png" class="img-fluid banner" alt=""></div>
+                        <div class="bg-img-2"><img src="../assets/img/company_view2.png" class="img-fluid banner" alt=""></div>
+                        <!-- <div class="bg-img-1"><img src="../assets/img/img.jpg" class="img-fluid banner" alt=""></div>
+                        <div class="bg-img-2"><img src="../assets/img/img-2.jpg" class="img-fluid banner" alt=""></div>
+                        <div class="bg-img-3"><img src="../assets/img/img.jpg" class="img-fluid banner" alt=""></div> -->
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 mt">
+                    <div class="d-flex">
+                        <h4 class="mb-4 title" onclick="location.href='./customerservice.html'" style="cursor: pointer;">Notice</h4>
+                        <!-- <div class="ml-auto mb-3">
+                            <a href="#"><span class="material-icons chevron">chevron_left</span></a>
+                            <a href="#"><span class="material-icons chevron">chevron_right</span></a>
+                        </div> -->
+                    </div>
+                    <div class="box-wrap slider">
+                        <div class="box-slider" onclick="location.href='./customerservice_text2.html'" style="cursor: pointer;">
+                            <p class="box-title">태양건업<br>파트너사(제휴, 협력업체) 모집</p>
+                            <span class="box-line"></span>
+                            <span class="box-date">2020.09.03</span>
+                            <p class="box-text mt-5">엄격한 품질 관리와 최상의 사후관리로 고객님들께 늘 최선을 다하는 (주)태양에서 함께 성장할 수 있는 파트너사를 모집합니다. 많은 ....</p>
+                        </div>
+                        <!-- <div class="box-slider">
+                            <p class="box-title">태양의 축제!<br>신규 홈페이지 오픈</p>
+                            <span class="box-line"></span>
+                            <span class="box-date">2020.08.01</span>
+                            <p class="box-text mt-5">태양건업은 8월 신규 홈페이지를 오픈하여 동해물과
+                                백두산이 마르고 닳도록 하느님이 보우하사 우리 나
+                                라만세 무궁화 삼천리 화려강산 대한사람...</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Business mt">
+        <div class="container">
+            <div class="d-flex">
+                <h4 class="mb-4 title">Our Business</h4>
+                <div class="ml-auto mb-3">
+                    <a href="./business.html">
+                        <div class="plus">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="padding:0 15px;">
+                <div class="col-md-6 col-xs-6 img-pd business-img-1" onclick=" location.href='../business.html'; ">
+                    <img src="../assets/img/1.jpg" class="img-fluid banner" alt="">
+                    <span class="business-title">facility & Interior architecture</span>
+                </div>
+                <div class="col-md-6 col-xs-6 img-pd business-img-2" onclick=" location.href='../business.html'; ">
+                    <img src="../assets/img/2.jpg" class="img-fluid banner" alt="">
+                    <span class="business-title">metal windows and doors</span>
+                </div>
+                <div class="col-md-6 col-xs-6 img-pd business-img-3" onclick=" location.href='../business_door.html'; ">
+                    <img src="../assets/img/door/door_main.jpeg" class="img-fluid banner" alt="">
+                    <span class="business-title">Automatic door</span>
+                </div>
+                <div class="col-md-6 col-xs-6 img-pd business-img-4" onclick=" location.href='../business_seal.html'; ">
+                    <img src="../assets/img/4.jpg" class="img-fluid banner" alt="">
+                    <span class="business-title">Waterproof</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- foonter -->
+    <div class="footer-wrap" style="margin-top:170px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="../assets/img/footer_logo.png" alt="">
+                     <div class="list-top mt-4">
+                        <a href="./about_greet.html" class="footer-menu margin-none">Anout Us</a>
+                        <a href="./business.html" class="footer-menu margin-none">Our Business</a>
+                        <a href="./construction_case.html" class="footer-menu margin-none">What we did</a>
+                        <a href="./customerservice.html" class="footer-menu margin-none">Customer Service</a>
+                        <!-- <a href="" class="footer-menu">이용약관</a>
+                        <a href="" class="footer-menu after-none">개인정보 처리방침</a> -->
+                    </div>
+                    <div class="list-bottom mt-3">
+                        <p class="footer-menu margin-none">TaeYang C&T</p>
+                        <p class="footer-menu"><span>Registration No.</span>121-81-48125</p>
+                        <p class="footer-menu after-none"><span>Address</span>52, Dorimbuk-ro 16beon-gil, Namdong-gu, Incheon, 21621, Rep. of KOREA</p><br />
+                        <p class="footer-menu margin-none"><span>Email</span>taeyang4658@gmail.com</p>
+                        <p class="footer-menu"><span>Customer Service</span>032-463-4658</p>
+                        <p class="footer-menu after-none"><span>Fax</span>032-463-4660</p><br>
+                        <br/>
+                        <p class="footer-menu after-none margin-none">© 2020 taeyang, All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+
+
+        function toggleHead() {
+            var scroll = $(window).scrollTop();
+            var returnValue = false;
+            if (scroll > 240) {
+                returnValue = true;
+            }
+            else {
+                returnValue = false;
+            }
+            return returnValue;
+        }
+
+    </script>
+
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/accordion.js"></script>
+
+</body>
+
+</html>
