@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taeyang</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/timeline_style.css">
+    <link rel="stylesheet" href="../assets/css/media_style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+</head>
+
+<body>
+<!-- nav -->
+<div class="navbar fixed-top top-nav" id="top_nav" style="display: block;">
+    <div class="border-bt">
+        <nav class="navbar container navbar-expand-lg navbar-dark">
+            <a class="navbar-brand logo-w" href="./index.html"><img src="../assets/img/logo.png" alt=""></a>
+            <a class="navbar-brand logo-r" href="./index.html"><img src="../assets/img/logo_color.png" alt=""></a>
+            <div class="nav justify-content-center">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active menu-over" href="./about_greet.html">Anout Us <span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link menu-over" href="./business.html">Our Business</a>
+                    <a class="nav-item nav-link menu-over" href="./construction_case.html">What we did</a>
+                    <a class="nav-item nav-link menu-over" href="./customerservice.html">Customer Service</a>
+                </div>
+                <div class="mobile-nav">
+
+                </div>
+            </div>
+            <div class="nav justify-content-end">
+                <div style="margin-right: 40px;">
+                    <div class="d-flex align-self-center language-box">
+                        <span class="material-icons mr-1 icon" style="color: #fff;">public</span>
+                        <span class="language" style="color: #fff;">English</span>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="menuicon">
+                    <label for="menuicon">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- 드롭다운 nav -->
+    <div class="dropdown-navbar" id="drop_menu">
+        <div class="container">
+            <div class="row m-auto" style="width:100%;">
+                <div class="col-md-2"></div>
+                <div class="col-md-10" style="margin: 16px 0 !important;">
+                    <div class="nav pb-2 pc-nav-group">
+                        <ul class="navbar-nav dropdown-nav size">
+                            <li><a class="nav-item nav-link eng" href="./about_greet.html">CEO Greeting</a></li>
+                            <li><a class="nav-item nav-link eng" href="./about_Management.html">Philosophy</a></li>
+                            <li><a class="nav-item nav-link eng" href="./about_history.html">History</a></li>
+                            <li><a class="nav-item nav-link eng" href="./about_directions.html">Location</a></li>
+                        </ul>
+                        <ul class="navbar-nav dropdown-nav">
+                            <li><a class="nav-item nav-link eng" href="./business.html">Constructions</a></li>
+                            <li><a class="nav-item nav-link eng" href="./business_door.html">Automatic door</a></li>
+                            <li><a class="nav-item nav-link eng" href="./business_seal.html">Waterproof</a></li>
+                        </ul> 
+                        <ul class="navbar-nav dropdown-nav" style="visibility: hidden;">
+                            <li><a class="nav-item nav-link eng" href="./construction_case.html">Constructions</a></li>
+                            <li><a class="nav-item nav-link eng" href="#">유리문</a></li>
+                            <li><a class="nav-item nav-link eng" href="#">엘베문</a></li>
+                        </ul>
+                        <ul class="navbar-nav dropdown-nav">
+                            <li><a class="nav-item nav-link eng" href="./customerservice.html" style="padding-left: 34px;">Notice</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- mobile_nav -->
+<div class="mobile_bg mobile_group"></div>
+<section id="wrapper" class="mobile_menu mobile_group">
+    <div class="container-fluid" style="padding: 0;">
+        <ul class="accordion">
+            <li class="item">
+                <h2 class="accordionTitle">Anout Us <span class="accIcon"></span></h2>
+                <div class="text">
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./about_greet.html'">CEO greeting</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./about_Management.html'">Philosophy</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./about_history.html'">History</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./about_directions.html'">Location</button>
+                </div>
+            </li>
+            <li class="item">
+                <h2 class="accordionTitle">Our Business <span class="accIcon"></span></h2>
+                <div class="text">
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./business.html'">Constructions</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./business_door.html'">Automatic door</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./business_seal.html'">Waterproof</button>
+                </div>
+            </li>
+            <li class="item">
+                <h2 class="accordionTitle" onclick="location.href='./construction_case.html'">What we did</h2>
+            </li>
+            <li class="item">
+                <h2 class="accordionTitle" onclick="location.href='./customerservice.html'">Customer Service</h2>
+            </li>
+        </ul>
+        <div class="mobile-menu-footer">
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+
+<div class="top-banner-2 d-flex align-items-center">
+    <div class="container text-center text-white">
+        <h2 class="banner-title">Our Business</h2>
+    </div>
+</div>
+
+<div class="company-top text-center">
+    <div class="dropdown">
+        <button class="btn dropdown-toggle text-left" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #000; font-size: 1em;">
+          Automatic door
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button" onclick="location.href='./business.html' ">Specialty Construction business</button>
+            <button class="dropdown-item" type="button" onclick="location.href='./business_seal.html' ">Waterproof</button>
+        </div>
+    </div>
+    <div class="nav-list mobile_hide">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-4 ">
+                    <a class="division " href="./business.html">Specialty Construction business</a>
+                </div>
+                <div class="col-4 hit-line">
+                    <a class="division hit" href="./business_door.html">Automatic door</a>
+                </div>
+                <div class="col-4 ">
+                    <a class="division " href="./business_seal.html">Waterproof</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="title-wrap mt mb-3">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="title mb-2">Automatic door</h2>
+                <p class="gray-title">AUTO DOOR SYSTEMS</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="management-bg-doors">
+    <div class="container text-center">
+        <div class="row position">
+            <div class="col-md-12 margin-box" style="word-break: keep-all;">
+                <h3 class="main-text" style="line-height:1.4em;">Execution automatic door</h3>
+                <p class="text mt-4" style="line-height:1.7em; font-size:1.063em;">Automatic door Execution</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="taeyang-wrap">
+    <div class="container text-center" style="margin-top: 225px; word-break: keep-all;">
+        <p style="font-size: 1.75em; text-align: left; font-weight: 400;">Automatic door Actuator</p>
+
+        <div class="row" style="margin-top: 25px;">
+
+            <div class="col-lg-5" style="padding-left: 0;">
+                <img src="../assets/img/door/Group1.jpg" style="text-align: left; max-width: 100%;">
+            </div>
+
+            <div class="col-lg-7" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Built-in WS-T</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%; max-width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right title-quote"
+                        style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                        Built-in digital servo control 90W DC motor
+                    </div>
+                    <div class="col-12 desc-text-right-bottom">
+                        Because the one of the WS-T series, Microprocessor Controlled Automatic Door is <br/>
+                        Intelligent Operator with the concept of ergonomic mechanical engine and artificial intelligence;<br/>
+                        it is a superior Woosung WECO automatic door that operates smoothly<br/>
+                        and has a high level of functionality.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-lg-5" style="padding-left: 0;">
+                <img src="../assets/img/door/Group2.jpg" style="text-align: left;   width: 100%; max-width: 100%;">
+            </div>
+
+            <div class="col-lg-7" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Double sliding WS-T</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right title-quote"
+                        style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                        Double sliding digital servo control 90W DC motor
+                    </div>
+                    <div class="col-12 desc-text-right-bottom">
+                        Because the one of the WS-T series, Microprocessor Controlled Automatic Door is <br/>
+                        Intelligent Operator with the concept of ergonomic mechanical engine and artificial intelligence;<br/>
+                        it is a superior Woosung WECO automatic door that operates smoothly<br/>
+                        and has a high level of functionality.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-lg-5" style="padding-left: 0;">
+                <img src="../assets/img/door/Group3.jpg" style="text-align: left;   width: 100%; max-width: 100%;">
+            </div>
+
+            <div class="col-lg-7" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Direct attaching cover integrated type WS-TC</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right title-quote"
+                        style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                        Direct attaching cover integrated type digital servo control 90W DC motor
+                    </div>
+                    <div class="col-12 desc-text-right-bottom">
+                        Because the one of the WS-T series, Microprocessor Controlled Automatic Door is <br/>
+                        Intelligent Operator with the concept of ergonomic mechanical engine and artificial intelligence;<br/>
+                        it is a superior Woosung WECO automatic door that operates smoothly<br/>
+                        and has a high level of functionality.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <p style="font-size: 1.75em; text-align: left; font-weight: 400; margin-top: 100px;">Automatic door System</p>
+
+        <div class="row" style="margin-top: 25px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/1.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Direct attachment type Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                        style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                        It is suitable for high-rise lobby and general stores that require convenience and kindness.
+                    </div>
+                    <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                        opens only one direction - WS-T200(S)<br /> opens double-sided direction - WS-T400(D)
+                    </div>
+                    <div class="col-12 desc-text-right-bottom">
+                        This is a heavy class applied to high-end lobby, vehicle exhibition hall entrance, and wide door width.<br/>
+                        The opening and closing operation is smooth and quiet, it has a reputation in places where there are many people in and out.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/2.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Built-in Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    Built-in universal type that does not damage aesthetics
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-T200(S)<br /> opens double-sided direction - WS-T400(D)
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    It can be applied from extremely narrow doors to wide doors,<br/>
+                    and it is a universal type that can be applied to all doors from light to heavy doors.<br/>
+                    It adopts a completely safe design and has a good reputation<br/>
+                    for use in places with frequent customer access.
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/3.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Panic Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    If you open the sliding-swing out in an emergency, you can secure double entrances.
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-TP200<br /> opens double-sided direction - WS-TP400
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    It can be applied from extremely narrow doors to wide doors,<br/>
+                    and it is a universal type that can be applied to all doors from light to heavy doors.<br/>
+                    It adopts a completely safe design and has a good reputation<br/>
+                    for use in places with frequent customer access.
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/4.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">3 piece Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    It is optimal for common entrances that require convenience and stability with a high-quality entrance.
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-T200(S)<br /> opens double-sided direction - WS-T400(D)
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    As part of the security measures for the common entrance of an apartment,<br/>
+                    it is suitable for places that require safety, convenience,<br/>
+                    and economical energy savings, and make the aesthetic of the entrance look beautiful.
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/5.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Ceiling type Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    The entrance hall with a low ceiling height can be used widely.
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-T200(S)<br /> opens double-sided direction - WS-T400(D)
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    If the automatic door installation is not possible<br/>
+                    due to the low height of the frame, the automatic door can be installed<br/>
+                    by lowering the frame by 115 mm, which allows more space utilization.
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/6.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Unbalanced Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    It is an automatic door that moves with different sizes of doors, and is suitable for places where the center of the entrance is asymmetrical to one side.
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens double-sided direction - WS-UD400
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    It is a novel design that upgrades the automatic door to the next level,<br/>
+                    and by adding a name or various decorations on one side,<br/>
+                    you can decorate the shop with a more sensational look than a simple automatic door,<br/>
+                    so it is an automatic door with a beautiful design.
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/7.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Aluminum Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    Because it is light, anyone can easily install it, and it has a windproof effect, helping to save energy.
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-TC200(S)<br /> opens double-sided direction - WS-TC400(D)
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    Easy to transport and efficient in handling, speeding up work.<br/>
+                    Various colors can be added, so it looks good on the outside,<br/>
+                    and it has the effect of blocking the wind, which can save energy.
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/8.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">For 100 bar Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    By using automatic doors to match the 100mm bar of existing manual doors, it enhances the aesthetics.
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-T200(S)<br /> opens double-sided direction - WS-T400(D)
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    In case of replacing the manual door in use with an automatic door,<br/>
+                    it is suitable for places where installation is difficult due to the size of the machine box.<br/>
+                    This is because the machine box size is matched with the 100mm bar of the manual door bar.
+                </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/9.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Telescopic sliding door Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    It is best suited for entrances where the space for pulling the door is narrow.
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-TS200(S)<br /> opens double-sided direction - WS-TS400(D)
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    It is a telescopic sliding type that connects two doors in the same<br/>
+                    direction even in places where there is not much space to pull in the door,<br/>
+                    so the entrance can be used widely.<br/>
+                    Ideal for large warehouses or hospitals with moving beds.
+                </div>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/10.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">For Industrial Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    The smooth opening and closing operation helps rationalize factory production.
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-T300(S)<br /> opens double-sided direction - WS-T600(D)
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    Transport is safe and efficient, so work speed is fast and energy is saved.<br/>
+                    There are many options for heavy doors used in factories,<br/>
+                    warehouses or freezers, so you can choose the right one for your site.
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/11.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">circlar type Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    Circlar door that enriches the dignity of the entrance
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-R180(1/2)<br /> opens double-sided direction - WS-R360
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    Circular doors are the mainstream of large automatic doors.<br/>
+                    When installed in hotels, department stores, and high-rise buildings,<br/>
+                    it enhances the dignity of the entrance and is beautiful.<br/>
+                    1500R is standard, but it is possible to design according to the location<br/>
+                    because various types of entrances can be made by adjusting a circle of 1/4.<br/>
+                    In addition, circular doors maximize the efficiency of thermal management with minimal movement.
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/12.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Swing Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    It is suitable for places where you want to achieve efficient energy saving and economical efficiency by changing the structure of the minimum space.
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-S100<br /> opens double-sided direction - WS-S200
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    As an operator that can be applied to a new building<br/>
+                    with an existing swing door or minimal structural change,<br />
+                    it is suitable for places where you want to get efficient energy savings at a low price.
+                </div>
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/13.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Folding type Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    Even in places where there is no space to pull in the door, it finishes nicely.
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-V100<br /> opens double-sided direction - WS-V200
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    Folding automatic doors that do not occupy much space at all entrances<br/>
+                    and are installed concisely are highly stable and suitable for operating rooms,<br/>
+                    aisles, and toilets in hospitals. And if you install it with an aluminum exclusive folding door<br/>
+                    by our unique design, it becomes a more harmonious Hi-Sense door.<br/>
+                    The PIVOT to be installed on the floor can be applied to a system<br/>
+                    in which the X-Y directions are independently adjusted within the range of ±3mm.
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/14.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Handicapped Automatic door</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    This door is designed for safety and convenience for the disabled.
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-HD200<br /> opens double-sided direction - WS-HD400
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    This door has a wide opening and is easy to pass.<br/>
+                    In addition, it is a door system for the handicapped designed<br/>
+                    with safe functions and users' perspective.
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/15.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Access control System</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    Now, the necessity of access control is becoming an essential factor.
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-TP200<br /> opens double-sided direction - WS-TP400
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    As society develops and the fields of industry become subdivided and specialized,<br/>
+                    the importance of information increases and the demand for security increases.<br/>
+                    The necessity of access control by qualification restrictions<br/>
+                    in specific areas is an essential factor.
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 60px;">
+
+            <div class="col-md-4" style="padding-left: 0;">
+                <img src="../assets/img/door/16.jpg" style="height: 320px; width: 330px; text-align: left;">
+            </div>
+
+            <div class="col-md-8" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="row" style="margin-top: 0px; ">
+                    <div class="col-12">
+                        <div class="title-tip-left"></div>
+                        <div class="title-text-left">Semi-automatic door (smooth)</div>
+                        <div
+                            style="border-bottom: 1px solid #E1E1E1; text-align: left; padding-bottom: 47px;  width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-12 desc-text-right"
+                    style="color: #005eaa; font-weight: 400; margin-top: 17px; font-size: 0.938em;">
+                    It can be opened lightly with little opening and closing force, and space utilization is maximized.
+                </div>
+                <div class="col-12" style="margin-top: 0px; text-align: left; margin-bottom: 15px;">
+                    opens only one direction - WS-TP200<br /> opens double-sided direction - WS-TP400
+                </div>
+                <div class="col-12 desc-text-right-bottom">
+                    The semi-automatic sliding door using a specially designed sealed air cylinder<br/>
+                    can be opened and closed easily and effortlessly.<br/>
+                    In addition, there is no noise when opening and closing,<br/>
+                    which helps maintain the quietness of the room.
+                </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+</div>
+
+ <!-- foonter -->
+ <div class="footer-wrap" style="margin-top:170px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="../assets/img/footer_logo.png" alt="">
+                 <div class="list-top mt-4">
+                    <a href="./about_greet.html" class="footer-menu margin-none">Anout Us</a>
+                    <a href="./business.html" class="footer-menu margin-none">Our Business</a>
+                    <a href="./construction_case.html" class="footer-menu margin-none">What we did</a>
+                    <a href="./customerservice.html" class="footer-menu margin-none">Customer Service</a>
+                    <!-- <a href="" class="footer-menu">이용약관</a>
+                    <a href="" class="footer-menu after-none">개인정보 처리방침</a> -->
+                </div>
+                <div class="list-bottom mt-3">
+                    <p class="footer-menu margin-none">TaeYang C&T</p>
+                    <p class="footer-menu"><span>Registration No.</span>121-81-48125</p>
+                    <p class="footer-menu after-none"><span>Address</span>52, Dorimbuk-ro 16beon-gil, Namdong-gu, Incheon, 21621, Rep. of KOREA</p><br />
+                    <p class="footer-menu margin-none"><span>Email</span>taeyang4658@gmail.com</p>
+                    <p class="footer-menu"><span>Customer Service</span>032-463-4658</p>
+                    <p class="footer-menu after-none"><span>Fax</span>032-463-4660</p><br>
+                    <br/>
+                    <p class="footer-menu after-none margin-none">© 2020 taeyang, All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+   
+    function toggleHead() {
+        var scroll = $(window).scrollTop();
+        var returnValue = false;
+        if(scroll > 75) {
+            returnValue = true;
+        }
+        else {
+            returnValue = false;
+        }
+        return returnValue;
+    } 
+
+</script>
+<script src="../assets/js/header.js"></script>
+<script src="../assets/js/accordion.js"></script>
+
+
+</body>
+</html>

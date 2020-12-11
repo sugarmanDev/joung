@@ -287,4 +287,7 @@
     .top-nav .dropdown-navbar .nav-link{
       margin: 0 36px;
     }
+    .top-nav .dropdown-navbar .nav-link.eng{
+      margin: 0 29px !important;
+    }
   }

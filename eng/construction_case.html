@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taeyang</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/timeline_style.css">
+    <link rel="stylesheet" href="../assets/css/media_style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+</head>
+
+<body>
+<!-- nav -->
+<div class="navbar fixed-top top-nav" id="top_nav" style="display: block;">
+    <div class="border-bt">
+        <nav class="navbar container navbar-expand-lg navbar-dark">
+            <a class="navbar-brand logo-w" href="./index.html"><img src="../assets/img/logo.png" alt=""></a>
+            <a class="navbar-brand logo-r" href="./index.html"><img src="../assets/img/logo_color.png" alt=""></a>
+            <div class="nav justify-content-center">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active menu-over" href="./about_greet.html">Anout Us <span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link menu-over" href="./business.html">Our Business</a>
+                    <a class="nav-item nav-link menu-over" href="./construction_case.html">What we did</a>
+                    <a class="nav-item nav-link menu-over" href="./customerservice.html">Customer Service</a>
+                </div>
+                <div class="mobile-nav">
+
+                </div>
+            </div>
+            <div class="nav justify-content-end">
+                <div style="margin-right: 40px;">
+                    <div class="d-flex align-self-center language-box">
+                        <span class="material-icons mr-1 icon" style="color: #fff;">public</span>
+                        <span class="language" style="color: #fff;">English</span>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="menuicon">
+                    <label for="menuicon">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- 드롭다운 nav -->
+    <div class="dropdown-navbar" id="drop_menu">
+        <div class="container">
+            <div class="row m-auto" style="width:100%;">
+                <div class="col-md-2"></div>
+                <div class="col-md-10" style="margin: 16px 0 !important;">
+                    <div class="nav pb-2 pc-nav-group">
+                        <ul class="navbar-nav dropdown-nav size">
+                            <li><a class="nav-item nav-link eng" href="./about_greet.html">CEO Greeting</a></li>
+                            <li><a class="nav-item nav-link eng" href="./about_Management.html">Philosophy</a></li>
+                            <li><a class="nav-item nav-link eng" href="./about_history.html">History</a></li>
+                            <li><a class="nav-item nav-link eng" href="./about_directions.html">Location</a></li>
+                        </ul>
+                        <ul class="navbar-nav dropdown-nav">
+                            <li><a class="nav-item nav-link eng" href="./business.html">Constructions</a></li>
+                            <li><a class="nav-item nav-link eng" href="./business_door.html">Automatic door</a></li>
+                            <li><a class="nav-item nav-link eng" href="./business_seal.html">Waterproof</a></li>
+                        </ul> 
+                        <ul class="navbar-nav dropdown-nav" style="visibility: hidden;">
+                            <li><a class="nav-item nav-link eng" href="./construction_case.html">Constructions</a></li>
+                            <li><a class="nav-item nav-link eng" href="#">유리문</a></li>
+                            <li><a class="nav-item nav-link eng" href="#">엘베문</a></li>
+                        </ul>
+                        <ul class="navbar-nav dropdown-nav">
+                            <li><a class="nav-item nav-link eng" href="./customerservice.html" style="padding-left: 34px;">Notice</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- mobile_nav -->
+<div class="mobile_bg mobile_group"></div>
+<section id="wrapper" class="mobile_menu mobile_group">
+    <div class="container-fluid" style="padding: 0;">
+        <ul class="accordion">
+            <li class="item">
+                <h2 class="accordionTitle">Anout Us <span class="accIcon"></span></h2>
+                <div class="text">
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./about_greet.html'">CEO greeting</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./about_Management.html'">Philosophy</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./about_history.html'">History</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./about_directions.html'">Location</button>
+                </div>
+            </li>
+            <li class="item">
+                <h2 class="accordionTitle">Our Business <span class="accIcon"></span></h2>
+                <div class="text">
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./business.html'">Constructions</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./business_door.html'">Automatic door</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./business_seal.html'">Waterproof</button>
+                </div>
+            </li>
+            <li class="item">
+                <h2 class="accordionTitle" onclick="location.href='./construction_case.html'">What we did</h2>
+            </li>
+            <li class="item">
+                <h2 class="accordionTitle" onclick="location.href='./customerservice.html'">Customer Service</h2>
+            </li>
+        </ul>
+        <div class="mobile-menu-footer">
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+
+<div class="top-banner-3 d-flex align-items-center">
+    <div class="container text-center text-white">
+        <h2 class="banner-title">What we did</h2>
+    </div>
+</div>
+
+
+
+<div class="title-wrap mt mb-3">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="title mb-3">Taeyang C&T boasts innovative technology and delicate completion.</h2>
+                <p>We were selected as an official company that can repair interiors and facilities by Korea National Housing Corporation in 2001.<br/>
+                    From that time to 2010, we signed a long-term construction contract with them, constructing national housing facilities<br/>
+                    and common areas for about 10 years.<br/>
+                    We pride ourselves on having a wealth of experience and know-how accumulated in the repair of collective facilities such as apartments.</p>
+                <img src="/Taeyang/assets/img/business-1.jpg" class="img-fluid mt-4" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="case-wrap mt-5">
+    <div class="container">
+         <div class="row width pt-4 case-1" style="margin-bottom: 100px;">
+            <div class="col-md-3 mb-3">
+                <h5>Performance of construction ordered by Korea Land and Housing Corporation</h5>
+            </div>
+            <div class="col-md-7 d-flex">
+                <div class="d-flex flex-column">
+                    <h2 class="date-yy" style="margin-bottom: 5px;">2005</h2>
+                    <h2 class="date-yy" style="margin-bottom: 52px;">2007</h2>
+                    <h2 class="date-yy" style="margin-bottom: 10px;">2009</h2>
+                    <h2 class="date-yy" style="margin-bottom: 30px;">2010</h2>
+                    <h2 class="date-yy" style="margin-bottom: 70px;">2014</h2>
+                    <h2 class="date-yy" style="margin-bottom: 52px;">2015</h2>
+                    <h2 class="date-yy" style="margin-bottom: 260px;">2016</h2>
+                    <h2 class="date-yy" style="margin-bottom: 25px;">2017</h2>
+                    <h2 class="date-yy" style="margin-bottom: 140px;">2018</h2>
+                    <h2 class="date-yy">2020</h2>
+                </div>
+                <div class="case-timeline m-auto">
+                    <div class="case-timelin-content">
+                        <div class="circle-1 circle1"></div>
+                        <ul>
+                            <li style="padding-top: 0px;">Construction to install insect screens<br/>in the couple's bathroom<br/>in Yuljeon Apartment Complex 1 in Suwon</li>
+                        </ul>
+                        <div class="circle-2 circle"></div>
+                        <ul>
+                            <li>First renovation of purchased rental housing</li>
+                            <li>Demonstration of wallpapering<br/>and replacement of floor coverings of Hapjeong<br/>3 long-term residents in Pyeongtaek</li>
+                        </ul>
+                        <div class="circle-3 circle"></div>
+                        <ul>
+                            <li>Construction of wallpaper<br/>and floor coverings for long-term residents<br/>of Dorim Apartment Complex 1 in Incheon</li>
+                        </ul>
+                        <div class="circle-4 circle"></div>
+                        <ul>
+                            <li>First renovation work for purchased<br/>rental housing(July 2010 1st)</li>
+                        </ul>
+                        <div class="circle-5 circle"></div>
+                        <ul>
+                            <li>(Emergency) Construction for maintenance<br/>and repair of apartments and multi-family houses<br/>in Gyeongbuk area 1 (building, civil work)</li>
+                            <li>Construction facility maintenance work<br/>in Incheon area (1) rental apartment</li>
+                        </ul>
+                        <div class="circle-6 circle"></div>
+                        <ul>
+                            <li>Construction to reinforce blocks<br/>in PIT for 6BL of Incheon Seochang (2)</li>
+                            <li>Construction to repair defects<br/>for 6BL in Seochang, Incheon (2)</li>
+                        </ul>
+                        <div class="circle-7 circle"></div>
+                        <ul>
+                            <li>Construction to repair defects<br/>for 6BL in Seochang, Incheon (2)</li>
+                            <li>Repair work to prevent fall under skylights<br/>and ventilation windows of labor apartment<br/>complexes sold in Incheon area (1)</li>
+                            <li>Incheon Seochang (2) 6BL repair work<br/>(Leakage in common parts of buildings)</li>
+                            <li>Incheon Seochang (2) 6BL repair work<br/>(external cracks, etc.)</li>
+                            <li>Construction to repair the door<br/>of Seochang Apartment Complex 11 in Incheon</li>
+                        </ul>
+                        <div class="circle-8 circle"></div>
+                        <ul>
+                            <li>Construction to install roof ladders<br/>at workers' rest areas and shopping centers<br/>of the Bucheon Okgil Project Group ordered by<br/>Incheon Land and Housing Corporation</li>
+                        </ul>
+                        <div class="circle-9 circle"></div>
+                        <ul>
+                            <li>Construction for maintenance<br/>of building, civil work, and landscape facilities<br/>in Chungnam A area</li>
+                            <li>Construction (building) for maintenance<br/>of purchased leases in Anyang 2</li>
+                            <li>Construction for maintenance of rental housing<br/>facilities in Jeonju 1 area<br/>(building, civil work, landscaping)</li>
+                            <li>Construction for maintenance of rental housing<br/>facilities in Kyongnam Yangsan area<br/>(building, civil work, landscaping)</li>
+                        </ul>
+                        <div class="circle-10 circle"></div>
+                        <ul>
+                             <li>Construction to maintain and repair building,<br/>civil work and landscape facilities<br/>in the Dong-gu area of Daejeon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 row align-items-center">
+                
+            </div>
+        </div>
+
+        <style>
+            .wrr{
+                color: red;
+            }
+        </style>
+        <div class="row width pt-4 case-2" style="margin-bottom: 100px;">
+            <div class="col-md-3 mb-3">
+                <h5>Performance of School construction</h5>
+                <h5>Performance of Urban development</h5>
+            </div>
+            <div class="col-md-7 d-flex">
+                <div class="d-flex flex-column">
+                    <h2 class="date-yy" style="margin-bottom: 487px;">2008</h2>
+                    <h2 class="date-yy" style="margin-bottom: 843px;">2009</h2>
+                    <h2 class="date-yy" style="margin-bottom: 48px;">2011</h2>
+                    <h2 class="date-yy" style="margin-bottom: 95px;">2012</h2>
+                    <h2 class="date-yy" style="margin-bottom: 95px;">2014</h2>
+                    <h2 class="date-yy" style="margin-bottom: 68px;">2015</h2>
+                    <h2 class="date-yy" style="margin-bottom: 52px;">2017</h2>
+                    <h2 class="date-yy" style="margin-bottom: 75px;">2018</h2>
+                    <h2 class="date-yy">2020</h2>
+                </div>
+                <div class="case-timeline m-auto">
+                    <div class="case-timelin-content">
+                        <div class="circle-1 circle"></div>
+                        <ul>
+                            <li style="padding-top: 0px;">Construction to install<br/>the ceiling of Manwol Elementary School</li>
+                            <li>Construction to replace the entrance door<br/>of the classroom at Baekma Elementary School</li>
+                            <li>Restroom renovation work of gajeong high school</li>
+                            <li>Construction to waterproof the exterior wal<br/>of the building in Baekma Elementary School</li>
+                            <!-- <li class="wrr">영종종교 옥외, 옥상 방수공사외</li> -->
+                            <li>Construction to repair a kindergarten attached<br/>to Manseok Elementary School</li>
+                            <li>Daegos elementary school renovation work</li>
+                            <li>Construction to improve toilets<br/>at Yonghyeonnam Elementary School</li>
+                            <li>Construction to replace the floor of<br/>the principal's office at Simhak Elementary School</li>
+                            <li>Construction of the Sanul Daycare Center<br/>in Samga-dong, Yeonsu</li>
+                            <li>Construction of municipal rental apartments<br/>in Yeonsu</li>
+                            <li>Construction of municipal rental apartment<br/>in Seonhak</li>
+                            <li>Construction to improve the classroom floor<br/>of Simhak Elementary School</li>
+                        </ul>
+                        <div class="circle-2 circle"></div>
+                        <ul>
+                            <li>Construction to repair the school building<br/>of Yeongjong Middle School</li>
+                            <li>Construction to improve toilets<br/>at Yeonsu Elementary School</li>
+                            <li>Construction to replace<br/>the classroom entrance door<br/>of Jangseong Middle School</li>
+                            <li>Construction to improve<br/>the environment of the school office<br/>at Hwasu Elementary Schoolin Goyang</li>
+                            <li>Construction to move the facility management office<br/>in Hwasu Elementary School in Goyang</li>
+                            <li>Construction to remodel the lounge<br/>for school staff at Sinneung Middle School</li>
+                            <li>Construction to improve<br/>the central entrance inside<br/>the administrative office<br/>of Wondang Elementary School</li>
+                            <li>Construction of stairs inside the school building<br/>of Cheongseok Elementary School</li>
+                            <li>Construction of art room, music room,<br/>and instrumental music room<br/>at Bongilcheon Middle School</li>
+                            <li>Construction to improve the classroom floor<br/>of Simhak Elementary School</li>
+                            <li>Construction to replace the classroom door<br/>of Baekma Elementary School</li>
+                            <li>Construction to waterproof the outer wall<br/>of Baekma Elementary School</li>
+                            <li>Construction of facilities<br/>for the disabled at Hwajeong<br/>Elementary School in Goyang</li>
+                            <li>Construction to be added<br/>as the second entrance to the classroom<br/>of Baekma Elementary School</li>
+                            <li>Construction to expand<br/>the Deokjeok elementary, middle and<br/>high school library</li>
+                            <li>Repair work and woodwork<br/>at Jayu Elementary School in Paju</li>
+                            <li>Interior work of the nursery class<br/>at Wanjeong Elementary School</li>
+                            <li>Inseong Girls' High School<br/>teacher's room remodeling work</li>
+                            <li>Construction to modernize the special room<br/>of Gajwa Girls' Middle School</li>
+                            <li>Purchase and installation<br/>of furniture for the modernization<br/>of Gajwa Girls' Middle School</li>
+                        </ul>
+                        <div class="circle-3 circle"></div>
+                        <ul>
+                            <li>Construction to replace<br/>the windows of Hugwan-dong<br/>in Dongam Elementary School</li>
+                        </ul>
+                        <div class="circle-4 circle"></div>
+                        <ul>
+                            <li>Construction to renovate<br/>the classroom for Korean and Math<br/>of Neungheodae Junior High School</li>
+                            <li>Construction to expand<br/>special schools<br/>at Seonin Middle School</li>
+                            <li>Construction to replace<br/>old flooring materials<br/>at Seorim Elementary School</li>
+                        </ul>
+                        <div class="circle-5 circle"></div>
+                        <ul>
+                            <li>Construction to replace<br/>the classroom floor and window<br/>of the multipurpose room in Incheon High School</li>
+                            <li>Construction to replace<br/>the classroom floor of the multipurpose room<br/>in Incheon High School</li>
+                            <li>Interior work of the multipurpose room<br/>and convergence talent classroom<br/>of Yeonsong High School</li>
+                        </ul>
+                        <div class="circle-6 circle"></div>
+                        <ul>
+                            <li>Construction to install reinforced doors<br/>in the history hall, the 2nd floor meeting room,<br/>and practice hall of Incheon Information<br/>Industry High School</li>
+                            <li>Construction to paint the new building<br/>and rooftop of Galwol Elementary School<br/>in Incheon</li>
+                        </ul>
+                        <div class="circle-7 circle"></div>
+                        <ul>
+                            <li>Construction to improve toilets<br/>in Gyesan High School</li>
+                            <li>Construction to improve restrooms<br/>and rooftop waterproofing<br/>of Sangok elementary school</li>
+                        </ul>
+                        <div class="circle-8 circle"></div>
+                        <ul>
+                            <li>Construction to improve restrooms<br/>of Buheung elementary school</li>
+                            <li>Construction to replace sound absorbing<br/>materials inside the high school gymnasium<br/>and audio-visual room attached<br/>to Hankuk University of Foreign Studies in Yongin</li>
+                        </ul>
+                        <div class="circle-9 circle"></div>
+                        <ul>
+                            <li>Construction to replace the classroom floor<br/>finishing materials of Baekseok High School</li>
+                            <li>Construction to improve toilets<br/>at Yale High School in Incheon</li>
+                            <li>Construction to replace the windows<br/>of the cafeteria in Gyesan High School</li>
+                            <li>Contract for remodeling work<br/>of connected care class in 2019</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 row align-items-center">
+                <p class="ml-auto">Facility maintenance work<br>
+                Interior work<br>
+                Metal window structure construction work
+                </p>
+            </div>
+        </div>
+
+        <div class="row width pt-4 case-3" style="margin-bottom: 100px;">
+            <div class="col-md-3 mb-3">
+                <h5>Performance of other government office orders</h5>
+            </div>
+            <div class="col-md-7 d-flex">
+                <div class="d-flex flex-column">
+                    <h2 class="date-yy" style="margin-bottom: 5px;">2005</h2>
+                    <h2 class="date-yy" style="margin-bottom: 5px;">2007</h2>
+                    <h2 class="date-yy" style="margin-bottom: 50px;">2009</h2>
+                    <h2 class="date-yy"  style="margin-bottom: 92px;">2010</h2>
+                    <h2 class="date-yy" style="margin-bottom: 50px;">2012</h2>
+                    <h2 class="date-yy" style="margin-bottom: 272px;">2013</h2>
+                    <h2 class="date-yy"  style="margin-bottom: 93px;">2014</h2>
+                    <h2 class="date-yy" style="margin-bottom: 95px;">2015</h2>
+                    <h2 class="date-yy" style="margin-bottom: 5px;">2016</h2>
+                    <h2 class="date-yy" style="margin-bottom: 205px;">2017</h2>
+                    <h2 class="date-yy" style="margin-bottom: 92px;">2018</h2>
+                    <h2 class="date-yy">2019</h2>
+                    <h2 class="date-yy mt-auto">2020</h2>
+                </div>
+                <div class="case-timeline m-auto">
+                    <div class="case-timelin-content">
+                        <div class="circle-1 circle"></div>
+                        <ul>
+                            <li style="padding-top: 0px;">Construction to paint, paper,<br/>and replace the police box</li>
+                        </ul>
+                        <div class="circle-2 circle"></div>
+                        <ul>
+                            <li>Environment improvement work<br/>of the office of Korea Electric Power<br/>Technology Corporation</li>
+                        </ul>
+                        <div class="circle-3 circle"></div>
+                        <ul>
+                            <li>Construction to repair the official<br/>residence building of the Fisheries Seedling<br/>Research Institute located in Incheon</li>
+                            <li>Construction to repair the main building<br/>of the Fisheries Seedling Research<br/>Institute located in Incheon</li>
+                        </ul>
+                        <div class="circle-4 circle"></div>
+                        <ul>
+                            <li>Construction to reinforce the ceiling<br/>of the entrance of the transmission station,<br/>air conditioning room and power supply room<br/>in Gwanaksan</li>
+                            <li>Construction to expand the ropeway<br/>toilet at the foot of the transmission<br/>station in Gwanaksan</li>
+                            <li>Construction to repair and reinforce<br/>the international passenger pier<br/>in Incheon Port</li>
+                        </ul>
+                        <div class="circle-5 circle"></div>
+                        <ul>
+                            <li>Construction to improve the facilities<br/>of the passenger terminal in<br/>Incheon Port in 2012</li>
+                            <li>Construction to repair and<br/>reinforce civil engineering facilities<br/>and building facilities of the lock gate</li>
+                        </ul>
+                        <div class="circle-6 circle"></div>
+                        <ul>
+                            <li>Construction to install a shower room<br/>in the dongsu station</li>
+                            <li>Construction to remodeling<br/>and repair the facilities of the infant<br/>daycare center in Jakjeon-dong</li>
+                            <li>Construction to install use<br/>facilities such as window blinds<br/>at the health clinic in Mungap</li>
+                            <li>Construction to install use<br/>facilities such as window blinds<br/>at the health clinic in Soyeongpyeong</li>
+                            <li>Construction to improve old facilities<br/>at Manseok-dong Post Office in Incheon</li>
+                            <li>Construction ordered by<br/>the Ministry of Defense, Unit 2002</li>
+                            <li>Construction ordered by<br/>the Ministry of National Defense to improve<br/>the barracks canteen at the 178th</li>
+                        </ul>
+                        <div class="circle-7 circle"></div>
+                        <ul>
+                            <li>Construction to improve facilities<br/>such as installing a canopy for<br/>a health clinic at Mungab</li>
+                            <li>Construction of dredging drainage<br/>and urgent repair of grating</li>
+                            <li>Construction to install PAD TR<br/>guards and perform other urgent repairs</li>
+                        </ul>
+                        <div class="circle-8 circle"></div>
+                        <ul>
+                            <li>Construction to install or maintain<br/>traffic safety signs in Incheon in 2015</li>
+                            <li>Construction of the 2015 airport railroad<br/>main ventilation tower inspection stairs</li>
+                            <li>Construction to build a book cafe<br/>at the community center in Dongchun 1-dong</li>
+                        </ul>
+                        <div class="circle-9 circle"></div>
+                        <ul>
+                            <li>Construction to repair control joints<br/>at the bottom of the underpass in Jungbong</li>
+                        </ul>
+                        <div class="circle-10 circle"></div>
+                        <ul>
+                            <li>Remodeling of Namdong Daycare Center</li>
+                            <li>Construction to install roof ladders<br/>at workers' rest areas and shopping centers<br/>of the Bucheon Okgil Project Group ordered<br/>by Incheon Land and Housing Corporation</li>
+                            <li>Construction to repair a manned<br/>lighthouse in Incheon in 2017</li>
+                            <li>Construction to replace the flooring<br/>of the internal stairs in the<br/>Namdong Daycare Center</li>
+                            <li>Construction ordered by the Ministry<br/>of Defense to repair the cooking facility<br/>at Unit 6799</li>
+                        </ul>
+                        <div class="circle-11 circle"></div>
+                        <ul>
+                            <li>Construction to replace the finishing materials<br/>for the 3rd stage of the residential building<br/>in Ihwa Village in Taean</li>
+                            <li>Construction to urgently repair<br/>the windbreak at the cargo dock<br/>in the coastal passenger terminal</li>
+                            <li>Construction ordered by the Ministry of Defense<br/>to repair the office of Unit 00</li>
+                        </ul>
+                        <div class="circle-12 circle"></div>
+                        <ul>
+                            <li>Construction to urgently repair parking lot<br/>drainage and roof waterproofing in Ilhae Freezer</li>
+                            <li>Construction to urgently repair damaged wires<br/>in the upper part of the shore and IPA Ball Park<br/>in the South Port</li>
+                            <li>Construction to improve the environment<br/>of the Environmental Sanitation Center</li>
+                            <li>4th major repair work for manned<br/>and unmanned signs in Incheon in 2019</li>
+                            <li>19-SO Construction ordered by the Ministry<br/>of Defense to improve the executive<br/>accommodation at Site 00</li>
+                            <li>19-IN Construction ordered by the Ministry<br/>of Defense to replace the windows<br/>of the government office at Site 00</li>
+                        </ul>
+                        <div class="circle-13 circle"></div>
+                        <ul>
+                            <li>20-IN Construction ordered by the Ministry<br/>of Defense to improve the executive<br/>accommodation in Buleumdo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 row align-items-center">
+            </div>
+        </div>
+
+        <div class="row width pt-4 case-4" >
+            <div class="col-md-3 mb-3">
+                <h5>Performance of Private sector construction</h5>
+            </div>
+            <div class="col-md-9 d-flex">
+                <div class="d-flex flex-column">
+                    <h2 class="date-yy" style="margin-bottom: 25px;">2009</h2>
+                    <h2 class="date-yy" style="margin-bottom: 52px;">2010</h2>
+                    <h2 class="date-yy" style="margin-bottom: 95px;">2013</h2>
+                    <h2 class="date-yy" style="margin-bottom: 205px;">2014</h2>
+                    <h2 class="date-yy" style="margin-bottom: 540px;">2015</h2>
+                    <h2 class="date-yy" style="margin-bottom: 90px;">2016</h2>
+                    <h2 class="date-yy" style="margin-bottom: 232px;">2017</h2>
+                    <h2 class="date-yy" style="margin-bottom: 975px;">2018</h2>
+                    <h2 class="date-yy" style="margin-bottom: 360px;">2019</h2>
+                    <h2 class="date-yy">2020</h2>
+                </div>
+                <div class="case-timeline m-auto">
+                    <div class="case-timelin-content">
+                        <div class="circle-1 circle"></div>
+                        <ul>
+                            <li style="padding-top: 0px;">Construction that first renovated units<br/>of rental housing (Unit #148, Shinwoo Parkville,<br/>Hamdeok in Jeju) purchased due<br/>to bankruptcy</li>
+                        </ul>
+                        <div class="circle-2 circle"></div>
+                        <ul>
+                            <li>Construction to repair the 3rd, 4th,<br/>and 5th floors of Juan Building</li>
+                            <li>Construction for a special exhibition<br/>to clarify the salty water of Incheon<br/>at the Incheon City Museum</li>
+                        </ul>
+                        <div class="circle-3 circle"></div>
+                        <ul>
+                            <li>Construction for maintenance<br/>of a company house in Incheon thermal<br/>power plant in 2013</li>
+                            <li>Construction to improve the environment<br/>in part of Kookmin Bank's Yeongdong branch</li>
+                            <li>Construction to improve the environment<br/>in part of Kookmin Bank's Bundang Baekgung<br/>Branch (Interior Work)</li>
+                        </ul>
+                        <div class="circle-4 circle"></div>
+                        <ul>
+                            <li>Construction to install the<br/>grandstand chairs, a sports facility<br/>ordered by the Deokjeok-myeon office</li>
+                            <li>Repair work to improve the environment<br/>of Senior Citizens (Seopo 1-ri, Buk 1-ri)<br/>ordered by the Deokjeok-myeon office</li>
+                            <li>Construction to install a bedroom<br/>at Gyulhyeon Station</li>
+                            <li>Construction to expand the kitchen<br/>of Senior Citizens Hall in Igae (Jin 2-ri)</li>
+                            <li>Construction to maintain traffic guide signs<br/>for the agricultural products wholesale market<br/>in Samsan</li>
+                        </ul>
+                        <div class="circle-5 circle"></div>
+                        <ul>
+                            <li>Construction to install<br/>an antiseptic deck at the Kaiser Palace<br/>in Woorim</li>
+                            <li>Construction to install<br/>boundary fence in Hanyang Pine<br/>Country Club</li>
+                            <li>Construction to install<br/>a food waste yard in Dongbu Centerville<br/>in Ichon</li>
+                            <li>Construction to install<br/>a garbage collection center at Kumho Oullim<br/>Apartment in Changdong</li>
+                            <li>Construction to install<br/>automatic doors in the 2nd<br/>Woorim Lions Valley</li>
+                            <li>Replacing the wallpaper<br/>of the corridor in We've<br/>the Zenith apartment</li>
+                            <li>Construction of a new handrail<br/>on the external stairs at Bumbak Hillstate<br/>Apartment #404 in Bucheon</li>
+                            <li>Construction to install roofs<br/>at Hyundai Kolon recycling classification<br/>and storage facilities</li>
+                            <li>Construction to install windows<br/>in the parking lot<br/>of Trapalace in Mok-dong</li>
+                            <li>Construction to install a fence<br/>in the food outlet<br/>of Daelim 2nd Apartment in Yangji</li>
+                            <li>Construction to install outdoor faucets<br/>at Charmnuri Eco Rich in Seocho</li>
+                            <li>Construction of renovating stairs<br/>and installing canopies of Ssangyong Apartment<br/>Complex 2 in Changsin</li>
+                        </ul>
+                        <div class="circle-6 circle"></div>
+                        <ul>
+                            <li>Construction to finish the floor<br/>in the men's bath of Hanyang Country Club</li>
+                            <li>Construction of remodeling steel stairs<br/>in the rooftop Heliport of ASEM Tower</li>
+                            <li>Construction to install the grating for<br/>the Unam Jugong 3 apartment complex in Osan</li>
+                        </ul>
+                        <div class="circle-7 circle"></div>
+                        <ul>
+                            <li>Ceiling material installation work on the<br/>wilderness terrace of Pilgrim House</li>
+                            <li>Installation of roof windows<br/>in the courtyard and installation of sliding doors<br/>on the second basement floor</li>
+                            <li>Construction to install stairs<br/>and replace window parts in Complex 1<br/>of e-Pyunhansesang Apartment in Wondong</li>
+                            <li>Construction to install a canopy at the<br/>recycling collection site in Seongwon</li>
+                            <li>Construction to install<br/>a garbage dump in Shinnaeseongwon</li>
+                            <li>Construction to install<br/>a recycling collection center in Hanshin<br/>Hanjin Apartment in Dongsomun</li>
+                        </ul>
+                        <div class="circle-8 circle"></div>
+                        <ul>
+                            <li>Construction to install a recycling<br/>collection site at the headquarters<br/>of the Korea Fire Insurance Association</li>
+                            <li>Construction to replace laminated glass</li>
+                            <li>Construction to install a canopy<br/>on the garden five life</li>
+                            <li>Construction to replace the corridor flooring<br/>material in front of the lily bus platform</li>
+                            <li>Construction to install the roof<br/>of the food waste container in the Bullo<br/>Geumho Eoullim Apartment</li>
+                            <li>Construction of installing and caulking skylights<br/>in the underground parking lot of Gunyeong 3rd<br/>Apartment in Junggye</li>
+                            <li>Construction to install<br/>the sky park ceiling canopy of Edutown Xi<br/>Apt. 1 in Gwanggyo</li>
+                            <li>Geumsan Jugong Non-Slip<br/>Replacement Corporation</li>
+                            <li>Construction to replace the soundproof<br/>wall glass in Raemian Oksu Riverzen</li>
+                            <li>Dream Valley Large Waste Land Expansion Project</li>
+                            <li>Construction of a cover film for tempered glass<br/>at the entrance of Deoksodusan Weave</li>
+                            <li>eonnong-dong Front Door Installation Corporation</li>
+                            <li>Construction to replace the window chassis<br/>of the Wideville Springlight Daycare Center in Gwangno</li>
+                            <li>Construction to repair Tralis at Prior Palace</li>
+                            <li>Gwanggyo Lake Village Chamnuri Lake<br/>Ventureda (motorless) Left Bridge Construction</li>
+                            <li>Gileum New Town 10 Complex<br/>Palgakjeong Repair Works, etc.</li>
+                            <li>Segok Prugio Outdoor EV Breakdown<br/>Glass Replacement Corporation</li>
+                            <li>Wood Deck Replacement<br/>of Resting Facility in<br/>front of the 323-dong Trisium</li>
+                            <li>Construction to install Leksan<br/>in the underground parking lot for Hanshin<br/>Cheong-gu in Mokdong</li>
+                            <li>Construction to replace the wooden<br/>stairs of the Familie Apartment in Ingye</li>
+                            <li>Kolon Science Valley 2nd 1st<br/>floor lobby restoration project</li>
+                            <li>Construction to install Leksan<br/>in the underground parking lot of Sekyung in Munchon<br/>Apartment Complex 14 in Ilsan</li>
+                        </ul>
+                        <div class="circle-9 circle"></div>
+                        <ul>
+                            <li>Construction to replace the fireproof glass door<br/>at the exit of the emergency elevator</li>
+                            <li>Construction to install a pad to prevent falling<br/>on the double-layered glass of a single window<br/>
+                            <li>Glass replacement work</li>
+                            <li>Dongtan Yedang Village Lotte Castle<br/>Winter Gate Establishment Project</li>
+                            <li>Construction to replace the skylight glass<br/>of The Sharp First World in Songdo</li>
+                            <li>Construction to install safety guards<br/>in Jungheung S Class Apartment Complex 1<br/>in Pyeongnae</li>
+                            <li>Construction to remove the evergreen<br/>rooftop flower bed and floor in Suraksan</li>
+                            <li>Construction to install a food waste<br/>collection site in Moglyeon Town in ilwon</li>
+                            <li>Construction to replace the soundproof<br/>wall glass in Raemian Oksu Riverzen</li>
+                        </ul>
+                        <div class="circle-10 circle"></div>
+                        <ul>
+                            <li>Construction to install partitions<br/>and simple entrances at the information desk<br/>of Prugio City Apt. in Songpa</li>
+                            <li>Construction to repair the deck on the third<br/>floor of Lotte Castle Ivy</li>
+                            <li>Construction to  install Lexan<br/>on the windshield of the bus platform in front<br/>of Smile City 2 ePyunhansesang Apt.</li>
+                            <li>Construction to replace the fence<br/>to prevent rockfall on the steep slope<br/>of Hana 2nd apartment in Gajeong</li>
+                            <li>Soundproofing construction<br/>of the Centerville golf driving range<br/>of e-Pyeonhansesang apartment in Gwangmyeong</li>
+                            <li>Construction to replace the membrane structure<br/>of Jugong Apartment in Daewol Village</li>
+                            <li>Construction to install a dehumidifier<br/>in the common entrance of Hillstate in Onsue</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+ <!-- foonter -->
+ <div class="footer-wrap" style="margin-top:170px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="../assets/img/footer_logo.png" alt="">
+                 <div class="list-top mt-4">
+                    <a href="./about_greet.html" class="footer-menu margin-none">Anout Us</a>
+                    <a href="./business.html" class="footer-menu margin-none">Our Business</a>
+                    <a href="./construction_case.html" class="footer-menu margin-none">What we did</a>
+                    <a href="./customerservice.html" class="footer-menu margin-none">Customer Service</a>
+                    <!-- <a href="" class="footer-menu">이용약관</a>
+                    <a href="" class="footer-menu after-none">개인정보 처리방침</a> -->
+                </div>
+                <div class="list-bottom mt-3">
+                    <p class="footer-menu margin-none">TaeYang C&T</p>
+                    <p class="footer-menu"><span>Registration No.</span>121-81-48125</p>
+                    <p class="footer-menu after-none"><span>Address</span>52, Dorimbuk-ro 16beon-gil, Namdong-gu, Incheon, 21621, Rep. of KOREA</p><br />
+                    <p class="footer-menu margin-none"><span>Email</span>taeyang4658@gmail.com</p>
+                    <p class="footer-menu"><span>Customer Service</span>032-463-4658</p>
+                    <p class="footer-menu after-none"><span>Fax</span>032-463-4660</p><br>
+                    <br/>
+                    <p class="footer-menu after-none margin-none">© 2020 taeyang, All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+    function toggleHead() {
+        var scroll = $(window).scrollTop();
+        var returnValue = false;
+        if(scroll > 75) {
+            returnValue = true;
+        }
+        else {
+            returnValue = false;
+        }
+        return returnValue;
+    } 
+
+</script>
+
+<script src="../assets/js/header.js"></script>
+<script src="../assets/js/accordion.js"></script>
+
+
+</body>
+</html>
