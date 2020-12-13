@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taeyang</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/timeline_style.css">
+    <link rel="stylesheet" href="../assets/css/media_style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+</head>
+
+<body>
+ <!-- nav -->
+ <div class="navbar fixed-top top-nav" id="top_nav" style="display: block;">
+    <div class="border-bt">
+        <nav class="navbar container navbar-expand-lg navbar-dark">
+            <a class="navbar-brand logo-w" href="./index.html"><img src="../assets/img/logo.png" alt=""></a>
+            <a class="navbar-brand logo-r" href="./index.html"><img src="../assets/img/logo_color.png" alt=""></a>
+            <div class="nav justify-content-center">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active menu-over" href="./about_greet.html">แนะนำบริษัท <span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link menu-over" href="./business.html">แผลกของธุรกิจ</a>
+                    <a class="nav-item nav-link menu-over" href="./construction_case.html">ตัวอย่างการก่อสร้าง</a>
+                    <a class="nav-item nav-link menu-over" href="./customerservice.html">Call Center</a>
+                </div>
+                <div class="mobile-nav">
+
+                </div>
+            </div>
+            <div class="nav justify-content-end">
+                <div style="margin-right: 40px;">
+                    <div class="d-flex align-self-center language-box">
+                        <span class="material-icons mr-1 icon" style="color: #fff;">public</span>
+                        <span class="language" style="color: #fff;">ไทย</span>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="menuicon">
+                    <label for="menuicon">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- 드롭다운 nav -->
+    <div class="dropdown-navbar" id="drop_menu">
+        <div class="container">
+            <div class="row m-auto" style="width:100%;">
+                <div class="col-md-3"></div>
+                <div class="col-md-9" style="margin: 16px 0 !important;">
+                    <div class="nav pb-2 pc-nav-group">
+                        <ul class="navbar-nav dropdown-nav size">
+                            <li><a class="nav-item nav-link" href="./about_greet.html">คำกล่าวของ CEO</a></li>
+                            <li><a class="nav-item nav-link" href="./about_Management.html">มโนคติการบริหาร</a></li>
+                            <li><a class="nav-item nav-link" href="./about_history.html">ความเป็นมา</a></li>
+                            <li><a class="nav-item nav-link" href="./about_directions.html">แผนที่</a></li>
+                        </ul>
+                        <ul class="navbar-nav dropdown-nav">
+                            <li><a class="nav-item nav-link" href="./business.html">ผู้เชี่ยวชาญด้านการก่อสร้าง</a></li>
+                            <li><a class="nav-item nav-link" href="./business_door.html">ประตูอัตโนมัติ</a></li>
+                            <li><a class="nav-item nav-link" href="./business_seal.html">การกันน้ำ</a></li>
+                        </ul>
+                        <ul class="navbar-nav dropdown-nav" style="visibility: hidden;">
+                            <li><a class="nav-item nav-link" href="./construction_case.html">ผู้เชี่ยวชาญด้านการก่อสร้าง</a></li>
+                            <li><a class="nav-item nav-link" href="#">유리문</a></li>
+                            <li><a class="nav-item nav-link" href="#">엘베문</a></li>
+                        </ul>
+                        <ul class="navbar-nav dropdown-nav">
+                            <li><a class="nav-item nav-link" href="./customerservice.html">การประกาศทั่วไป</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- mobile_nav -->
+<div class="mobile_bg mobile_group"></div>
+<section id="wrapper" class="mobile_menu mobile_group">
+    <div class="container-fluid" style="padding: 0;">
+        <ul class="accordion">
+            <li class="item">
+                <h2 class="accordionTitle">แนะนำบริษัท <span class="accIcon"></span></h2>
+                <div class="text">
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./about_greet.html'">คำกล่าวของ CEO</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./about_Management.html'">มโนคติการบริหาร</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./about_history.html'">ความเป็นมา</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./about_directions.html'">แผนที่</button>
+                </div>
+            </li>
+            <li class="item">
+                <h2 class="accordionTitle">แผลกของธุรกิจ <span class="accIcon"></span></h2>
+                <div class="text">
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./business.html'">ผู้เชี่ยวชาญด้านการก่อสร้าง</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./business_door.html'">ประตูอัตโนมัติ</button>
+                    <button class="btn btn-link btn-block text-left"
+                        onclick="location.href='./business_seal.html'">การกันน้ำ</button>
+                </div>
+            </li>
+            <li class="item">
+                <h2 class="accordionTitle" onclick="location.href='./construction_case.html'">ตัวอย่างการก่อสร้าง</h2>
+            </li>
+            <li class="item">
+                <h2 class="accordionTitle" onclick="location.href='./customerservice.html'">Call Center</h2>
+            </li>
+        </ul>
+        <div class="mobile-menu-footer"></div>
+    </div>
+</section>
+
+
+
+<div class="top-banner-3 d-flex align-items-center">
+    <div class="container text-center text-white">
+        <h2 class="banner-title">ตัวอย่างการก่อสร้าง</h2>
+    </div>
+</div>
+
+
+
+<div class="title-wrap mt mb-3">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="title mb-3">บริษัทแทยังมีเทคโนโลยีที่ล้ำสมัยและการตกแต่งที่ละเอียดอ่อน</h2>
+                <p>ได้รับเลือกเป็นบริษัทซ่อมแซมภายใน / การบำรุงรักษาสิ่งอำนวยความสะดวกในปี 2001<br>
+                    จากรัฐวิสาหกิจกรมการก่อสร้างที่พักอาศัยและเราก็มีความมั่นใจในความรู้และความเชี่ยวชาญจนได้ทำสัญญา 10 ปี ไปจนถึงปี 2010</p>
+                <img src="/Taeyang/assets/img/business-1.jpg" class="img-fluid mt-4" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="case-wrap mt-5">
+    <div class="container">
+         <div class="row width pt-4 case-1" style="margin-bottom: 100px;">
+            <div class="col-md-3 mb-3">
+                <h5>รายละเอียดการก่อสร้างของกระทรวงที่ดินและที่พักอาศัยในประเทศ</h5>
+            </div>
+            <div class="col-md-7 d-flex">
+                <div class="d-flex flex-column">
+                    <h2 class="date-yy" style="margin-bottom: 5px;">2005</h2>
+                    <h2 class="date-yy" style="margin-bottom: 52px;">2007</h2>
+                    <h2 class="date-yy" style="margin-bottom: 10px;">2009</h2>
+                    <h2 class="date-yy" style="margin-bottom: 30px;">2010</h2>
+                    <h2 class="date-yy" style="margin-bottom: 70px;">2014</h2>
+                    <h2 class="date-yy" style="margin-bottom: 52px;">2015</h2>
+                    <h2 class="date-yy" style="margin-bottom: 260px;">2016</h2>
+                    <h2 class="date-yy" style="margin-bottom: 25px;">2017</h2>
+                    <h2 class="date-yy" style="margin-bottom: 140px;">2018</h2>
+                    <h2 class="date-yy">2020</h2>
+                </div>
+                <div class="case-timeline m-auto">
+                    <div class="case-timelin-content">
+                        <div class="circle-1 circle1"></div>
+                        <ul>
+                            <li style="padding-top: 0px;">การติดตั้งมุ้งลวดในห้องอาบน้ำที่ Suwon Yuljeon ตึก 1</li>
+                        </ul>
+                        <div class="circle-2 circle"></div>
+                        <ul>
+                            <li>งานปรับปรุงบ้านที่ซื้อมาเพื่อให้เช่าครั้งแรก</li>
+                            <li>การเปลี่ยนวัสดุของผลังและการปูพื้นใหม่ที่<br/>Pyeongtaek Hapjeong 3</li>
+                        </ul>
+                        <div class="circle-3 circle"></div>
+                        <ul>
+                            <li>การเปลี่ยนวัสดุของผลังและการปูพื้นใหม่ที่<br/>Incheon Dorim ตึก 1</li>
+                        </ul>
+                        <div class="circle-4 circle"></div>
+                        <ul>
+                            <li>งานปรับปรุงบ้านที่ซื้อมาเพื่อให้เช่า<br />(รอบที่ 1 ก.ค. ปี 2010)</li>
+                        </ul>
+                        <div class="circle-5 circle"></div>
+                        <ul>
+                            <li>งานปรับปรุงบำรุงรักษาอพาร์ทเ<br/>มนต์และตึกที่มีหลายครัวเรือนที่ Gyeongbuk เขต 1</li>
+                            <li>งานปรับปรุงที่พักบ้านเช้า(อพาร์ทเมนต์)ที่ จังหวัด<br/>Incheon(1)</li>
+                        </ul>
+                        <div class="circle-6 circle"></div>
+                        <ul>
+                            <li>การบำรุงบล็อกใน 6BL PIT ที่ Incheon Seochang(2)</li>
+                            <li>การบำรุงข้อบกพร่อง 6BL ที่ Incheon Seochang(2)</li>
+                        </ul>
+                        <div class="circle-7 circle"></div>
+                        <ul>
+                            <li>การบำรุงข้อบกพร่อง 6BL ที่ Incheon Seochang(2)</li>
+                            <li>บำรุงซ่อมแซมหน้าต่างระบายอากาศส่วนล่างที่จังหวัด<br/>Incheon(1) ตึกแบ่งขาย(อพาร์ทเมนต์)</li>
+                            <li>การบำรุงข้อบกพร่อง 6BL ที่ Incheon Seochang(2)<br />(มีน้ำรั่วไหลในอาคารทั่วไป)</li>
+                            <li>การบำรุงข้อบกพร่อง 6BL ที่ Incheon Seochang(2)<br />(รอยแตกร้าวภายนอก)</li>
+                            <li>การซ่อมแซมทางเข้าอพาร์ทเมนต์<br/>Incheon Seochang ตึก 11</li>
+                        </ul>
+                        <div class="circle-8 circle"></div>
+                        <ul>
+                            <li>ติดตั้งห้องพักคนแรงงานและบันไดขึ้นชั้นดาดฟ้าของร้<br/>านค้าต่างๆโดยกลุ่มโครงการ  Bucheon Okgil<br/> กระทรวงที่ดินและทีพั่กอาศัยจังหวัด Incheon</li>
+                        </ul>
+                        <div class="circle-9 circle"></div>
+                        <ul>
+                            <li>งานบำรุงและก่อสร้างวิศวกรรมโยธาและภูมินิทัศน์สิ่<br />งอำนวยความสะดวกที่ Chungcheongnam-do เขต A</li>
+                            <li>งานปรับปรุงบ้านที่ซื้อมาเพื่อให้เช่าที่<br/>Anyang เขต2 (ก่อสร้าง)</li>
+                            <li>งานปรับปรุงที่พักบ้านเช้าที่ จังหวัด Jeonju เขต 1<br/>(ก่อสร้างวิศวกรรมโยธาและภูมินิทัศน์)</li>
+                            <li>งานปรับปรุงที่พักบ้านเช้าที่ จังหวัด Gyeongsangnam-do<br/>เขต Yangsan (ก่อสร้างวิศวกรรมโยธาและภูมินิทัศน์)</li>
+                        </ul>
+                        <div class="circle-10 circle"></div>
+                        <ul>
+                             <li>งานบำรุงและก่อสร้างวิศวกรรมโยธาและภูมินิทัศน์สิ่<br/>งอำนวยความสะดวกที่ Daejeon เขต Dong-gu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 row align-items-center">
+                
+            </div>
+        </div>
+
+        <style>
+            .wrr{
+                color: red;
+            }
+        </style>
+        <div class="row width pt-4 case-2" style="margin-bottom: 100px;">
+            <div class="col-md-3 mb-3">
+                <h5>รายละเอียดการก่อสร้างโรงเรียน</h5>
+                <h5>รายละเอียดการก่อสร้างและพัฒณาเขต</h5>
+            </div>
+            <div class="col-md-7 d-flex">
+                <div class="d-flex flex-column">
+                    <h2 class="date-yy" style="margin-bottom: 487px;">2008</h2>
+                    <h2 class="date-yy" style="margin-bottom: 843px;">2009</h2>
+                    <h2 class="date-yy" style="margin-bottom: 48px;">2011</h2>
+                    <h2 class="date-yy" style="margin-bottom: 95px;">2012</h2>
+                    <h2 class="date-yy" style="margin-bottom: 95px;">2014</h2>
+                    <h2 class="date-yy" style="margin-bottom: 68px;">2015</h2>
+                    <h2 class="date-yy" style="margin-bottom: 52px;">2017</h2>
+                    <h2 class="date-yy" style="margin-bottom: 75px;">2018</h2>
+                    <h2 class="date-yy">2020</h2>
+                </div>
+                <div class="case-timeline m-auto">
+                    <div class="case-timelin-content">
+                        <div class="circle-1 circle"></div>
+                        <ul>
+                            <li style="padding-top: 0px;">ก่อสร้างติดตั้งเพดานโรงเรียนประถม Manwol</li>
+                            <li>เปลี่ยนประตูทางเข้าห้องเรียนโรง<br/>เรียนประถม Baekma</li>
+                            <li>ปรับปรุงห้องน้ำโรงเรียนมัธยมปลาย Gajeong</li>
+                            <li>ก่อสร้างกันน้ำผนังภายนอกโรงเรียนประถม Baekma</li>
+                            <!-- <li class="wrr">영종종교 옥외, 옥상 방수공사외</li> -->
+                            <li>ก่อสร้างซ่อมแซมโรงเรียนประถมและอนุบาล Manseok</li>
+                            <li>ปรับปรุงบำรุงโรงเรียนประถม Daegos</li>
+                            <li>ปรับปรุงห้องน้ำโรงเรียนประถม Yonghyeonnam</li>
+                            <li>ปูพื้นใหม่ห้องผู้อำนวยการโรงเรียนประถม Simhak</li>
+                            <li>สถานรับเลี้ยงเด็ก Sanul, Samga-dong, Yeonsu</li>
+                            <li>อพาร์ทเมนต์ให้เช่าของรัฐบาลเขต Yeonsu</li>
+                            <li>อพาร์ทเมนต์ให้เช่าของเขต Seonhak</li>
+                            <li>ก่อสร้างปรับปรุงไม้ปูพื้นห้องเ<br/>รียนโรงเรียนประถม Simhak</li>
+                        </ul>
+                        <div class="circle-2 circle"></div>
+                        <ul>
+                            <li>ปรับปรุงบำรุงโรงเรียนมัธยมต้น Yeongjong</li>
+                            <li>ปรับปรุงบำรุงห้องน้ำโรงเรียนประถม Yeonsu</li>
+                            <li>เปลี่ยนปรับปรุงประตูทางเข้า<br/>ห้องเรียนโรงเรียนมัธยมต้น Jangseong</li>
+                            <li>ปรับปรุงก่อสร้างห้องพักครูโรงเ<br/>รียนประถม Hwasu ที่เขต Goyang</li>
+                            <li>ก่อสร้างย้ายสถานที่สำนักงานบำรุง<br/>รักษาของโรงเรียนประถม Hwasu ที่เขต Goyang</li>
+                            <li>งานปรับปรุงตกแต่งใหม่ห้อ<br/>งพักครูโรงเรียนมัธยมต้น Sinneung</li>
+                            <li>ปรับปรุงส่วนกลางภายในห้อง<br/>ธุรการโรงเรียนประถม Wondang</li>
+                            <li>ก่อสร้างบันไดโรงเรียนที่โรงเรียนประถม CheongSeok</li>
+                            <li>ก่อสร้างห้องศิลปะดนตรีโรงเรียนมัธยม Bongilcheon</li>
+                            <li>ปรับปรุงไม้ปูพื้นห้องเรียนโรงเรียนประถม Simhak</li>
+                            <li>เปลี่ยนประตูทางเข้าห้อง<br/>เรียนโรงเรียนประถม Baekma</li>
+                            <li>ก่อสร้างผลังกันน้ำโรงเรียนประถม Baekma</li>
+                            <li>ก่อสร้างแหล่งอำนวยความสะดว<br/>กสำหรับคนพิการที่โรงเรียน Hwajeong เขต Goyang</li>
+                            <li>เสริมประตูทางเข้าออกห้องเรียนโรงเรียนประถม Baekma</li>
+                            <li>งานต่อเติมห้องสมุดโรงเรียน Deokjeok</li>
+                            <li>งานซ่อมและงานไม้โ<br/>รงเรียนประถม Jayu ที่เขต Paju</li>
+                            <li>ก่อสร้างตกแต่งภายในห้อง<br/>เลี้ยงดูเด็กโรงเรียนประถม Wanjeong</li>
+                            <li>ปรับปรุงตกแต่งภายในใหม่ห้อ<br/>งพักครูโรงเรียนมัธยมปลายหญิงล้วน Inseong</li>
+                            <li>โครงการปรับปรุงห้องพิเศษโรงเ<br/>รียนมัธยมต้นหญิงล้วน Gajwa</li>
+                            <li>ติดตั้งเฟอร์นิเจอร์สำหรับโครงก<br/>ารใหม่โรงเรียนมัธยมต้นหญิงล้วน Gajwa</li>
+                        </ul>
+                        <div class="circle-3 circle"></div>
+                        <ul>
+                            <li>ก่อสร้างเปลี่ยนหน้าต่างโรงเรียนประถม<br/>Dongam ที่เขต Hugwan-dong</li>
+                            <li>ก่อสร้างเปลี่ยนหน้าต่างโรงเรียนประถม<br/>Dongam ที่เขต Hugwan-dong</li>
+                        </ul>
+                        <div class="circle-4 circle"></div>
+                        <ul>
+                            <li>ก่อสร้างห้องเรียน (วิชาคณิตศาสตร์และภาษาอังกฤษ)<br/> โรงเรียนมัธยมต้น Neungheodae</li>
+                            <li>งานขยายโรงเรียนพิเศษโรงเ<br/>รียนมัธยมต้น Seonin</li>
+                            <li>งานเปลี่ยนวัสดุปูพื้นที่เก่าแก่โรงเ<br/>รียนประถม Seorim</li>
+                        </ul>
+                        <div class="circle-5 circle"></div>
+                        <ul>
+                            <li>การปรับปรุงพื้นที่ห้องเรียน โรงเรียนมัธยม<br/> Incheon และ ห้องเรียนอเนกประสงค์ <br/>การก่อสร้างปรับปรุงใหม่</li>
+                            <li>ห้องเรียนอเนกประสงค์ที่โรงเรียนมัธยมอินชอน<br/> ซ่อมชั้นบรรยากาศ</li>
+                            <li>การตกแต่งภายในใหม่ห้องเอนกประสงค์และห้<br/>องบุคลากรโรงเรียนมัธยมปลาย Yeonsong</li>
+                        </ul>
+                        <div class="circle-6 circle"></div>
+                        <ul>
+                            <li>ก่อสร้างประตูเสริมห้องประฎิบัติการและห้องประชุมชั้น<br/>2 ตึกประวัติศาสตร์โรงเรียนมัธยมปลา<br/>ยอุตสาหกรรมข้อมูล Incheon</li>
+                            <li>ทาสีตึกใหม่และชั้นดาดฟ้าโรงเ<br/>รียนประถม Galwol Incheon</li>
+                        </ul>
+                        <div class="circle-7 circle"></div>
+                        <ul>
+                            <li>ปรับปรุงบำรุงห้องน้ำโรงเรียนมัธยม Gyesan</li>
+                            <li>บำรุงห้องน้ำและสร้างการกันน้<br/>ำชั้นดาดฟ้าโรงเรียนประถม Sangok</li>
+                        </ul>
+                        <div class="circle-8 circle"></div>
+                        <ul>
+                            <li>ปรับปรุงบำรุงห้องน้ำโรงเรียนประถม Buheung</li>
+                            <li>งานก่อสร้างปรับปรุงกันเสียงดังห้องพล<br/>ะและห้องโสตทัศนูปกรณ์โรงเรียนมัธยมปลาย<br/>Hankuk University of Foreign studies ที่ Yongin</li>
+                        </ul>
+                        <div class="circle-9 circle"></div>
+                        <ul>
+                            <li>ก่อสร้างเปลี่ยนหน้าต่างโรงเ<br/>รียนประถม Dongam ที่เขต Hugwan-dong</li>
+                            <li>ปรับปรุงห้องน้ำโรงเรียนมัธยมปลาย<br/> Yale Incheon</li>
+                            <li>เปลี่ยนหน้าต่างโรงอ<br/>าหารโรงเรียนมัธยม Gyesan</li>
+                            <li>เซ็นสัญญาการตกแต่งภายในห้องเ<br/>รียนและห้องดูแลในปี 2019</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 row align-items-center">
+                <p class="ml-auto">การดูแลรักษาบำรุงสถานที่ก่อสร้าง<br>
+                การก่อสร้างภายใน<br>
+                การก่อสร้างโครงสร้างหน้าต่าง
+                </p>
+            </div>
+        </div>
+
+        <div class="row width pt-4 case-3" style="margin-bottom: 100px;">
+            <div class="col-md-3 mb-3">
+                <h5>รายละเอียดการก่อสร้างต่างๆของหน่วยงานรัฐบาล</h5>
+            </div>
+            <div class="col-md-7 d-flex">
+                <div class="d-flex flex-column">
+                    <h2 class="date-yy" style="margin-bottom: 5px;">2005</h2>
+                    <h2 class="date-yy" style="margin-bottom: 5px;">2007</h2>
+                    <h2 class="date-yy" style="margin-bottom: 50px;">2009</h2>
+                    <h2 class="date-yy"  style="margin-bottom: 92px;">2010</h2>
+                    <h2 class="date-yy" style="margin-bottom: 50px;">2012</h2>
+                    <h2 class="date-yy" style="margin-bottom: 272px;">2013</h2>
+                    <h2 class="date-yy"  style="margin-bottom: 93px;">2014</h2>
+                    <h2 class="date-yy" style="margin-bottom: 95px;">2015</h2>
+                    <h2 class="date-yy" style="margin-bottom: 5px;">2016</h2>
+                    <h2 class="date-yy" style="margin-bottom: 205px;">2017</h2>
+                    <h2 class="date-yy" style="margin-bottom: 92px;">2018</h2>
+                    <h2 class="date-yy">2019</h2>
+                    <h2 class="date-yy mt-auto">2020</h2>
+                </div>
+                <div class="case-timeline m-auto">
+                    <div class="case-timelin-content">
+                        <div class="circle-1 circle"></div>
+                        <ul>
+                            <li style="padding-top: 0px;">เปลี่ยนไม้ปูพื้น, ทาสีห้องรับรองและตึกสถานีตำรวจ</li>
+                        </ul>
+                        <div class="circle-2 circle"></div>
+                        <ul>
+                            <li>ปรับปรุงสภาพแวดล้อมสำนักงานการไฟฟ้าเกาหลี</li>
+                        </ul>
+                        <div class="circle-3 circle"></div>
+                        <ul>
+                            <li>งานปรับปรุงก่อสร้างสถาบันวิจัยการประมงที่ Incheon</li>
+                            <li>งานปรับปรุงก่อสร้างสถาบันวิจัยการประมงที่ Incheon</li>
+                        </ul>
+                        <div class="circle-4 circle"></div>
+                        <ul>
+                            <li>ปรับปรุงเสริมเพดานห้องจ่าย<br/>ไฟฟ้าของสถานีส่งสัญญาณ Gwanaksan</li>
+                            <li>ก่อสร้างเสริมห้องน้ำสถานีส่งสัญญาณ Gwanaksan</li>
+                            <li>ปรับปรุงท่ารับผู้โดยสารสนามบินนานาชาติ Incheon</li>
+                        </ul>
+                        <div class="circle-5 circle"></div>
+                        <ul>
+                            <li>ปรับปรุงบำรุงสถานที่ท่าอากาศยาน Incheon ปี 2012</li>
+                            <li>ปรับปรุงบำรุงวิศวกรรมโยธาประตูระบายน้ำ</li>
+                        </ul>
+                        <div class="circle-6 circle"></div>
+                        <ul>
+                            <li>การติดตั้งห้องอาบน้ำสถานี Dongsu</li>
+                            <li>งานปรับปรุงสถานที่รักเลี้ยงเด็กเขต Jakjeon-dong</li>
+                            <li>ติดตั้งหน้าต่างมู่ลี่คลินิกที่ Mungap</li>
+                            <li>ติดตั้งหน้าต่างมู่ลี่คลินิกที่ Soyeongpyeong</li>
+                            <li>ปรับปรุงอาคารเก่าที่ทำการไปรษณีย์<br/> Manseok-dong Incheon</li>
+                            <li>งานของกระทรวงกลาโหมกองทหารที่ 2002</li>
+                            <li>งานปรับปรุงโรงอาหารของทหา<br/>รกระทรวงกลาโหมค่ายทหารที่ 178</li>
+                        </ul>
+                        <div class="circle-7 circle"></div>
+                        <ul>
+                            <li>การติดตั้งหลังคาคลินิก Mungap</li>
+                            <li>การขุดลอกท่อระบายน้ำและการซ่อมแซมฉุกเฉิน</li>
+                            <li>ติดตั้งตัวป้องกัน PAD TR และการซ่อมแซมฉุกเฉิน</li>
+                        </ul>
+                        <div class="circle-8 circle"></div>
+                        <ul>
+                            <li>ติดตั้งและบำรุงรักษาป้ายรักษา<br/>ความปลอดภัยจราจร Incheon ปี 2015</li>
+                            <li>ปี 2015 การติดตั้งหอตรวจอากาศในโ<br/>ครงการสนามบินนานาชาติ ลอส แองเจลลิส</li>
+                            <li>ก่อสร้างห้องสมุดที่ศูนย์ชุมชนเขต Dongchun 1-dong</li>
+                        </ul>
+                        <div class="circle-9 circle"></div>
+                        <ul>
+                            <li>งานก่อสร้างพื้นของทางใต้ดิน Jungbong ใหม่</li>
+                        </ul>
+                        <div class="circle-10 circle"></div>
+                        <ul>
+                            <li>งานตกแต่งภายในใหม่บ้านรับเลี้ยงเด็ก Namdong</li>
+                            <li>ติดตั้งห้องพักคนแรงงานและบันไดขึ้นชั้นด<br/>าดฟ้าของร้านค้าต่างๆโดยกลุ่มโครงการ<br/>Bucheon Okgil กระทรวงที่ดินและทีพั่ก<br/>อาศัยจังหวัด Incheon</li>
+                            <li>งานซ่อมแซมครั้งใหญ่ของประภาคารเมือง <br/>Incheon ปี 2017</li>
+                            <li>งานเปลี่ยนไม้ปูพื้นและติดตั้งบั<br/>นไดภายในที่สถานรับเลี้ยงเด็ก Namdong</li>
+                            <li>งานปรับปรุงครัวของค่ายทหารที่<br/> 6799 โดยกระทรวงกลาโหม</li>
+                        </ul>
+                        <div class="circle-11 circle"></div>
+                        <ul>
+                            <li>งานเปลี่ยนวัสดุตกแต่ง 3 ขั้นตอนที่ตึกพั<br/>กอาศัยหมู่บ้าน Ihwa เขต Taean</li>
+                            <li>ปรับปรุงตัวต้านลมฉุกเฉินที่ท่าเรือคลังสินค้า </li>
+                            <li>ปรับปรุงสำนักงานค่ายทหาร<br/> 00 กระทรวงกลาโหม</li>
+                        </ul>
+                        <div class="circle-12 circle"></div>
+                        <ul>
+                            <li>ปรับปรุงช่องระบายน้ำลานจ<br/>อดรถและน้ำรั่วบนดาดฟ้าฉุกเฉิน</li>
+                            <li>การก่อสร้างเพื่อซ่อมแซมสายไฟที่เสียห<br/>ายอย่างเร่งด่วนในส่วนบนและ IPA<br/> Ball Park ในท่าเรือทางใต้</li>
+                            <li>เป็นที่แรกที่ก่อสร้างการเปลี่ยนหน้าต่างในปี 2019</li>                           
+                            <li>งานปรับปรุงสภาพแวดล้อม<br/>ของศูนย์สุขาภิบาลสิ่งแวดล้อม</li>
+                            <li>ก่อสร้างปรับปรุงครั้งใหญ่ป้ายแนะนำที่<br/> Incheon ปี 2019 (ครั้งที่ 4)</li>
+                            <li>ซ่อมแซมที่พักของทหาร ค่ายทหาร<br/> 00 กอง 19 กระทรวงกลาโหม</li>
+                            <li>เปลี่ยนหน้าต่างที่ทำการพื้นที่ 00<br/> เขต 19 กระทรวงกลาโหม</li>
+                        </ul>
+                        <div class="circle-13 circle"></div>
+                        <ul>
+                            <li>ซ่อมแซมที่พักของทหาร Buleumdo <br/>เขต 20 กระทรวงกลาโหม</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 row align-items-center">
+            </div>
+        </div>
+
+        <div class="row width pt-4 case-4" >
+            <div class="col-md-3 mb-3">
+                <h5>รายละเอียดการก่อสร้างของเอกชน</h5>
+            </div>
+            <div class="col-md-7 d-flex">
+                <div class="d-flex flex-column">
+                    <h2 class="date-yy" style="margin-bottom: 25px;">2009</h2>
+                    <h2 class="date-yy" style="margin-bottom: 52px;">2010</h2>
+                    <h2 class="date-yy" style="margin-bottom: 95px;">2013</h2>
+                    <h2 class="date-yy" style="margin-bottom: 205px;">2014</h2>
+                    <h2 class="date-yy" style="margin-bottom: 540px;">2015</h2>
+                    <h2 class="date-yy" style="margin-bottom: 90px;">2016</h2>
+                    <h2 class="date-yy" style="margin-bottom: 232px;">2017</h2>
+                    <h2 class="date-yy" style="margin-bottom: 975px;">2018</h2>
+                    <h2 class="date-yy" style="margin-bottom: 360px;">2019</h2>
+                    <h2 class="date-yy">2020</h2>
+                </div>
+                <div class="case-timeline m-auto">
+                    <div class="case-timelin-content">
+                        <div class="circle-1 circle"></div>
+                        <ul>
+                            <li style="padding-top: 0px;">บ้านซื้อไว้ให้เช่า (ห้อง148, Shinwoo Parkville <br/>Hamdeok Jeju) ครั้งแรกที่ปรับปรุงเป็นห้อง</li>
+                        </ul>
+                        <div class="circle-2 circle"></div>
+                        <ul>
+                            <li>ปรับปรุงตึก Juan ชั้น 3,4,5</li>
+                            <li>นิทรรศการพิเศษเกี่ยวกับน้ำเกลือของเมือง<br/> Incheon ที่พิพิธภัณฑ์แห่งเมือง Incheon</li>
+                        </ul>
+                        <div class="circle-3 circle"></div>
+                        <ul>
+                            <li>ซ่อมแซมบ้านพักของโรงผลิตพลังงานไฟฟ้า ปี 2013</li>
+                            <li>ปรับปรุงสิ่งแวดล้อมบางส่วนของธนาคาร<br/> Kookmin สาขา Yeongdong</li>
+                            <li>ปรับปรุงสิ่งแวดล้อมบางส่วนของธนาคาร <br/>Kookmin สาขา Bundang Baekgung (ก่อสร้างภายใน)</li>
+                        </ul>
+                        <div class="circle-4 circle"></div>
+                        <ul>
+                            <li>ติดตั้งเก้าอี้ที่นั่งชมการแข่งขันกีฬาที่โรงยิมเขต<br/> Deokjeok-myeon</li>
+                            <li>ปรับปรุงสิ่งแวดล้อมบ้านพักผู้สูงอายุเขต<br/> Deokjeok-myeon (Seopo 1-ri, Buk 1-ri)</li>
+                            <li>ติดตั้งห้องนอนสถานี Gyulhyeon</li>
+                            <li>ก่อสร้างขยายห้องทำอาห<br/>ารบ้านพักผู้สูงอายุ Igae (Jin 2-ri)</li>
+                            <li>ซ่อมแซมป้ายจราจรตลาดส่<br/>งสินค้าขายทางการเกษตร</li>
+                        </ul>
+                        <div class="circle-5 circle"></div>
+                        <ul>
+                            <li>ป้องกันการเปื่อยของไม้ที่ตึก<br/> Kaiser Palace Woorim</li>
+                            <li>สร้างพื้นที่เก็บเศษอาหารที่ตึก<br/> Dongbu Centerville Ichon</li>
+                            <li>สร้างพื้นที่เก็บเศษอาหารที่ตึก<br/> Dongbu Centerville Ichon</li>
+                            <li>สร้างพื้นที่สำหรับแยกขยะที่อพาร์<br/>ทเมนต์ Kumho Oullim ที่ Changdong</li>
+                            <li>ติดตั้งประตูอัตโนมัติที่อพาร์ทเมนต์<br/>Woorim Lions Valley ตึก 2</li>
+                            <li>เปลี่ยนแผ่นผนังทางเดินส่วนกลา<br/>งของอพาร์ทเมนต์ We've Zenith</li>
+                            <li>ติดตั้งราวจับบันไดภายนอกที่อพ<br/>าร์ทเมนต์ Bumbak Hillstate ตึก 404 </li>
+                            <li>ติดตั้งหลังคา, ที่เก็บและแยกรีไซเคิล <br/>อพาร์ทเมนต์ Hyundai Kolon</li>
+                            <li>ก่อสร้างหน้าต่างลานจอดรถอพาร์ทเมนต์ <br/>Trapalace ที่ Mok-dong </li>
+                            <li>ติดตั้งรั้วที่เก็บขยะเปียกหรือเศษ<br/>อาหารที่อพาร์ทเมนต์  Daelim ตึก2</li>
+                            <li>ติดตั้งก๊อกน้ำกลางแจ้ง Charmnuri<br/> Eco Rich ที่ Seocho</li>
+                            <li>งานซ่อมแซมบันไดและติดตั้งกันสาดที่อพ<br/>าร์ทเมนต์ Changsin Ssangyong ตึก 2</li>
+                        </ul>
+                        <div class="circle-6 circle"></div>
+                        <ul>
+                            <li>ติดตั้งรั้วแบ่งพื้นที่กับสนามกอล์ฟ Hanyang Pine</li>
+                            <li>การติดตั้งเปลี่ยนบันไดเหล็ก Heliport<br/> ชั้นดาดฟ้าตึก ASEM</li>
+                            <li>ก่อสร้างตะแกรงอพาร์ทเมนต์ Osan Unam Jugong ตึก 3</li>
+                        </ul>
+                        <div class="circle-7 circle"></div>
+                        <ul>
+                            <li>ก่อสร้างวัสดุเพดานระเบียงที่โล่งที่ Pilgrim House</li>
+                            <li>ติดตั้งหน้าต่างหลังคาและประตูเลื่อนชั้นใต้ดินชั้น 2</li>
+                            <li>โครงงานเปลี่ยนหน้าต่างแถวบันไดที่อ<br/>พาร์ทเมนต์ Wondong e-Pyunhansesang ตึก 1</li>
+                            <li>ติดตั้งหลังคาโรงแยกขยะที่ Seongwon</li>
+                            <li>สร้างพื้นที่เก็บและทิ้งขยะ Shinnaeseongwon</li>
+                            <li>สร้างโรงแยกขยะที่อพาร์ทเมนต์ Dongsomun<br/>Hanshin Hanjin</li>
+                        </ul>
+                        <div class="circle-8 circle"></div>
+                        <ul>
+                            <li>สร้างพื้นที่แยกขยะ เป็นต้นที่ตึกสำนักงานใหญ่ส<br/>มาคมบริษัทประกันภัยเกาหลี</li>
+                            <li>เปลี่ยนกระจกลามิเนตสองชั้น</li>
+                            <li>ติดตั้งหลังคาที่ garden five life</li>
+                            <li>เปลี่ยนไม้ปูพื้นทางเดินชานชาลา</li>
+                            <li>สร้างหลังคาโรงเก็บขยะเปียกหรือเศษอา<br/>หารอพาร์ทเมนต์ Bullo Geumho Eoullim </li>
+                            <li>ติดตั้งหน้าต่างลานจอดรถแลพเก็บรอย<br/>แตกที่อพาร์ทเมนต์ Junggye Gunyeong ตึก 3</li>
+                            <li>ก่อสร้างหลังคาเพดาน Sky park <br/>ที่อพาร์ทเมนต์ Gwanggyo Edutown Xi ตึก 1</li>
+                            <li>งานเปลี่ยนแปลงนอนบรรจุกระสุน</li>
+                            <li>เปลี่ยนกระจกกันเสียงที่ Raemian Oksu Riverzen</li>
+                            <li>โรงงานผลิตโรงกำจัดขยะขนาดใหญ่ดรีม วัลเลย์</li>
+                            <li>งานปิดม่านบังแดด ที่ทางเข้าหมู่บ้านดอกโซดูซาน วีฟ</li>
+                            <li>งานติดตั้งประตูอัตโนมัติของสนามเพลาะ</li>
+                            <li>เปลี่ยนหน้าต่างบ้านรับเลี้ยงเด็ก <br/>Springlight Daycare Center</li>
+                            <li>ปรับปรุงทางเดิน Prior Palace</li>
+                            <li>ชาวกุมานูเอล ชิงช้าสวรรค์สร้างสะพ<br/>านเชื่อมต่อกับทะเลสาปกวางกโย</li>
+                            <li>นอกเหนือจากงานซ่อมแปดเหลี่ยม<br/>จัตุรัสเมืองนิวทาวน์ 10</li>
+                            <li>สามเหลี่ยม ฟรูจิโอ ทำการเปลี่ยนก<br/>ระจกแตก EV กลางแจ้ง</li>
+                            <li>ซ่อมไม้ ที่พักตากอากาศข้างหน้า <br/>323-dong ทำซ่อมหลังคาไม้</li>
+                            <li>บ้านพักตากอากาศแห่งความบริสุทธิ์ข<br/>องเขตสงวนของ kid-dong<br/> ทำเล็กซานใต้หลังคาใหม่</li>
+                            <li>เปลี่ยนบันไดไม้อพาร์ทเมนต์ Ingye Familie</li>
+                            <li>งานกลับสู่สภาพเดิม ชั้นที่ 2 ของงาน Daily-Files</li>
+                            <li>ติดตั้ง Leksan ลานจอดรถใต้ดิน <br/>Sekyung Munchon ตึก 14 ที่ Ilsan</li>
+                        </ul>
+                        <div class="circle-9 circle"></div>
+                        <ul>
+                            <li>เปลี่ยนกระจกป้องกันเพลิงทางเข้าลิฟท์ฉุกเฉิน</li>
+                            <li>ติดตั้งแผ่นกันกระตกชั้น 2 <br/>ตกที่ Anyang Trade Center</li>
+                            <li>การเปลี่ยนกระจก</li>
+                            <li>ช่างติดตั้งประตูป้องกันภัยใต้ผืนผ้าของล็อตเต้คาสเซิล</li>
+                            <li>เปลี่ยนกระจกใสที่ Songdo<br/> The Sharp First World</li>
+                            <li>ติดตั้งตัวกันกระแทกอพาร์ทเมนต์<br/> Pyeongnae Jungheung S Class ตึก1</li>
+                            <li>งานรื้อไม้ปูพื้นและสวนดอกไม้ชั้นดาดฟ้าที่ Suraksan</li>
+                            <li>สร้างโรงแยกขยะที่อพาร์ทเมนต์ <br/>Ilwon Moglyeon Town</li>
+                            <li>เปลี่ยนกระจกกันเสียงที่ Raemian Oksu Riverzen</li>
+                        </ul>
+                        <div class="circle-10 circle"></div>
+                        <ul>
+                            <li>ติดตั้งกำแพงกั้นประตูทางเข้าและโต๊ะประช<br/>าสัมพันธ์ที่อพาร์ทเมนต์ Songpa Prugio City</li>
+                            <li>ซ่อมแซมไม้ปูพื้นอพาร์ทเมนต์<br/> Lotte Castle Ivy ชั้น 3 </li>
+                            <li>ติดตั้งกันลมป้ายรถบัสที่อพาร์ทเมนต์ <br/>ePyunhansesang Smile City 2</li>
+                            <li>ติดตั้งรั่วกันหินตกลงจากภูเขาที่อพาร์ทเมนต์<br/> Gajeong Hana ตึก2</li>
+                            <li>ติดตั้งกันเสียงสนามฝึกกอล์ฟอพาร์ทเมนต์ <br/>Gwangmyeong e-Pyeonhansesang Centerville </li>
+                            <li>งานเปลี่ยนโครงสร้างเมมเบรน<br/>ที่อพาร์ทเมนต์ Daewol Village</li>
+                            <li>ติดตั้งเครื่องลดความชื้นประตูส่วนกล<br/>างที่อพาร์ทเมนต์ Onsue Hillstate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 row align-items-center">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- foonter -->
+<div class="footer-wrap" style="margin-top:170px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="../assets/img/footer_logo.png" alt="">
+                <div class="list-top mt-4">
+                    <a href="../about_greet.html" class="footer-menu margin-none">เกี่ยวกับเรา</a>
+                    <a href="../business.html" class="footer-menu margin-none">ด้านธุรกิจ</a>
+                    <a href="../construction_case.html" class="footer-menu margin-none">ตัวอย่างการก่อสร้าง</a>
+                    <a href="../customerservice.html" class="footer-menu margin-none">ศูนย์บริการ</a>
+                        <!-- <a href="" class="footer-menu">이용약관</a>
+                        <a href="" class="footer-menu after-none">개인정보 처리방침</a> -->
+                </div>
+                <div class="list-bottom mt-3">
+                    <p class="footer-menu margin-none">บจก.แทยัง</p>
+                    <p class="footer-menu"><span>หมายเลขใบประกอบการค้า</span> 121-81-48125</p>
+                    <p class="footer-menu after-none"><span>ที่อยู่</span> จังหวัดอินชอน อำเภอนัมดง ถนนโดริมเหนือ 16/52</p><br />
+                    <p class="footer-menu margin-none"><span>อีเมล</span>taeyang4658@gmail.com</p>
+                    <p class="footer-menu"><span>ศูนย์บริการลูกค้า</span>032-463-4658</p>
+                    <p class="footer-menu after-none"><span>หมายเลขแฟกซ์</span>032-463-4660</p><br>
+                    <p class="footer-menu after-none margin-none">© 2020 taeyang,  All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+    function toggleHead() {
+        var scroll = $(window).scrollTop();
+        var returnValue = false;
+        if(scroll > 75) {
+            returnValue = true;
+        }
+        else {
+            returnValue = false;
+        }
+        return returnValue;
+    } 
+
+</script>
+
+<script src="../assets/js/header.js"></script>
+<script src="../assets/js/accordion.js"></script>
+
+
+</body>
+</html>
