@@ -290,4 +290,7 @@
     .top-nav .dropdown-navbar .nav-link.eng{
       margin: 0 29px !important;
     }
+    .top-nav .dropdown-navbar .nav-link.thai{
+      margin: 0 30px !important;
+    }
   }
