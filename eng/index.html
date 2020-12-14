@@ -60,66 +60,13 @@
                             <span class="open-lang material-icons mr-1 icon" style="color: #fff; cursor: pointer;">public</span>
                             <span class="open-lang language language-box" style="color: #fff; cursor: pointer" >English</span>
                         </div>
-
-                        <style>
-                            .language-select{
-                                position: absolute;
-                                top:75px;
-                                right:11px;
-                                background-color:#fff;
-                                border-radius:5px;
-                                padding:10px;
-                                width:300px;
-                                height:130px;
-                                overflow:auto;
-                                max-width: calc (90% - 11px);
-                                text-align:center;
-                                z-index:10;
-                                opacity:0;
-                                transition: 0.6s all;
-                                z-index:0;
-                            }
-                            .language-select.show{
-                                opacity:1;
-                                width:300px;
-                                height:130px;
-                                z-index:53;
-                            }
-                            .language-items{
-                                padding:5px 10px;
-                                background-color:#f1f1f1;
-                                border-radius:3px;
-                                display:inline-block;
-                                width:30%;
-                                cursor: pointer;
-                                transition: 0.6s all;
-                            }
-                            .language-items.active{
-                                border:1px solid #000;
-                            }
-                            .language-items:hover {
-                                background-color:#d0d0d0;
-                            }
-                            .language-text{
-                                margin-bottom:30px;
-                            }
-                            .remove-language{
-                                position:absolute;
-                                right:20px;
-                                color: #000;
-                                cursor: pointer;
-                                top: 11px;
-                            }
-                        </style>
-
-                            <div class="language-select">
-                                <div class="language-text">Please select a language</div>
-                                <span class="remove-language  material-icons mr-1 icon" style="color: #000; cursor: pointer;">close</span>
-                                <div class="language-items" onclick="location.href='../index.html'">한국어</div>
-                                <div class="language-items active" onclick="location.href='./index.html'">English</div>
-                                <div class="language-items" onclick="location.href='../thai/index.html'">ไทย</div>
-                            </div>
-                            
+                        <div class="language-select">
+                            <div class="language-text">Please select a language</div>
+                            <span class="remove-language  material-icons mr-1 icon" style="color: #000; cursor: pointer;">close</span>
+                            <div class="language-items" onclick="location.href='../index.html'">한국어</div>
+                            <div class="language-items active" onclick="location.href='./index.html'">English</div>
+                            <div class="language-items" onclick="location.href='../thai/index.html'">ไทย</div>
+                        </div>
                     </div>
                     <div>
                         <input type="checkbox" id="menuicon">

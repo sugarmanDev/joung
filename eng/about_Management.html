@@ -45,9 +45,16 @@
             </div>
             <div class="nav justify-content-end">
                 <div style="margin-right: 40px;">
-                    <div class="d-flex align-self-center language-box">
-                        <span class="material-icons mr-1 icon" style="color: #fff;">public</span>
-                        <span class="language" style="color: #fff;">English</span>
+                    <div class="d-flex align-self-center ">
+                        <span class="open-lang material-icons mr-1 icon" style="color: #fff; cursor: pointer;">public</span>
+                        <span class="open-lang language language-box" style="color: #fff; cursor: pointer" >English</span>
+                    </div>
+                    <div class="language-select">
+                        <div class="language-text">Please select a language</div>
+                        <span class="remove-language  material-icons mr-1 icon" style="color: #000; cursor: pointer;">close</span>
+                        <div class="language-items" onclick="location.href='../about_Management.html'">한국어</div>
+                        <div class="language-items active" onclick="location.href='./about_Management.html'">English</div>
+                        <div class="language-items" onclick="location.href='../thai/about_Management.html'">ไทย</div>
                     </div>
                 </div>
                 <div>
