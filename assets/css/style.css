@@ -564,6 +564,7 @@ background-image: url(../img/banner_img_light.jpg);
 
 .taeyang-wrap .row {
   margin-top: 120px;
+  word-break: break-all !important;
 }
 
 .taeyang-text {
