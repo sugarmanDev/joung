@@ -22,7 +22,7 @@ input {
 body {
   font-family: 'Inter', sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
-  word-break: keep-all;
+  word-break: break-all;
 }
 
 /* 공통 */
