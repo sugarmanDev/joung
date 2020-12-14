@@ -294,3 +294,10 @@
       margin: 0 30px !important;
     }
   }
+
+  @media (max-width:414px){
+    #thai_management_text{
+      overflow-x: hidden;
+      max-width: 90%;
+    }
+  }
