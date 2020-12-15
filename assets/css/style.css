@@ -1688,6 +1688,9 @@ margin-bottom: 0px;
   font-weight: 700;
   color: #005FA5;
   font-size: 2em;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -2180,4 +2183,47 @@ input[type="checkbox"] {
   color: #000;
   cursor: pointer;
   top: 11px;
+}
+
+.col-sm-8.case-con{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-left: 1px solid #000;
+  padding-left: 20px;
+  word-break: keep-all;
+}
+
+.col-sm-8.case-con.thai{
+  word-wrap: normal;
+}
+
+.dot{
+  border: 4px solid #005FA5;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  position: absolute;
+  right: -9px;
+  z-index: 9;
+  background-color: #fff;
+}
+
+.case_body .case{
+  border-top: 3px solid #005FA5;
+  margin-top: 100px;
+  padding-top: 24px;
+}
+
+.case_body .case .col-lg-3 h5{
+  word-break: keep-all;
+}
+
+.case_body .case .col-lg-3.thai h5{
+  word-break: normal;
+}
+
+.case_body .case .side_text{
+  display: flex;
+  align-items: center;
 }

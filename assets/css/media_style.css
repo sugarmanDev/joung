@@ -294,3 +294,23 @@
       margin: 0 30px !important;
     }
   }
+
+  @media (max-width: 991px) {
+    .case_body .case .col-lg-3{
+      margin-bottom: 20px;
+    }
+    .case_body .case .side_text{
+      display: none;
+    }
+  }
+  @media (max-width: 575px) {
+    .dot{
+      display: none;
+    }
+    .col-sm-8.case-con{
+      border-style: none;
+    }
+    .date-yy.yy{
+      margin-top: 10px;
+    }
+  }
