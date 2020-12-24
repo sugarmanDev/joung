@@ -2227,3 +2227,7 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
 }
+
+.top-nav.eng .border-bt .navbar-nav .nav-link{
+  margin: 0px 20px;
+}
