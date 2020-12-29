@@ -1,0 +1,22 @@
+@media only screen and (max-width:1200px){
+.main-timeline .timeline-content{margin-top:75px}
+}
+@media only screen and (max-width:990px){
+.main-timeline .timeline{margin:0 0 10px}
+.main-timeline .timeline-content{margin-top:115px}
+}
+@media only screen and (max-width:767px){
+.main-timeline{padding-top:50px}
+.main-timeline:before{left:25%;right:0;margin:0}
+.main-timeline .timeline{margin-bottom:70px}
+.main-timeline .timeline:before{top:0;left:25%;right:0;margin:0}
+.main-timeline .timeline-content,.main-timeline .timeline:nth-child(even)
+.timeline-content{width:100%;margin-top:-15px;padding-left:35%;padding-right:5px}
+.main-timeline .timeline:nth-child(even) .timeline-content{float:right; text-align: left;}
+.main-timeline .timeline:nth-child(even) .timeline-content:before{right:auto;transform:rotateY(0)}
+.main-timeline .timeline-content:after,.main-timeline .timeline:nth-child(even).timeline-content:after{left:80px}
+}
+@media only screen and (max-width:479px){
+.main-timeline .timeline-content,.main-timeline .timeline:nth-child(2n) .timeline-content{padding-left:35%}
+.main-timeline .timeline-content:after,.main-timeline .timeline:nth-child(2n) .timeline-content:after{left:65px}
+}
