@@ -324,4 +324,28 @@
     }
   }
 
+  @media (max-width: 462px) {
+    .title-text-left{
+      font-size: 14px !important;
+    }
+    .desc-text-right-bottom{
+      font-size: 14px !important;
+    }
+    .desc-text-right{
+        font-size: 14px;
+    }
+    .taeyang-wrap p{
+        font-size: 14px;
+    }
+  }
+
+  @media (max-width: 338px) {
+    .title-text-left{
+      font-size: 12px !important;
+    }
+    .title-tip-left{
+        margin-right: 5px;
+    }
+  }
+
 
